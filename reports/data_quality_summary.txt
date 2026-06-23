@@ -1,0 +1,8 @@
+
+DATA QUALITY SUMMARY — AMFI Code Validation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total schemes in fund_master  : 26
+Matched with nav_history      : 23
+Missing NAV records           : 3 (possibly inactive/new funds)
+Orphan NAV codes              : 2 (no master entry — possible feed gap)
+Match rate                    : 88.46%
