@@ -9,10 +9,12 @@ import pandas as pd
 import numpy as np
 from sqlalchemy import create_engine, text
 
-RAW_DIR = r"C:\Users\user\OneDrive\Desktop\project\data\raw"
-PROCESSED_DIR = r"C:\Users\user\OneDrive\Desktop\project\data\processed"
-DB_PATH = r"C:\Users\user\OneDrive\Desktop\project\bluestock_mf.db"
-SCHEMA_PATH = r"C:\Users\user\OneDrive\Desktop\project\sql\schema.sql"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
+PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
+DB_PATH = os.path.join(BASE_DIR, "bluestock_mf.db")
+SCHEMA_PATH = os.path.join(BASE_DIR, "sql", "schema.sql")
+
 
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
@@ -27,11 +29,13 @@ def clean_nav_history():
     
     # 1. Parse dates to datetime
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df = df.dropna(subset=["date"])
     
     # 2. Remove duplicates
     df = df.drop_duplicates(subset=["scheme_code", "date"])
     
     # 3. Validate NAV > 0
+    df["nav"] = pd.to_numeric(df["nav"], errors="coerce")
     df = df[df["nav"] > 0]
     
     # 4. Sort and Forward fill missing NAV for holidays/weekends
@@ -43,16 +47,19 @@ def clean_nav_history():
         
         # Reindex to full daily range
         all_dates = pd.date_range(start=min_dt, end=max_dt, freq="D")
+        all_dates.name = "date"
         group = group.set_index("date").reindex(all_dates)
         
         # Forward fill scheme_code and nav
         group["scheme_code"] = scheme_code
         group["nav"] = group["nav"].ffill()
         
-        group = group.reset_index().rename(columns={"index": "date"})
+        group = group.reset_index()
         cleaned_groups.append(group)
         
     cleaned_df = pd.concat(cleaned_groups, ignore_index=True)
+    # Sort by scheme_code + date
+    cleaned_df = cleaned_df.sort_values(["scheme_code", "date"]).reset_index(drop=True)
     cleaned_df["date"] = cleaned_df["date"].dt.strftime("%Y-%m-%d")
     return cleaned_df
 
@@ -63,6 +70,7 @@ def clean_investor_transactions():
     
     # 1. Fix date formats
     df["date"] = pd.to_datetime(df["date"], format="mixed", dayfirst=True, errors="coerce")
+    df = df.dropna(subset=["date"])
     
     # 2. Standardize transaction_type (SIP/Lumpsum/Redemption)
     type_map = {
@@ -80,6 +88,7 @@ def clean_investor_transactions():
     )
     
     # 3. Validate amount > 0
+    df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
     df = df[df["amount"] > 0]
     
     # 4. Check KYC status enum values (Verified/Pending/Failed)
@@ -123,11 +132,13 @@ def clean_scheme_performance():
     def parse_expense_ratio(val):
         if pd.isna(val):
             return 1.0 # default to 1.0%
-        val_str = str(val).replace("%", "").strip()
+        val_str = str(val).strip()
+        has_pct = "%" in val_str
+        val_str = val_str.replace("%", "").strip()
         try:
             num = float(val_str)
-            # If formatted as decimal (e.g. 0.015 instead of 1.5)
-            if num <= 0.03: 
+            # If formatted as decimal (e.g. 0.024 instead of 2.4)
+            if not has_pct and num < 0.5:
                 num = num * 100
             return num
         except ValueError:

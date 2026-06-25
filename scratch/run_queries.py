@@ -2,8 +2,12 @@ import sqlite3
 import pandas as pd
 import re
 
-DB_PATH = r"C:\Users\user\OneDrive\Desktop\project\bluestock_mf.db"
-QUERIES_PATH = r"C:\Users\user\OneDrive\Desktop\project\sql\queries.sql"
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "bluestock_mf.db")
+QUERIES_PATH = os.path.join(BASE_DIR, "sql", "queries.sql")
+
 
 def run_queries():
     conn = sqlite3.connect(DB_PATH)
