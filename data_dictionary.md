@@ -39,8 +39,8 @@ This data dictionary documents the structure, columns, data types, business rule
 ---
 
 ## 3. fact_nav (Fact Table)
-* **Description**: Historical daily Net Asset Value (NAV) records of schemes.
-* **Source References**: Cleaned from raw `nav_history.csv` (forward-filled on weekends/holidays).
+* **Description**: Historical daily Net Asset Value (NAV) records of schemes. Orphan schemes (999991, 999992) not in `dim_fund` have been filtered out to ensure referential integrity.
+* **Source References**: Cleaned from raw `nav_history.csv` (forward-filled on weekends/holidays, then filtered for valid scheme codes in `dim_fund`).
 * **Primary Key**: `(scheme_code, date)`
 * **Foreign Keys**: 
   - `scheme_code` references `dim_fund(scheme_code)`

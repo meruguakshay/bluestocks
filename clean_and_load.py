@@ -31,14 +31,24 @@ def clean_nav_history():
     df["date"] = pd.to_datetime(df["date"], errors="coerce")
     df = df.dropna(subset=["date"])
     
-    # 2. Remove duplicates
+    # 2. Filter out orphan schemes not present in both fund_master.csv and scheme_details.csv
+    master_path = os.path.join(RAW_DIR, "fund_master.csv")
+    details_path = os.path.join(RAW_DIR, "scheme_details.csv")
+    if os.path.exists(master_path) and os.path.exists(details_path):
+        master_codes = set(pd.read_csv(master_path)["scheme_code"].unique())
+        details_codes = set(pd.read_csv(details_path)["scheme_code"].unique())
+        valid_codes = master_codes.intersection(details_codes)
+        df = df[df["scheme_code"].isin(valid_codes)]
+        print(f"  Filtered orphan scheme codes. Retained {df['scheme_code'].nunique()} valid schemes.")
+    
+    # 3. Remove duplicates
     df = df.drop_duplicates(subset=["scheme_code", "date"])
     
-    # 3. Validate NAV > 0
+    # 4. Validate NAV > 0
     df["nav"] = pd.to_numeric(df["nav"], errors="coerce")
     df = df[df["nav"] > 0]
     
-    # 4. Sort and Forward fill missing NAV for holidays/weekends
+    # 5. Sort and Forward fill missing NAV for holidays/weekends
     cleaned_groups = []
     for scheme_code, group in df.groupby("scheme_code"):
         group = group.sort_values("date")
@@ -62,6 +72,7 @@ def clean_nav_history():
     cleaned_df = cleaned_df.sort_values(["scheme_code", "date"]).reset_index(drop=True)
     cleaned_df["date"] = cleaned_df["date"].dt.strftime("%Y-%m-%d")
     return cleaned_df
+
 
 def clean_investor_transactions():
     print("Cleaning investor_transactions.csv...")
@@ -306,6 +317,21 @@ def main():
     verify_df = pd.DataFrame(verification_counts)
     print(verify_df.to_string(index=False))
     
+    # Verify Foreign Key constraints
+    print("\nVerifying database foreign key integrity...")
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("PRAGMA foreign_key_check;")
+    fk_violations = cursor.fetchall()
+    conn.close()
+    if fk_violations:
+        print("  [ERROR] Foreign key violations found:")
+        for violation in fk_violations:
+            print(f"    Table: {violation[0]}, Row ID: {violation[1]}, Referenced Table: {violation[2]}, Constraint ID: {violation[3]}")
+        raise ValueError("Foreign key integrity verification failed!")
+    else:
+        print("  [OK] Foreign key integrity verified successfully (no violations).")
+        
     print("\nSuccess: Data cleaning and database loading completed successfully!")
 
 if __name__ == "__main__":
