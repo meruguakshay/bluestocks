@@ -1,0 +1,46 @@
+{
+    "name": "Bluestock Color Theme",
+    "dataColors": [
+        "#0052CC",
+        "#0A2540",
+        "#0DCAF0",
+        "#20C997",
+        "#FD7E14",
+        "#FFC107",
+        "#6F42C1",
+        "#E83E8C"
+    ],
+    "background": "#FFFFFF",
+    "foreground": "#1E293B",
+    "tableAccent": "#0052CC",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "fontFamily": [
+                    {
+                        "value": "Arial"
+                    }
+                ],
+                "color": [
+                    {
+                        "value": "#1E293B"
+                    }
+                ]
+            }
+        },
+        "page": {
+            "*": {
+                "background": [
+                    {
+                        "color": {
+                            "solid": {
+                                "color": "#F4F6F9"
+                            }
+                        },
+                        "transparency": 0
+                    }
+                ]
+            }
+        }
+    }
+}

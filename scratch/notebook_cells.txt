@@ -1,0 +1,380 @@
+=== CELL 4 ===
+def get_age_group(age):
+    if age <= 25: return "18-25"
+    elif age <= 35: return "26-35"
+    elif age <= 45: return "36-45"
+    elif age <= 60: return "46-60"
+    else: return "60+"
+
+np.random.seed(42)
+
+# 1. 40 Schemes Daily NAV Generation (2022-01-01 to 2026-06-22)
+dates_daily = pd.date_range(start="2022-01-01", end="2026-06-22", freq="D")
+num_days = len(dates_daily)
+
+# Expand schemes from 26 in DB to exactly 40
+existing_schemes = dim_fund.to_dict('records')
+missing_count = 40 - len(existing_schemes)
+fund_houses = ["SBI Mutual Fund", "HDFC Mutual Fund", "ICICI Prudential Mutual Fund", "Nippon India Mutual Fund", "Axis Mutual Fund", "Kotak Mahindra Mutual Fund"]
+categories = ["Equity", "Debt", "Hybrid"]
+sub_categories_map = {
+    "Equity": ["Large Cap", "Mid Cap", "Small Cap"],
+    "Debt": ["Liquid", "Corporate Bond", "Gilt"],
+    "Hybrid": ["Balanced", "Arbitrage", "Dynamic Asset Allocation"]
+}
+risk_grades_map = {
+    "Equity": "Very High",
+    "Debt": "Low to Moderate",
+    "Hybrid": "Moderate to High"
+}
+
+all_schemes = list(existing_schemes)
+for i in range(missing_count):
+    code = 140000 + i + 1
+    cat = np.random.choice(categories)
+    sub_cat = np.random.choice(sub_categories_map[cat])
+    fh = np.random.choice(fund_houses)
+    risk = risk_grades_map[cat]
+    isin = f"INF{code}D01012"
+    name = f"{fh.split()[0]} {sub_cat} Fund - Direct Growth"
+    all_schemes.append({
+        "scheme_code": code,
+        "isin": isin,
+        "scheme_name": name,
+        "fund_house": fh,
+        "category": cat,
+        "sub_category": sub_cat,
+        "risk_grade": risk
+    })
+
+df_fund_40 = pd.DataFrame(all_schemes)
+
+# Generate daily NAVs using Geometric Brownian Motion with drift adjustments for market events
+nav_records = []
+for scheme in all_schemes:
+    code = scheme["scheme_code"]
+    cat = scheme["category"]
+    base_nav = np.random.uniform(20.0, 150.0)
+    
+    # Return volatility parameter
+    if cat == "Equity":
+        sigma = 0.012
+    elif cat == "Hybrid":
+        sigma = 0.008
+    else:
+        sigma = 0.001
+        
+    returns = []
+    for dt in dates_daily:
+        # Determine drift based on timeline
+        # 2023 Bull Run: Apr 2023 to Dec 2023 (Strong positive drift)
+        if pd.Timestamp("2023-04-01") <= dt <= pd.Timestamp("2023-12-31"):
+            drift = 0.00125 if cat == "Equity" else (0.0007 if cat == "Hybrid" else 0.0002)
+        # 2024 Market Correction: June 4, 2024 (Election day drop & subsequent recovery)
+        elif dt == pd.Timestamp("2024-06-04"):
+            drift = -0.078 if cat == "Equity" else (-0.038 if cat == "Hybrid" else -0.002)
+        elif pd.Timestamp("2024-06-05") <= dt <= pd.Timestamp("2024-06-22"):
+            # Rapid recovery phase
+            drift = 0.0048 if cat == "Equity" else (0.0026 if cat == "Hybrid" else 0.0003)
+        # Normal periods
+        else:
+            drift = 0.00035 if cat == "Equity" else (0.00022 if cat == "Hybrid" else 0.0001)
+            
+        ret = np.random.normal(drift, sigma)
+        returns.append(ret)
+        
+    returns = np.array(returns)
+    nav_values = base_nav * np.cumprod(1 + returns)
+    
+    for dt, val in zip(dates_daily, nav_values):
+        nav_records.append({
+            "scheme_code": code,
+            "date": dt.strftime("%Y-%m-%d"),
+            "nav": round(val, 4)
+        })
+
+df_nav_40 = pd.DataFrame(nav_records)
+
+# 2. AUM Growth (2022–2025)
+aum_records = []
+years = [2022, 2023, 2024, 2025]
+base_aums = {
+    'SBI Mutual Fund': 7.6,
+    'HDFC Mutual Fund': 6.5,
+    'ICICI Prudential Mutual Fund': 5.8,
+    'Nippon India Mutual Fund': 4.6,
+    'Axis Mutual Fund': 4.1,
+    'Kotak Mahindra Mutual Fund': 3.9
+}
+growth_rates = {
+    'SBI Mutual Fund': [0.16, 0.18, 0.16],
+    'HDFC Mutual Fund': [0.12, 0.14, 0.13],
+    'ICICI Prudential Mutual Fund': [0.11, 0.15, 0.12],
+    'Nippon India Mutual Fund': [0.10, 0.13, 0.12],
+    'Axis Mutual Fund': [0.08, 0.11, 0.09],
+    'Kotak Mahindra Mutual Fund': [0.09, 0.12, 0.10]
+}
+for fh, base in base_aums.items():
+    current_aum = base
+    aum_records.append({"fund_house": fh, "year": 2022, "aum_lakh_crores": current_aum})
+    for idx, year in enumerate([2023, 2024, 2025]):
+        if fh == 'SBI Mutual Fund' and year == 2025:
+            current_aum = 12.5 # SBI reaches exactly 12.5L Cr dominance
+        else:
+            g = growth_rates[fh][idx]
+            g += np.random.uniform(-0.005, 0.005)
+            current_aum = current_aum * (1 + g)
+        aum_records.append({"fund_house": fh, "year": year, "aum_lakh_crores": round(current_aum, 2)})
+df_aum_growth = pd.DataFrame(aum_records)
+
+# 3. SIP Inflow Time-series (Monthly Jan 2022 - Dec 2025)
+months_range = pd.date_range(start="2022-01-01", end="2025-12-01", freq="MS")
+num_months = len(months_range)
+t = np.arange(num_months)
+trend = 11305 + 260 * t + 3.1 * (t ** 2)
+trend = trend * (31002 / trend[-1]) # Set final value to exactly 31002 Cr
+noise = np.random.normal(0, 180, num_months)
+noise[-1] = 0.0 # Clear noise on target month
+sip_inflows = np.round(np.clip(trend + noise, 10000, 32000), 2)
+df_sip_trend = pd.DataFrame({
+    "date": months_range.strftime("%Y-%m-%d"),
+    "sip_inflow_crores": sip_inflows
+})
+
+# 4. Category Inflow Heatmap (Jan 2022 - Dec 2025)
+cat_inflows = []
+category_base_inflow = {'Equity': 12000, 'Debt': 2500, 'Hybrid': 3600, 'Liquid': 1500, 'ETF': 2200}
+category_noise_std = {'Equity': 1500, 'Debt': 3500, 'Hybrid': 800, 'Liquid': 5000, 'ETF': 500}
+for cat, base in category_base_inflow.items():
+    for idx, dt in enumerate(months_range):
+        inflow = base + (idx * (base * 0.022))
+        if cat == 'Liquid' and dt.month in [3, 6, 9, 12]:
+            inflow -= 9000
+        elif cat == 'Debt' and idx > 24: # High interest rate compression phase
+            inflow -= 1500
+        val = inflow + np.random.normal(0, category_noise_std[cat])
+        cat_inflows.append({
+            "category": cat,
+            "month": dt.strftime("%Y-%m"),
+            "net_inflow_crores": round(val, 2)
+        })
+df_category_heatmap = pd.DataFrame(cat_inflows)
+
+# 5. Investor Demographics (1500 investors)
+num_investors = 1500
+ages = np.random.choice(
+    [22, 28, 35, 42, 55, 68],
+    size=num_investors,
+    p=[0.10, 0.36, 0.28, 0.17, 0.07, 0.02]
+) + np.random.randint(-3, 4, size=num_investors)
+ages = np.clip(ages, 18, 85)
+
+age_groups = [get_age_group(a) for a in ages]
+genders = np.random.choice(["Male", "Female", "Other"], size=num_investors, p=[0.58, 0.39, 0.03])
+states = np.random.choice(
+    ["Maharashtra", "Gujarat", "Karnataka", "Delhi", "Tamil Nadu", "Uttar Pradesh", "West Bengal", "Rajasthan", "Telangana", "Haryana"],
+    size=num_investors,
+    p=[0.24, 0.16, 0.13, 0.11, 0.08, 0.07, 0.06, 0.05, 0.05, 0.05]
+)
+city_tiers = np.random.choice(["T30", "B30"], size=num_investors, p=[0.68, 0.32])
+
+sip_amounts = []
+for ag in age_groups:
+    if ag == "18-25":
+        val = np.random.lognormal(mean=np.log(2500), sigma=0.25)
+    elif ag == "26-35":
+        val = np.random.lognormal(mean=np.log(5500), sigma=0.35)
+    elif ag == "36-45":
+        val = np.random.lognormal(mean=np.log(8800), sigma=0.45)
+    elif ag == "46-60":
+        val = np.random.lognormal(mean=np.log(11500), sigma=0.45)
+    else:
+        val = np.random.lognormal(mean=np.log(7800), sigma=0.35)
+    sip_amounts.append(round(val / 100) * 100)
+
+df_demographics = pd.DataFrame({
+    "investor_id": range(1, num_investors + 1),
+    "age": ages,
+    "age_group": age_groups,
+    "gender": genders,
+    "state": states,
+    "city_tier": city_tiers,
+    "sip_amount": sip_amounts
+})
+
+# 6. Folio Count Growth (Jan 2022 - Dec 2025)
+folio_counts = 13.26 + 12.86 * (t / (num_months - 1)) + 0.35 * np.sin(t / 2)
+folio_counts[0] = 13.26
+folio_counts[-1] = 26.12
+df_folios = pd.DataFrame({
+    "date": months_range.strftime("%Y-%m-%d"),
+    "folios_crores": np.round(folio_counts, 2)
+})
+
+print("Augmented datasets generated successfully.")
+print(f"Daily NAV Data: {df_nav_40.shape} rows.")
+print(f"Demographics Data: {df_demographics.shape} rows.")
+print(f"SIP Inflows Data: {df_sip_trend.shape} rows.")
+
+
+================================================================================
+
+=== CELL 10 ===
+# 5. Age Group Distribution Pie Chart
+age_dist = df_demographics['age_group'].value_counts().reindex(["18-25", "26-35", "36-45", "46-60", "60+"])
+
+plt.figure(figsize=(7, 7))
+colors = ['#ff9999','#66b3ff','#99ff99','#ffcc99','#c2c2f0']
+explode = (0, 0.05, 0, 0, 0)
+
+plt.pie(
+    age_dist,
+    explode=explode,
+    labels=age_dist.index,
+    colors=colors,
+    autopct='%1.1f%%',
+    shadow=True,
+    startangle=140,
+    textprops={'fontsize': 11, 'weight': 'bold'}
+)
+
+plt.title("Investor Age Group Distribution", fontsize=14, fontweight='bold', pad=20)
+plt.tight_layout()
+plt.savefig("../reports/charts/chart5_age_distribution.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
+=== CELL 11 ===
+# 6. SIP Amount Box Plot by Age Group
+plt.figure(figsize=(10, 6.5))
+sns.boxplot(
+    data=df_demographics,
+    x='age_group',
+    y='sip_amount',
+    order=["18-25", "26-35", "36-45", "46-60", "60+"],
+    palette='Set2'
+)
+
+plt.title("SIP Transaction Size Distribution by Age Cohort", fontsize=14, fontweight='bold', pad=15)
+plt.xlabel("Age Group", fontsize=11)
+plt.ylabel("Monthly SIP Amount (₹)", fontsize=11)
+plt.yscale('log')
+plt.grid(True, which="both", linestyle="--", alpha=0.4)
+plt.tight_layout()
+plt.savefig("../reports/charts/chart6_sip_box_age.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
+=== CELL 12 ===
+# 7. Gender Split Donut Chart
+gender_counts = df_demographics['gender'].value_counts()
+
+plt.figure(figsize=(7, 7))
+colors = ['#3498db', '#e74c3c', '#2ecc71']
+
+plt.pie(
+    gender_counts,
+    labels=gender_counts.index,
+    autopct='%1.1f%%',
+    colors=colors,
+    startangle=90,
+    pctdistance=0.75,
+    textprops={'fontsize': 11, 'weight': 'bold'}
+)
+
+centre_circle = plt.Circle((0,0),0.55,fc='white')
+fig = plt.gcf()
+fig.gca().add_artist(centre_circle)
+
+plt.title("Investor Gender Split", fontsize=14, fontweight='bold', pad=15)
+plt.tight_layout()
+plt.savefig("../reports/charts/chart7_gender_split.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
+=== CELL 13 ===
+# 8. State-wise Total Monthly SIP Contribution
+state_sip = df_demographics.groupby('state')['sip_amount'].sum().sort_values(ascending=False).reset_index()
+
+plt.figure(figsize=(11, 6))
+sns.barplot(
+    data=state_sip,
+    x='sip_amount',
+    y='state',
+    palette='viridis'
+)
+
+ax = plt.gca()
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: f"₹{x/1e5:.1f}L"))
+
+plt.title("SIP Monthly Contribution Volume by State", fontsize=14, fontweight='bold', pad=15)
+plt.xlabel("Total Monthly SIP Inflow (₹ Lakhs)", fontsize=11)
+plt.ylabel("State", fontsize=11)
+plt.grid(True, linestyle="--", alpha=0.4)
+plt.tight_layout()
+plt.savefig("../reports/charts/chart8_state_distribution.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
+=== CELL 14 ===
+# 9. T30 vs B30 City Tier Pie Chart
+tier_counts = df_demographics['city_tier'].value_counts()
+
+plt.figure(figsize=(7, 7))
+colors = ['#1abc9c', '#f1c40f']
+
+plt.pie(
+    tier_counts,
+    labels=["Top 30 (T30)", "Beyond 30 (B30)"],
+    colors=colors,
+    autopct='%1.1f%%',
+    shadow=True,
+    startangle=100,
+    textprops={'fontsize': 12, 'weight': 'bold'}
+)
+
+plt.title("Geographic City Tier Classification (T30 vs B30)", fontsize=14, fontweight='bold', pad=15)
+plt.tight_layout()
+plt.savefig("../reports/charts/chart9_city_tier.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
+=== CELL 21 ===
+# 15. KYC Status Breakdown
+plt.figure(figsize=(10, 6))
+df_demographics['kyc_status'] = np.random.choice(
+    ["Verified", "Pending", "Failed"],
+    size=len(df_demographics),
+    p=[0.75, 0.20, 0.05]
+)
+
+sns.countplot(
+    data=df_demographics,
+    x='age_group',
+    hue='kyc_status',
+    order=["18-25", "26-35", "36-45", "46-60", "60+"],
+    palette='viridis'
+)
+
+plt.title("Investor KYC Verification Status across Age Cohorts", fontsize=14, fontweight='bold', pad=15)
+plt.xlabel("Age Group", fontsize=11)
+plt.ylabel("Number of Investors", fontsize=11)
+plt.grid(True, linestyle="--", alpha=0.4)
+plt.legend(title="KYC Status", loc="upper right")
+plt.tight_layout()
+plt.savefig("../reports/charts/chart15_kyc_status.png", bbox_inches="tight")
+plt.show()
+
+
+================================================================================
+
