@@ -14,8 +14,12 @@ env/
 *.csv
 *.xlsx
 *.json
+*.db
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!var_cvar_report.csv
+
+
 
 # OS
 .DS_Store
