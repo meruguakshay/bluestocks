@@ -1,114 +1,175 @@
 -- SQLite Database Schema for Nifty 100 Financial Intelligence Database
-
--- Ensure Foreign Key Constraints are enabled at session level
 PRAGMA foreign_keys = ON;
 
+-- Drop tables in reverse dependency order
+DROP TABLE IF EXISTS market_cap;
+DROP TABLE IF EXISTS peer_groups;
+DROP TABLE IF EXISTS prosandcons;
+DROP TABLE IF EXISTS documents;
+DROP TABLE IF EXISTS analysis;
+DROP TABLE IF EXISTS stock_prices;
+DROP TABLE IF EXISTS financial_ratios;
+DROP TABLE IF EXISTS cashflow;
+DROP TABLE IF EXISTS balancesheet;
+DROP TABLE IF EXISTS profitandloss;
+DROP TABLE IF EXISTS companies;
+DROP TABLE IF EXISTS sectors;
+
 -- 1. sectors table
-CREATE TABLE IF NOT EXISTS sectors (
-    sector_id INTEGER PRIMARY KEY,
-    sector_name TEXT NOT NULL
+CREATE TABLE sectors (
+    sector_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    broad_sector TEXT UNIQUE NOT NULL
 );
 
 -- 2. companies table
-CREATE TABLE IF NOT EXISTS companies (
-    company_id INTEGER PRIMARY KEY,
-    ticker TEXT UNIQUE NOT NULL,
+CREATE TABLE companies (
+    company_id TEXT PRIMARY KEY, -- Real Ticker (e.g. ABB, RELIANCE)
     company_name TEXT NOT NULL,
-    bse_code TEXT,
-    nse_code TEXT,
-    website_url TEXT,
+    company_logo TEXT,
+    chart_link TEXT,
+    about_company TEXT,
+    website TEXT,
+    nse_profile TEXT,
+    bse_profile TEXT,
+    face_value REAL,
+    book_value REAL,
+    roce_percentage REAL,
+    roe_percentage REAL,
     sector_id INTEGER,
+    sub_sector TEXT,
+    index_weight_pct REAL,
+    market_cap_category TEXT,
     FOREIGN KEY(sector_id) REFERENCES sectors(sector_id) ON DELETE CASCADE
 );
 
 -- 3. profitandloss table
-CREATE TABLE IF NOT EXISTS profitandloss (
-    company_id INTEGER,
+CREATE TABLE profitandloss (
+    company_id TEXT,
     year INTEGER,
     sales REAL,
+    expenses REAL,
     operating_profit REAL,
     opm_percentage REAL,
-    interest_expense REAL,
-    ebit REAL,
-    ebt REAL,
-    tax REAL,
+    other_income REAL,
+    interest REAL,
+    depreciation REAL,
+    profit_before_tax REAL,
+    tax_percentage REAL,
     net_profit REAL,
     eps REAL,
+    dividend_payout REAL,
     PRIMARY KEY (company_id, year),
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 4. balancesheet table
-CREATE TABLE IF NOT EXISTS balancesheet (
-    company_id INTEGER,
+CREATE TABLE balancesheet (
+    company_id TEXT,
     year INTEGER,
-    total_assets REAL,
+    equity_capital REAL,
+    reserves REAL,
+    borrowings REAL,
+    other_liabilities REAL,
     total_liabilities REAL,
-    total_equity REAL,
+    fixed_assets REAL,
+    cwip REAL,
+    investments REAL,
+    other_asset REAL,
+    total_assets REAL,
     PRIMARY KEY (company_id, year),
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 5. cashflow table
-CREATE TABLE IF NOT EXISTS cashflow (
-    company_id INTEGER,
+CREATE TABLE cashflow (
+    company_id TEXT,
     year INTEGER,
-    cash_from_operations REAL,
-    cash_from_investing REAL,
-    cash_from_financing REAL,
+    operating_activity REAL,
+    investing_activity REAL,
+    financing_activity REAL,
     net_cash_flow REAL,
     PRIMARY KEY (company_id, year),
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 6. financial_ratios table
-CREATE TABLE IF NOT EXISTS financial_ratios (
-    company_id INTEGER,
+CREATE TABLE financial_ratios (
+    company_id TEXT,
     year INTEGER,
-    interest_coverage_ratio REAL,
+    net_profit_margin_pct REAL,
+    operating_profit_margin_pct REAL,
+    return_on_equity_pct REAL,
+    debt_to_equity REAL,
+    interest_coverage REAL,
+    asset_turnover REAL,
+    free_cash_flow_cr REAL,
+    capex_cr REAL,
+    earnings_per_share REAL,
+    book_value_per_share REAL,
+    dividend_payout_ratio_pct REAL,
+    total_debt_cr REAL,
+    cash_from_operations_cr REAL,
     PRIMARY KEY (company_id, year),
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 7. stock_prices table
-CREATE TABLE IF NOT EXISTS stock_prices (
-    ticker TEXT,
+CREATE TABLE stock_prices (
+    company_id TEXT,
     date TEXT,
+    open_price REAL,
+    high_price REAL,
+    low_price REAL,
     close_price REAL,
-    PRIMARY KEY (ticker, date),
-    FOREIGN KEY(ticker) REFERENCES companies(ticker) ON DELETE CASCADE
+    volume INTEGER,
+    adjusted_close REAL,
+    PRIMARY KEY (company_id, date),
+    FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 8. analysis table
-CREATE TABLE IF NOT EXISTS analysis (
-    company_id INTEGER PRIMARY KEY,
+CREATE TABLE analysis (
+    company_id TEXT PRIMARY KEY,
     analysis_date TEXT,
     notes TEXT,
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 9. documents table
-CREATE TABLE IF NOT EXISTS documents (
-    company_id INTEGER,
-    doc_name TEXT,
-    doc_url TEXT,
-    PRIMARY KEY (company_id, doc_name),
+CREATE TABLE documents (
+    company_id TEXT,
+    year TEXT,
+    annual_report TEXT,
+    PRIMARY KEY (company_id, year),
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 10. prosandcons table
-CREATE TABLE IF NOT EXISTS prosandcons (
-    company_id INTEGER PRIMARY KEY,
-    pro TEXT,
-    con TEXT,
+CREATE TABLE prosandcons (
+    company_id TEXT PRIMARY KEY,
+    pros TEXT,
+    cons TEXT,
     FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );
 
 -- 11. peer_groups table
-CREATE TABLE IF NOT EXISTS peer_groups (
-    company_id INTEGER,
-    peer_company_id INTEGER,
-    PRIMARY KEY (company_id, peer_company_id),
-    FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE,
-    FOREIGN KEY(peer_company_id) REFERENCES companies(company_id) ON DELETE CASCADE
+CREATE TABLE peer_groups (
+    company_id TEXT PRIMARY KEY,
+    peer_group_name TEXT NOT NULL,
+    is_benchmark INTEGER NOT NULL, -- 0 or 1
+    FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
+);
+
+-- 12. market_cap table
+CREATE TABLE market_cap (
+    company_id TEXT,
+    year INTEGER,
+    market_cap_crore REAL,
+    enterprise_value_crore REAL,
+    pe_ratio REAL,
+    pb_ratio REAL,
+    ev_ebitda REAL,
+    dividend_yield_pct REAL,
+    PRIMARY KEY (company_id, year),
+    FOREIGN KEY(company_id) REFERENCES companies(company_id) ON DELETE CASCADE
 );

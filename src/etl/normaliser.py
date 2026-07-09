@@ -26,6 +26,11 @@ def normalize_year(val) -> int:
         parts = s.split('/')
         s = parts[1].strip()
         
+    # Search for a 4-digit year starting with 19 or 20 (e.g. 2023 or 2016)
+    match_4d = re.search(r'\b(19|20)\d{2}\b', s)
+    if match_4d:
+        return int(match_4d.group(0))
+        
     # Extract digit-only characters
     s = re.sub(r'\D', '', s)
     if not s:
