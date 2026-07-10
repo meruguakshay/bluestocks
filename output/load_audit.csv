@@ -1,0 +1,13 @@
+table_name,raw_row_count,clean_row_count,rejected_row_count,status
+sectors,10,10,0,SUCCESS
+companies,92,92,0,SUCCESS
+profitandloss,1276,1073,203,CLEANED
+balancesheet,1312,1140,172,CLEANED
+cashflow,1187,1056,131,CLEANED
+financial_ratios,1184,1041,143,CLEANED
+stock_prices,5520,5520,0,SUCCESS
+analysis,92,50,42,CLEANED
+documents,1585,1456,129,CLEANED
+prosandcons,16,4,12,CLEANED
+peer_groups,56,56,0,SUCCESS
+market_cap,552,552,0,SUCCESS

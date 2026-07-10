@@ -1,22 +1,22 @@
 .PHONY: load test clean ratios report dashboard api
 
 load:
-	python src/etl/loader.py
+	python -m src.etl.loader
 
 test:
-	pytest tests/etl/
+	python -m pytest tests/
 
 ratios:
-	python src/etl/ratios.py
+	python -m src.etl.ratios
 
 report:
-	python src/etl/report.py
+	python -m src.etl.report
 
 dashboard:
-	python src/etl/dashboard.py
+	python -m src.etl.dashboard
 
 api:
-	python src/etl/api.py
+	python -m src.etl.api
 
 clean:
 	powershell -Command "if (Test-Path db/nifty100.db) { Remove-Item db/nifty100.db -Force }"

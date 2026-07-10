@@ -31,11 +31,11 @@ def test_clean_financials():
     cleaned = clean_financials(df)
     
     # Assert duplicates/invalid years are cleaned
-    # "FY23", "2023", "2022-23" all map to year 2023. Only the first (FY23) is kept.
-    # 2024 is kept.
+    # "FY23", "2023", "2022-23" all map to year "2023-03". Only the first (FY23) is kept.
+    # "2024" maps to "2024-03".
     # "invalid_year" -> year is None -> dropped.
     assert len(cleaned) == 2
-    assert set(cleaned['year'].values) == {2023, 2024}
+    assert set(cleaned['year'].values) == {"2023-03", "2024-03"}
 
 def test_clean_stock_prices():
     df = pd.DataFrame([
@@ -47,4 +47,4 @@ def test_clean_stock_prices():
     cleaned = clean_stock_prices(df)
     
     assert len(cleaned) == 2
-    assert cleaned.loc[cleaned['ticker'] == "RELIANCE", 'close_price'].values[0] == 2400.0
+    assert cleaned.loc[cleaned['company_id'] == "RELIANCE", 'close_price'].values[0] == 2400.0

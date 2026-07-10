@@ -45,7 +45,7 @@ CREATE TABLE companies (
 -- 3. profitandloss table
 CREATE TABLE profitandloss (
     company_id TEXT,
-    year INTEGER,
+    year TEXT,
     sales REAL,
     expenses REAL,
     operating_profit REAL,
@@ -65,7 +65,7 @@ CREATE TABLE profitandloss (
 -- 4. balancesheet table
 CREATE TABLE balancesheet (
     company_id TEXT,
-    year INTEGER,
+    year TEXT,
     equity_capital REAL,
     reserves REAL,
     borrowings REAL,
@@ -83,7 +83,7 @@ CREATE TABLE balancesheet (
 -- 5. cashflow table
 CREATE TABLE cashflow (
     company_id TEXT,
-    year INTEGER,
+    year TEXT,
     operating_activity REAL,
     investing_activity REAL,
     financing_activity REAL,
@@ -95,7 +95,7 @@ CREATE TABLE cashflow (
 -- 6. financial_ratios table
 CREATE TABLE financial_ratios (
     company_id TEXT,
-    year INTEGER,
+    year TEXT,
     net_profit_margin_pct REAL,
     operating_profit_margin_pct REAL,
     return_on_equity_pct REAL,
@@ -163,7 +163,7 @@ CREATE TABLE peer_groups (
 -- 12. market_cap table
 CREATE TABLE market_cap (
     company_id TEXT,
-    year INTEGER,
+    year TEXT,
     market_cap_crore REAL,
     enterprise_value_crore REAL,
     pe_ratio REAL,

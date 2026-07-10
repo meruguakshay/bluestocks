@@ -110,6 +110,9 @@ def clean_companies(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     if 'ticker' in df.columns:
         df['ticker'] = df['ticker'].apply(normalize_ticker)
+    elif 'id' in df.columns:
+        df = df.rename(columns={'id': 'company_id'})
+        df['company_id'] = df['company_id'].apply(normalize_ticker)
     df = df.drop_duplicates(subset=['company_id'], keep='first')
     return df
 
@@ -118,15 +121,17 @@ def clean_financials(df: pd.DataFrame) -> pd.DataFrame:
     if 'year' in df.columns:
         df['year'] = df['year'].apply(normalize_year)
         df = df.dropna(subset=['year'])
-        df['year'] = df['year'].astype(int)
     df = df.drop_duplicates(subset=['company_id', 'year'], keep='first')
     return df
 
 def clean_stock_prices(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     if 'ticker' in df.columns:
-        df['ticker'] = df['ticker'].apply(normalize_ticker)
-    df = df.drop_duplicates(subset=['ticker', 'date'], keep='first')
+        df = df.rename(columns={'ticker': 'company_id'})
+        df['company_id'] = df['company_id'].apply(normalize_ticker)
+    elif 'company_id' in df.columns:
+        df['company_id'] = df['company_id'].apply(normalize_ticker)
+    df = df.drop_duplicates(subset=['company_id', 'date'], keep='first')
     return df
 
 def clean_time_series(df: pd.DataFrame, pk_cols=['company_id', 'year']) -> pd.DataFrame:
@@ -137,14 +142,13 @@ def clean_time_series(df: pd.DataFrame, pk_cols=['company_id', 'year']) -> pd.Da
     if 'year' in df.columns:
         df['year'] = df['year'].apply(normalize_year)
         df = df.dropna(subset=['year'])
-        df['year'] = df['year'].astype(int)
         
     df = df.drop_duplicates(subset=pk_cols, keep='first')
     return df
 
 def run_etl():
     print("=" * 60)
-    print("RUNNING NIFTY 100 SPRINT 2 ETL PIPELINE")
+    print("RUNNING NIFTY 100 SPRINT 1 ETL PIPELINE")
     print("=" * 60)
     
     # 1. Define files and tables
@@ -187,7 +191,7 @@ def run_etl():
     from src.etl.validator import DataQualityValidator
     validator = DataQualityValidator()
     print("\nRunning 16 data quality rules...")
-    validator.run_validation(val_dfs)
+    validator.run_validation(val_dfs, output_path="output/validation_failures.csv")
     print(f"Logged validations. Failures count: {len(validator.failures)}")
 
     # 2. Clean Sectors and Companies first (dependencies)
@@ -264,11 +268,6 @@ def run_etl():
     # Clean Cash Flow
     df_cf = raw_dfs["cashflow"].copy()
     df_cf = clean_time_series(df_cf, ["company_id", "year"])
-    df_cf = df_cf.rename(columns={
-        "operating_activity": "operating_activity",
-        "investing_activity": "investing_activity",
-        "financing_activity": "financing_activity"
-    })
     df_cf = df_cf[[
         "company_id", "year", "operating_activity", "investing_activity", "financing_activity", "net_cash_flow"
     ]]
@@ -311,6 +310,8 @@ def run_etl():
     df_docs = raw_dfs["documents"].copy()
     df_docs = df_docs.rename(columns={"Year": "year", "Annual_Report": "annual_report"})
     df_docs["company_id"] = df_docs["company_id"].apply(normalize_ticker)
+    df_docs["year"] = df_docs["year"].apply(normalize_year)
+    df_docs = df_docs.dropna(subset=["year"])
     df_docs = df_docs.drop_duplicates(subset=["company_id", "year"])
     df_docs = df_docs[["company_id", "year", "annual_report"]]
     df_docs = df_docs[df_docs["company_id"].isin(valid_company_ids)]

@@ -4,37 +4,40 @@ import os
 from src.etl.validator import DataQualityValidator
 
 def test_validator_rules():
-    # Construct mock datasets with anomalies
+    # Construct mock datasets with anomalies matching conformed DQ rules
     companies = pd.DataFrame([
-        {"company_id": 1, "ticker": "RELIANCE", "company_name": "Reliance", "bse_code": "500325", "nse_code": "RELIANCE", "website_url": "https://reliance.com", "sector_id": 1},
-        {"company_id": 1, "ticker": "RELIANCE-DUP", "company_name": "Reliance Dup", "bse_code": "500325", "nse_code": "RELIANCE", "website_url": "https://reliance.com", "sector_id": 1}, # DQ-01 dup PK
-        {"company_id": 2, "ticker": "INVALID_TICKER$", "company_name": "Invalid Ticker", "bse_code": "500326", "nse_code": "INVALID", "website_url": "https://invalid.com", "sector_id": 99} # DQ-03 sector orphan, DQ-12 ticker format
+        {"company_id": "RELIANCE", "company_name": "Reliance"},
+        {"company_id": "RELIANCE", "company_name": "Reliance Dup"},  # DQ-01 dup PK
+        {"company_id": "TCS", "company_name": "TCS"},
+        {"company_id": "INV@LID_TICKER_NAME_TOO_LONG", "company_name": "Invalid Ticker"}  # DQ-08 ticker format length / chars
     ])
     
     pnl = pd.DataFrame([
-        {"company_id": 1, "year": 2023, "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 20.0, "interest_expense": 50.0, "ebit": 180.0, "ebt": 130.0, "tax": 30.0, "net_profit": 100.0, "eps": 10.0},
-        {"company_id": 1, "year": 2023, "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 20.0, "interest_expense": 50.0, "ebit": 180.0, "ebt": 130.0, "tax": 30.0, "net_profit": 100.0, "eps": 10.0}, # DQ-02 composite PK dup
-        {"company_id": 3, "year": 2023, "sales": -50.0, "operating_profit": 10.0, "opm_percentage": 10.0, "interest_expense": 2.0, "ebit": 8.0, "ebt": 6.0, "tax": 2.0, "net_profit": 4.0, "eps": 0.4}, # DQ-03 company orphan, DQ-06 negative sales
-        {"company_id": 2, "year": 2023, "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 50.0, "interest_expense": 50.0, "ebit": 180.0, "ebt": 130.0, "tax": 200.0, "net_profit": -70.0, "eps": 5.0} # DQ-05 OPM mismatch, DQ-08 tax > 100%, DQ-11 EPS sign mismatch
+        {"company_id": "RELIANCE", "year": "2023-03", "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 20.0, "net_profit": 100.0, "eps": 10.0, "dividend_payout": 20.0, "tax_percentage": 25.0},
+        {"company_id": "RELIANCE", "year": "2023-03", "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 20.0, "net_profit": 100.0, "eps": 10.0, "dividend_payout": 20.0, "tax_percentage": 25.0},  # DQ-02 composite PK dup
+        {"company_id": "ORPHAN", "year": "2023-03", "sales": 500.0, "operating_profit": 100.0, "opm_percentage": 20.0, "net_profit": 50.0, "eps": 5.0, "dividend_payout": 10.0, "tax_percentage": 20.0},  # DQ-03 company orphan
+        {"company_id": "TCS", "year": "2023-03", "sales": -50.0, "operating_profit": 10.0, "opm_percentage": -20.0, "net_profit": 5.0, "eps": 0.5, "dividend_payout": 0.0, "tax_percentage": 20.0},  # DQ-06 negative sales for non-bank
+        {"company_id": "TCS", "year": "2024-03", "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 50.0, "net_profit": 100.0, "eps": 10.0, "dividend_payout": 250.0, "tax_percentage": 25.0},  # DQ-05 OPM mismatch, DQ-12 div payout > 200
+        {"company_id": "TCS", "year": "2025-03", "sales": 1000.0, "operating_profit": 200.0, "opm_percentage": 20.0, "net_profit": 100.0, "eps": -10.0, "dividend_payout": 20.0, "tax_percentage": 85.0}  # DQ-11 tax > 60%, DQ-14 EPS sign mismatch
     ])
     
     bs = pd.DataFrame([
-        {"company_id": 1, "year": 2023, "total_assets": 5000.0, "total_liabilities": 2000.0, "total_equity": 3000.0},
-        {"company_id": 2, "year": 2023, "total_assets": 5000.0, "total_liabilities": 2000.0, "total_equity": 4000.0}, # DQ-04 Assets != Liab + Equity
-        {"company_id": 1, "year": 2024, "total_assets": 5000.0, "total_liabilities": 6000.0, "total_equity": -1000.0} # DQ-14 negative equity
+        {"company_id": "RELIANCE", "year": "2023-03", "total_assets": 5000.0, "total_liabilities": 5000.0, "fixed_assets": -10.0},  # DQ-10 negative fixed assets
+        {"company_id": "TCS", "year": "2023-03", "total_assets": 5000.0, "total_liabilities": 2000.0, "fixed_assets": 1000.0}  # DQ-04 Assets != Liabilities, DQ-15 strict mismatch
     ])
     
     cf = pd.DataFrame([
-        {"company_id": 1, "year": 2023, "cash_from_operations": 500.0, "cash_from_investing": -200.0, "cash_from_financing": -100.0, "net_cash_flow": 200.0},
-        {"company_id": 2, "year": 2023, "cash_from_operations": 500.0, "cash_from_investing": -200.0, "cash_from_financing": -100.0, "net_cash_flow": 500.0} # DQ-07 net cash flow mismatch
+        {"company_id": "RELIANCE", "year": "2023-03", "operating_activity": 500.0, "investing_activity": -200.0, "financing_activity": -100.0, "net_cash_flow": 500.0},  # DQ-09 net cash flow mismatch (sum=200)
+        {"company_id": "TCS", "year": "2023-03", "operating_activity": 500.0, "investing_activity": -200.0, "financing_activity": -100.0, "net_cash_flow": 200.0}
     ])
     
     sectors = pd.DataFrame([
-        {"sector_id": 1, "sector_name": "Technology"}
+        {"company_id": "RELIANCE", "broad_sector": "Energy"},
+        {"company_id": "TCS", "broad_sector": "IT"}
     ])
     
     docs = pd.DataFrame([
-        {"company_id": 1, "doc_name": "Report", "doc_url": "invalid_url_format"} # DQ-10 invalid URL
+        {"company_id": "RELIANCE", "year": "2023-03", "annual_report": "invalid_url_format"}  # DQ-13 invalid URL
     ])
     
     data_dict = {
@@ -47,7 +50,11 @@ def test_validator_rules():
     }
     
     validator = DataQualityValidator()
-    failures = validator.run_validation(data_dict)
+    test_out = "output/test_validation_failures.csv"
+    if os.path.exists(test_out):
+        os.remove(test_out)
+        
+    failures = validator.run_validation(data_dict, output_path=test_out)
     
     # Assert validation failures were logged
     assert len(failures) > 0
@@ -57,12 +64,16 @@ def test_validator_rules():
     assert "DQ-04" in failures['rule_id'].values
     assert "DQ-05" in failures['rule_id'].values
     assert "DQ-06" in failures['rule_id'].values
-    assert "DQ-07" in failures['rule_id'].values
     assert "DQ-08" in failures['rule_id'].values
+    assert "DQ-09" in failures['rule_id'].values
     assert "DQ-10" in failures['rule_id'].values
     assert "DQ-11" in failures['rule_id'].values
     assert "DQ-12" in failures['rule_id'].values
+    assert "DQ-13" in failures['rule_id'].values
     assert "DQ-14" in failures['rule_id'].values
+    assert "DQ-15" in failures['rule_id'].values
+    assert "DQ-16" in failures['rule_id'].values
     
-    # Check that output/validation_failures.csv was written
-    assert os.path.exists("output/validation_failures.csv")
+    # Check that test failures file was written
+    assert os.path.exists(test_out)
+    os.remove(test_out)
