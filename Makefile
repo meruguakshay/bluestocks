@@ -7,7 +7,7 @@ test:
 	python -m pytest tests/
 
 ratios:
-	python -m src.etl.ratios
+	python -m src.analytics.ratios
 
 report:
 	python -m src.etl.report
