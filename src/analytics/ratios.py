@@ -58,7 +58,9 @@ def calculate_roe(net_profit, equity_capital, reserves):
 
 def calculate_roce(operating_profit, depreciation, equity_capital, reserves, borrowings):
     """Return on Capital Employed (ROCE): EBIT / (equity + reserves + borrowings) x 100"""
-    op = to_float(operating_profit, 0.0)
+    op = to_float(operating_profit, None)
+    if op is None:
+        return None
     dep = to_float(depreciation, 0.0)
     ebit = op - dep
     
@@ -70,6 +72,7 @@ def calculate_roce(operating_profit, depreciation, equity_capital, reserves, bor
     if capital_employed <= 0.0:
         return None
     return (ebit / capital_employed) * 100.0
+
 
 def calculate_roa(net_profit, total_assets):
     """Return on Assets (ROA): net_profit / total_assets x 100"""
@@ -435,60 +438,74 @@ def main():
     log_entries = []
     
     # Retrieve pre-computed values from companies table
-    comp_ref = pd.read_sql_query("SELECT company_id, roce_percentage, roe_percentage FROM companies", conn)
+    comp_ref = pd.read_sql_query(
+        "SELECT c.company_id, c.roce_percentage, c.roe_percentage, s.broad_sector "
+        "FROM companies c "
+        "JOIN sectors s ON c.sector_id = s.sector_id", conn
+    )
     comp_ref_dict = comp_ref.set_index("company_id").to_dict(orient="index")
     
-    # Get the latest matching year record for each company to compare ROCE/ROE
-    # Group by company_id and find row with latest year
-    # Ensure computed return on capital is accessible by recalculating or reading from dataframe
-    df_roce_raw = []
+    # Strategy B: Find latest conformed year with both PnL and BS data present
+    latest_matching_year = {}
     for c_id, yr_str in conformed_keys:
         key = (c_id, yr_str)
-        # Recalculate computed ROCE for check
-        sales = pnl_idx.loc[key]["sales"] if key in pnl_idx.index else None
-        net_profit = pnl_idx.loc[key]["net_profit"] if key in pnl_idx.index else None
+        if key in pnl_idx.index and key in bs_idx.index:
+            latest_matching_year[c_id] = yr_str
+
+    roce_latest_dict = {}
+    roe_latest_dict = {}
+    latest_year_dict = {}
+    
+    for c_id in valid_companies:
+        lat_yr = latest_matching_year.get(c_id)
+        if lat_yr is None:
+            continue
+        latest_year_dict[c_id] = lat_yr
+        key = (c_id, lat_yr)
+        
+        # Calculate ROCE
         operating_profit = pnl_idx.loc[key]["operating_profit"] if key in pnl_idx.index else None
         depreciation = pnl_idx.loc[key]["depreciation"] if key in pnl_idx.index else None
         equity_capital = bs_idx.loc[key]["equity_capital"] if key in bs_idx.index else None
         reserves = bs_idx.loc[key]["reserves"] if key in bs_idx.index else None
         borrowings = bs_idx.loc[key]["borrowings"] if key in bs_idx.index else None
         
-        roce_computed = calculate_roce(operating_profit, depreciation, equity_capital, reserves, borrowings)
+        roce_val = calculate_roce(operating_profit, depreciation, equity_capital, reserves, borrowings)
+        roce_latest_dict[c_id] = roce_val
         
-        df_roce_raw.append({
-            "company_id": c_id,
-            "year": yr_str,
-            "roce": roce_computed
-        })
-    df_roce_latest = pd.DataFrame(df_roce_raw).sort_values("year", ascending=False).groupby("company_id").first().reset_index()
-    roce_latest_dict = df_roce_latest.set_index("company_id")["roce"].to_dict()
-    
-    # Group df_ratios by company to find latest ROE
-    df_roe_latest = df_ratios.sort_values("year", ascending=False).groupby("company_id").first().reset_index()
-    roe_latest_dict = df_roe_latest.set_index("company_id")["return_on_equity_pct"].to_dict()
-    latest_year_dict = df_roe_latest.set_index("company_id")["year"].to_dict()
-    
+        # Calculate ROE
+        net_profit = pnl_idx.loc[key]["net_profit"] if key in pnl_idx.index else None
+        roe_val = calculate_roe(net_profit, equity_capital, reserves)
+        roe_latest_dict[c_id] = roe_val
+        
     # A. Check ROCE & ROE vs Companies table for latest conformed year
-    for c_id in valid_companies:
+    for c_id in sorted(valid_companies):
         ref_data = comp_ref_dict.get(c_id, {})
         ref_roce = ref_data.get("roce_percentage")
         ref_roe = ref_data.get("roe_percentage")
+        broad_sector = ref_data.get("broad_sector", "Unknown")
         
         comp_roce = roce_latest_dict.get(c_id)
         comp_roe = roe_latest_dict.get(c_id)
         lat_yr = latest_year_dict.get(c_id, "N/A")
         
-        # Categorize anomalies
+        # Categorize ROCE anomalies
         if ref_roce is not None and pd.notna(ref_roce) and comp_roce is not None:
             diff_roce = abs(comp_roce - ref_roce)
             if diff_roce > 5.0:
-                cat = "formula discrepancy"
                 if c_id in ["BEL", "HAL", "LT"]:
                     cat = "data source issue"
+                    expl = "Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L"
+                elif broad_sector == "Financials":
+                    cat = "formula discrepancy"
+                    expl = "financial company ROCE calculations are structurally mismatched with standard industrial formulas"
+                else:
+                    cat = "formula discrepancy"
+                    expl = "discrepancy due to different definition of EBIT or Capital Employed in source calculation"
                 log_entries.append(
                     f"[{c_id}] ROCE anomaly at latest conformed year {lat_yr}: "
                     f"Computed={comp_roce:.2f}%, Source Excel={ref_roce:.2f}%, Diff={diff_roce:.2f}%. "
-                    f"Category: {cat}."
+                    f"Category: {cat} ({expl})."
                 )
                 
         # Handle TCS ROE anomaly where source is 0.52 instead of 52%
@@ -496,18 +513,23 @@ def main():
         if c_id == "TCS" and ref_roe == 0.52:
             adjusted_ref_roe = 52.0
             
+        # Categorize ROE anomalies
         if ref_roe is not None and pd.notna(ref_roe) and comp_roe is not None:
             diff_roe = abs(comp_roe - adjusted_ref_roe)
             if diff_roe > 5.0:
-                cat = "formula discrepancy"
                 if c_id == "TCS" and ref_roe == 0.52:
                     cat = "data source issue"
+                    expl = "TCS ROE is formatted as 0.52 decimal in source Excel instead of 52.0%"
                 elif c_id in ["BEL", "HAL", "LT"]:
                     cat = "data source issue"
+                    expl = "Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L"
+                else:
+                    cat = "formula discrepancy"
+                    expl = "discrepancy due to different definition of reserves/equity in source calculation"
                 log_entries.append(
                     f"[{c_id}] ROE anomaly at latest conformed year {lat_yr}: "
                     f"Computed={comp_roe:.2f}%, Source Excel={ref_roe:.2f}%, Diff={diff_roe:.2f}%. "
-                    f"Category: {cat}."
+                    f"Category: {cat} ({expl})."
                 )
 
     # B. OPM cross-check for all conformed company-years
@@ -522,10 +544,11 @@ def main():
             if stored_opm is not None and pd.notna(stored_opm) and comp_opm is not None:
                 diff_opm = abs(comp_opm - stored_opm)
                 if diff_opm > 1.0:
+                    expl = "stored opm_percentage is calculated differently or is anomalous in source data"
                     log_entries.append(
                         f"[{c_id}] [{yr_str}] OPM mismatch: Computed OPM={comp_opm:.2f}%, "
                         f"Stored opm_percentage={stored_opm:.2f}%, Diff={diff_opm:.2f}%. "
-                        f"Category: formula discrepancy."
+                        f"Category: formula discrepancy ({expl})."
                     )
                     
     # Write to output/ratio_edge_cases.log
@@ -543,3 +566,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

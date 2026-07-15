@@ -1,0 +1,1796 @@
+
+============================================================
+KEYWORD: 'Ratio Engine' matched 18 times
+============================================================
+
+--- Match 1 (Position 4359) ---
+11
+5.6
+documents.xlsx
+ 12
+5.7
+prosandcons.xlsx
+ 12
+6
+Supplementary Datasets
+ 13
+6.1–6.5
+sectors / stock_prices / market_cap / financial_ratios / peer_groups
+ 13
+7
+Data Relationships & Entity Map
+ 15
+8
+System Architecture
+ 16
+9
+Module 1 — Data Engineering & ETL Pipeline
+ 17
+10
+Module 2 — Financial Ratio Engine (50+ KPIs)
+ 19
+11
+Module 3 — Company Intelligence Dashboard
+ 22
+12
+Module 4 — Investment Screener
+ 23
+13
+Module 5 — Financial Health Scoring Model
+ 25
+14
+Module 6 — Sector Analytics
+ 27
+15
+Module 7 — Cash Flow Intelligence
+ 29
+16
+Module 8 — Trend & Growth Analytics
+ 30
+17
+Module 9 — Peer Comparison
+
+--- Match 2 (Position 4931) ---
+lytics
+ 30
+17
+Module 9 — Peer Comparison Engine
+ 31
+18
+Module 10 — Reporting & Export Engine
+ 32
+19
+Module 11 — Document Intelligence Repository
+ 33
+20
+Module 12 — Alerts & Watchlist
+ 34
+21
+45-Day Sprint Plan & Timeline
+ 35
+21.1
+Sprint 1 — Foundation & Data Engineering
+ 35
+21.2
+Sprint 2 — Financial Ratio Engine
+ 36
+21.3
+Sprint 3 — Screener, Scoring & Sector Analytics
+ 37
+21.4
+Sprint 4 — Peer, Trend, Cash Flow & Documents
+ 38
+21.5
+Sprint 5 — Dashboard & Reporting
+ 39
+21.6
+Sprint 6 — Testing, Documentation & Delivery
+ 40
+22
+KPI Definitions & Business Logic
+ 41
+23
+Data Quality & Validation Rules
+ 44
+24
+API &
+
+--- Match 3 (Position 7770) ---
+ys
+Quality
+Acceptance Criteria
+20
+#
+Key Outcome
+Business Value
+Owner Module
+01
+Unified financial data warehouse for 92 companies
+Single source of truth; eliminates manual data gathering
+ETL Pipeline
+02
+50+ computed KPIs per company per year
+Instant quantitative assessment without manual calculation
+Ratio Engine
+03
+Multi-parameter investment screener (18 filters)
+Reduces analyst time-to-insight from hours to seconds
+Screener
+04
+Composite Financial Health Score (0–100)
+Standardised risk triage across the full universe
+Health Score
+05
+Sector benchmarks across 11 broad sectors
+Sector rotation analysis and rel
+
+--- Match 4 (Position 8824) ---
+mary source documents
+Document Repo
+10
+Rule-based alert system and company watchlist
+Proactive KPI deterioration monitoring
+Alerts
+Sprint
+Days
+Focus Area
+Primary Deliverable
+Exit Gate
+Sprint 1
+1–7
+Foundation & ETL
+SQLite DB loaded; DQ report
+0 critical DQ violations; ≥80% ETL coverage
+Sprint 2
+8–14
+Ratio Engine
+50+ KPIs in financial_ratios table
+Values validated vs 5 companies ±2%
+Sprint 3
+15–21
+Screener, Score & Sector
+Screener, FHS, Sector module
+All 3 modules correct; scores 0–100 for all 92
+
+=================== PAGE 7 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN
+
+--- Match 5 (Position 13674) ---
+l)
+Daily — Sprint 5
+Data Analyst — QA
+Quality Assurance
+Test suite, documentation
+Daily — Sprint 6
+Project Lead
+Coordinator
+All modules — review & integration
+Weekly review meetings
+Module
+ETL Analyst
+Analytics Analyst
+Frontend Analyst
+Reporting Analyst
+QA Analyst
+ETL Pipeline
+R/A
+C
+I
+I
+C
+Financial Ratio Engine
+C
+R/A
+I
+I
+C
+Investment Screener
+I
+R/A
+C
+I
+C
+Health Scoring
+I
+R/A
+C
+I
+C
+Sector Analytics
+I
+R/A
+C
+I
+C
+Peer Comparison
+I
+R/A
+C
+I
+C
+Trend & Growth
+I
+R/A
+C
+I
+C
+Cash Flow Intelligence
+I
+R/A
+C
+I
+C
+Dashboard
+I
+C
+R/A
+C
+C
+PDF / Excel Reports
+I
+C
+C
+R/A
+C
+Alerts & Watchlist
+I
+R
+C
+I
+A
+Full Test Suite
+C
+C
+C
+C
+R/
+
+--- Match 6 (Position 16290) ---
+tock page URL.
+face_value
+NUMERIC
+No
+1
+Share face value in ■. Common: 1, 2, 5, 10. Used in book value calculation.
+book_value
+NUMERIC
+Yes
+157.40
+Book value per share in ■ (latest). Display only; compute from BS for analytics.
+roce_percentage
+NUMERIC
+Yes
+64.30
+ROCE % (pre-computed). Use for display; Ratio Engine values for analytics.
+roe_percentage
+NUMERIC
+Yes
+0.52
+ROE % (pre-computed). Note: TCS shows 0.52 — anomaly; use Ratio Engine value.
+5.2 profitandloss.xlsx — Annual Profit & Loss Statements
+Column
+Type
+Nullable
+Sample (TCS FY23)
+Formula / Notes
+id
+INTEGER
+No
+61
+Row ID — not analytically meaningful.
+
+--- Match 7 (Position 16415) ---
+NUMERIC
+Yes
+157.40
+Book value per share in ■ (latest). Display only; compute from BS for analytics.
+roce_percentage
+NUMERIC
+Yes
+64.30
+ROCE % (pre-computed). Use for display; Ratio Engine values for analytics.
+roe_percentage
+NUMERIC
+Yes
+0.52
+ROE % (pre-computed). Note: TCS shows 0.52 — anomaly; use Ratio Engine value.
+5.2 profitandloss.xlsx — Annual Profit & Loss Statements
+Column
+Type
+Nullable
+Sample (TCS FY23)
+Formula / Notes
+id
+INTEGER
+No
+61
+Row ID — not analytically meaningful. Use composite key.
+company_id
+VARCHAR
+No
+TCS
+FK → companies.id. Normalise to uppercase stripped ticker.
+year
+VARCHAR
+No
+Mar-2
+
+--- Match 8 (Position 20648) ---
+Years?:?\s*([\d.]+)%' → (10, 21.0)
+Display + cross-check after parsing
+compounded_profit_growth
+TEXT
+5 Years:  6%
+Same pattern
+Display + cross-check
+stock_price_cagr
+TEXT
+10 Years: 15%
+Same pattern
+Display only — compute from market_cap dataset
+roe
+TEXT
+10 Years: 17%
+Same pattern
+Display only — use Ratio Engine ROE for analytics
+Coverage gap: Only ~8 companies have entries. Compute growth metrics for all 92 via the Ratio Engine (Sprint 2). Use analysis.xlsx values only for
+display cross-check.
+5.6 documents.xlsx — Annual Report Repository
+Column
+Type
+Nullable
+Sample Value
+Notes
+id
+INTEGER
+No
+1
+Row ID.
+com
+
+--- Match 9 (Position 20767) ---
+pattern
+Display + cross-check
+stock_price_cagr
+TEXT
+10 Years: 15%
+Same pattern
+Display only — compute from market_cap dataset
+roe
+TEXT
+10 Years: 17%
+Same pattern
+Display only — use Ratio Engine ROE for analytics
+Coverage gap: Only ~8 companies have entries. Compute growth metrics for all 92 via the Ratio Engine (Sprint 2). Use analysis.xlsx values only for
+display cross-check.
+5.6 documents.xlsx — Annual Report Repository
+Column
+Type
+Nullable
+Sample Value
+Notes
+id
+INTEGER
+No
+1
+Row ID.
+company_id
+VARCHAR
+No
+ABB
+FK → companies.id.
+
+=================== PAGE 13 ===================
+NIFTY 100 FINANCIAL INTELLIG
+
+--- Match 10 (Position 31884) ---
+validator, schema validator
+Python — pandas, openpyxl, requests
+L2
+ETL & Normalisation
+Year normaliser, ticker normaliser, dedup engine
+Python — pandas, custom ETL modules
+L3
+Persistent Storage
+SQLite database (10 tables) — core + supporting
+SQLite 3.x — single-file, zero-config
+L4
+Analytics Engine
+Ratio engine, screener, comparator, capital classifier
+Python — pandas, NumPy, scipy.stats
+L5
+Intelligence Layer
+Peer percentiles, health scorer, NLP summarizer
+Python — scikit-learn, regex, NLTK
+L6
+Reporting Layer
+PDF reports, Excel exports, chart generation
+ReportLab, openpyxl, matplotlib, Plotly
+L7
+Dashboard
+
+--- Match 11 (Position 35462) ---
+andcons, sectors, market_cap, stock_prices, financial_ratios, peer_groups
+load_audit.csv
+Per-table load statistics for QA review. Row count, rejection count, runtime.
+validation_failures.csv
+All DQ rule violations with company_id, year, field, issue, severity (CRITICAL/WARNING).
+Module 2: Financial Ratio Engine
+Computes 50+ KPIs for every company-year combination across all 14 available years. Handles all edge cases: division by zero, negative equity,
+debt-free companies, bank/NBFC D/E carve-out, and CAGR sign anomalies.
+Sprint: Sprint 2 (Days 8–14)
+#
+Feature / KPI
+Formula
+Edge Case
+2.1
+Net Profit Margin
+
+--- Match 12 (Position 46908) ---
+o sector tags using keyword matching. Confirm vs sectors.xlsx.
+Tag validation report
+9.4
+Sentiment scorer
+Basic polarity scoring on pros (positive) and cons (negative) text using NLTK SentimentIntensityAnalyzer.
+Sentiment score per entry
+9.5
+CAGR cross-validator
+Compare parsed analysis.xlsx CAGR vs Ratio Engine computed CAGR. Flag >5% divergence.
+cross_validation.csv
+Output
+Detail
+pros_cons_generated.csv
+company_id, type (pro/con), rule_triggered, text, confidence_pct. Auto-fills gaps for 84 companies.
+analysis_parsed.csv
+Structured: company_id, metric_type, period_years, value_pct for all analysis.xlsx r
+
+--- Match 13 (Position 52532) ---
+6 Sprints × 7–8 Days
+ — Day-by-Day Task
+ Breakdown
+Sprint
+Days
+Theme
+Modules
+Exit Criteria
+Sprint 1
+Days 01–07
+Data Foundation
+Module 1
+nifty100.db built; all 10 tables loaded; load_audit.csv shows zero CRITICAL failures; validation_failures.csv reviewed and cleared by team lead
+Sprint 2
+Days 08–14
+Ratio Engine
+Module 2
+financial_ratios table populated for 92 × 14yr; 60+ KPIs computed; all 20 KPI formula tests pass; edge case log reviewed
+Sprint 3
+Days 15–21
+Screener & Peers
+Modules 3–4
+6 preset screeners operational; peer percentile table built for all 11 groups; peer comparison Excel exported; all DQ te
+
+--- Match 14 (Position 54677) ---
+heck 5 random companies across all time-series tables. Fix any loader bugs. Re-run load.
+DQ review notes in team channel
+D07
+Write 10 SQL exploratory queries (row counts, nulls, year coverage per company). Sprint retrospective. Update task board.
+exploratory_queries.sql, sprint1_retro.md
+Sprint 2 — Ratio Engine (Days 8–14)
+Day
+Tasks
+Deliverable
+D08
+Implement profitability ratios: NPM, OPM, ROE, ROCE. Edge cases: negative equity (None), zero sales (None). Cross-validate OPM vs source.
+analytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset T
+
+--- Match 15 (Position 65572) ---
+ject orphan rows. Log to validation_failures.csv.
+DQ-04
+Balance Sheet Balance
+|total_assets − total_liabilities| / total_assets < 0.01
+WARNING
+Flag row. Do not reject. Analyst review required.
+DQ-05
+OPM Cross-Check
+|opm_percentage − (op_profit/sales×100)| < 1.0
+WARNING
+Flag row. Use computed OPM in Ratio Engine; keep source for display.
+DQ-06
+Positive Sales
+sales > 0 for all non-bank companies
+WARNING
+Flag rows with sales ≤ 0. Exclude from growth CAGR.
+DQ-07
+Year Format
+After normalize_year(), all values match r'^\d{4}-\d{2}$'
+CRITICAL
+Reject row if unparseable. Log raw value.
+DQ-08
+Ticker Format
+company_
+
+--- Match 16 (Position 85444) ---
+t:8501
+10. Start REST API
+uvicorn src.api.main:app --port 8000 (or: make api)
+API running at http://localhost:8000/docs
+Makefile Target
+What it does
+When to use
+make load
+Runs ETL: loads all 12 files into nifty100.db. Re-runnable (idempotent).
+Day 1 and after any source file update
+make ratios
+Runs Ratio Engine: populates financial_ratios table.
+After make load. Re-run after any KPI formula change.
+make test
+Runs full pytest suite. Generates HTML report.
+Before every commit. Must be 0 failures.
+make report
+Generates all PDF reports: 92 tearsheets + 11 sector + 1 portfolio.
+Sprint 5+. Run once a week for f
+
+--- Match 17 (Position 98289) ---
+onglomerates
+10–20%
+0.5–2×
+8–18%
+15–30×
+Diverse revenue streams; holding company discount applied
+Usage: For relative scoring, normalise KPIs against these sector ranges rather than the universal Nifty 100 range. A D/E of 4× is a CRITICAL flag for
+an IT company but completely normal for a bank. The Ratio Engine uses sectors.broad_sector to select the appropriate benchmark range for each
+metric.
+29. Week-by-Week Communication & Review Plan
+ Milestone Reviews,
+Deliverable Handoffs
+ & Sign-Off Schedule
+Week
+Days
+Review Meeting
+Deliverables to Share
+Go / No-Go Criteria
+Week 1
+D01–07
+End of D07 — Sprint 1 Revi
+
+--- Match 18 (Position 102521) ---
+A
+Escalation Path
+Team Lead / Project Manager
+Sprint planning, risk decisions, final sign-off on all deliverables
+Same day
+—
+Data Engineer
+ETL module (Module 1), database schema, DQ rules, pipeline reliability
+4 hours for CRITICAL DQ failures
+Escalate to Team Lead after 2hr block
+Analytics Engineer
+Ratio Engine (Module 2), Screener (Module 3), Peer Engine (Module 4)
+Same sprint day
+Escalate to Team Lead for business logic decisions
+Dashboard Developer
+Streamlit app (Module 5), chart design, UX
+Same sprint day
+Escalate for data availability issues → Data Engineer
+API Developer
+FastAPI server (Module 11), O
+
+============================================================
+KEYWORD: 'ratios\.py' matched 9 times
+============================================================
+
+--- Match 1 (Position 54876) ---
+pany). Sprint retrospective. Update task board.
+exploratory_queries.sql, sprint1_retro.md
+Sprint 2 — Ratio Engine (Days 8–14)
+Day
+Tasks
+Deliverable
+D08
+Implement profitability ratios: NPM, OPM, ROE, ROCE. Edge cases: negative equity (None), zero sales (None). Cross-validate OPM vs source.
+analytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset Turnover. Write tests.
+tests/kpi/test_leverage.py
+D10
+Implement CAGR engine: Revenue CAGR, PAT CAGR, EPS CAGR for 3yr, 5yr, 10yr windows. Turnaround flag logic.
+analytics/cagr.py
+D11
+Implement cash
+
+--- Match 2 (Position 77712) ---
+Tests
+Path
+Type
+Contents
+data/raw/
+Directory
+7 core Excel files (READ ONLY). Never modify.
+data/supporting/
+Directory
+5 supplementary Excel files.
+data/nifty100.db
+SQLite
+Primary database. All 10 tables.
+src/etl/
+Directory
+loader.py, validator.py, normaliser.py, schema.sql
+src/analytics/
+Directory
+ratios.py, cagr.py, cashflow_kpis.py, screener/engine.py, peer.py, clustering.py
+src/nlp/
+Directory
+parser.py (analysis.xlsx), pros_cons_generator.py
+src/dashboard/
+Directory
+app.py, pages/ (01–08), utils/charts.py, utils/db.py
+src/api/
+Directory
+main.py, routers/ (companies, screener, peers, sectors, report
+
+--- Match 3 (Position 84715) ---
+no errors
+4. Configure environment
+cp config/.env.template .env && nano .env
+Set DB_PATH=data/nifty100.db; PORT=8000; LOG_LEVEL=INFO
+5. Build database (ETL)
+python src/etl/loader.py (or: make load)
+nifty100.db created; load_audit.csv shows 12 files loaded
+6. Run KPI computation
+python src/analytics/ratios.py (or: make ratios)
+financial_ratios table populated; 1,100+ rows
+7. Run test suite
+pytest tests/ --html=reports/pytest_report.html (or: make test)
+60+ tests collected; 0 failures
+8. Generate PDF reports
+python src/reports/portfolio_report.py (or: make report)
+reports/tearsheets/ populated with 92 PD
+
+--- Match 4 (Position 95247) ---
+s/etl/test_normalise.py
+test_year_fy24
+FY24
+2024-03
+tests/etl/test_normalise.py
+test_year_dec22
+Dec-22
+2022-12
+tests/etl/test_normalise.py
+test_year_garbage
+xyz
+PARSE_ERROR
+tests/etl/test_normalise.py
+test_ticker_strip
+  TCS  
+TCS
+tests/etl/test_normalise.py
+test_ticker_lower
+tcs
+TCS
+tests/kpi/test_ratios.py
+test_roe_positive
+net_profit=100, equity=500
+ROE = 20.0
+tests/kpi/test_ratios.py
+test_roe_neg_equity
+net_profit=100, equity=-50
+ROE = None
+tests/kpi/test_ratios.py
+test_de_debtfree
+borrowings=0, equity=500
+D/E = 0
+tests/kpi/test_ratios.py
+test_icr_debtfree
+interest=0
+ICR = None (display 'Debt Free'
+
+--- Match 5 (Position 95328) ---
+est_year_dec22
+Dec-22
+2022-12
+tests/etl/test_normalise.py
+test_year_garbage
+xyz
+PARSE_ERROR
+tests/etl/test_normalise.py
+test_ticker_strip
+  TCS  
+TCS
+tests/etl/test_normalise.py
+test_ticker_lower
+tcs
+TCS
+tests/kpi/test_ratios.py
+test_roe_positive
+net_profit=100, equity=500
+ROE = 20.0
+tests/kpi/test_ratios.py
+test_roe_neg_equity
+net_profit=100, equity=-50
+ROE = None
+tests/kpi/test_ratios.py
+test_de_debtfree
+borrowings=0, equity=500
+D/E = 0
+tests/kpi/test_ratios.py
+test_icr_debtfree
+interest=0
+ICR = None (display 'Debt Free')
+tests/kpi/test_ratios.py
+test_cagr_turnaround
+base=-100, end=200
+CAGR = None, f
+
+--- Match 6 (Position 95411) ---
+SE_ERROR
+tests/etl/test_normalise.py
+test_ticker_strip
+  TCS  
+TCS
+tests/etl/test_normalise.py
+test_ticker_lower
+tcs
+TCS
+tests/kpi/test_ratios.py
+test_roe_positive
+net_profit=100, equity=500
+ROE = 20.0
+tests/kpi/test_ratios.py
+test_roe_neg_equity
+net_profit=100, equity=-50
+ROE = None
+tests/kpi/test_ratios.py
+test_de_debtfree
+borrowings=0, equity=500
+D/E = 0
+tests/kpi/test_ratios.py
+test_icr_debtfree
+interest=0
+ICR = None (display 'Debt Free')
+tests/kpi/test_ratios.py
+test_cagr_turnaround
+base=-100, end=200
+CAGR = None, flag='TURNAROUND'
+
+=================== PAGE 41 ===================
+NIFTY 100 FINANCI
+
+--- Match 7 (Position 95486) ---
+l/test_normalise.py
+test_ticker_lower
+tcs
+TCS
+tests/kpi/test_ratios.py
+test_roe_positive
+net_profit=100, equity=500
+ROE = 20.0
+tests/kpi/test_ratios.py
+test_roe_neg_equity
+net_profit=100, equity=-50
+ROE = None
+tests/kpi/test_ratios.py
+test_de_debtfree
+borrowings=0, equity=500
+D/E = 0
+tests/kpi/test_ratios.py
+test_icr_debtfree
+interest=0
+ICR = None (display 'Debt Free')
+tests/kpi/test_ratios.py
+test_cagr_turnaround
+base=-100, end=200
+CAGR = None, flag='TURNAROUND'
+
+=================== PAGE 41 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA
+
+--- Match 8 (Position 95573) ---
+e
+net_profit=100, equity=500
+ROE = 20.0
+tests/kpi/test_ratios.py
+test_roe_neg_equity
+net_profit=100, equity=-50
+ROE = None
+tests/kpi/test_ratios.py
+test_de_debtfree
+borrowings=0, equity=500
+D/E = 0
+tests/kpi/test_ratios.py
+test_icr_debtfree
+interest=0
+ICR = None (display 'Debt Free')
+tests/kpi/test_ratios.py
+test_cagr_turnaround
+base=-100, end=200
+CAGR = None, flag='TURNAROUND'
+
+=================== PAGE 41 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 41
+Test File
+Test Name
+Input
+Expected Ou
+
+--- Match 9 (Position 95902) ---
+d
+base=-100, end=200
+CAGR = None, flag='TURNAROUND'
+
+=================== PAGE 41 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 41
+Test File
+Test Name
+Input
+Expected Output
+tests/kpi/test_ratios.py
+test_cagr_normal
+base=100, end=161, n=5
+CAGR ≈ 10.0%
+tests/dq/test_rules.py
+test_dq04_bs_balance
+assets=1000, liab=1020
+DQ-04 WARNING triggered
+tests/dq/test_rules.py
+test_dq06_zero_sales
+sales=0
+DQ-06 WARNING triggered
+tests/api/test_health.py
+test_health_200
+GET /api/v1/health
+HTTP 200, status='o
+
+============================================================
+KEYWORD: 'report\.py' matched 4 times
+============================================================
+
+--- Match 1 (Position 78076) ---
+y, clustering.py
+src/nlp/
+Directory
+parser.py (analysis.xlsx), pros_cons_generator.py
+src/dashboard/
+Directory
+app.py, pages/ (01–08), utils/charts.py, utils/db.py
+src/api/
+Directory
+main.py, routers/ (companies, screener, peers, sectors, reports, health)
+src/reports/
+Directory
+tearsheet.py, sector_report.py, portfolio_report.py, screener_report.py
+tests/
+Directory
+etl/, kpi/, api/, dq/ — 60+ pytest test files
+config/
+Directory
+screener_config.yaml, .env.template, logging_config.yaml
+reports/tearsheets/
+Directory
+92 company tearsheet PDFs
+reports/sector/
+Directory
+11 sector PDFs
+reports/portfolio/
+Dire
+
+--- Match 2 (Position 78097) ---
+nlp/
+Directory
+parser.py (analysis.xlsx), pros_cons_generator.py
+src/dashboard/
+Directory
+app.py, pages/ (01–08), utils/charts.py, utils/db.py
+src/api/
+Directory
+main.py, routers/ (companies, screener, peers, sectors, reports, health)
+src/reports/
+Directory
+tearsheet.py, sector_report.py, portfolio_report.py, screener_report.py
+tests/
+Directory
+etl/, kpi/, api/, dq/ — 60+ pytest test files
+config/
+Directory
+screener_config.yaml, .env.template, logging_config.yaml
+reports/tearsheets/
+Directory
+92 company tearsheet PDFs
+reports/sector/
+Directory
+11 sector PDFs
+reports/portfolio/
+Directory
+Portfolio summa
+
+--- Match 3 (Position 78117) ---
+r.py (analysis.xlsx), pros_cons_generator.py
+src/dashboard/
+Directory
+app.py, pages/ (01–08), utils/charts.py, utils/db.py
+src/api/
+Directory
+main.py, routers/ (companies, screener, peers, sectors, reports, health)
+src/reports/
+Directory
+tearsheet.py, sector_report.py, portfolio_report.py, screener_report.py
+tests/
+Directory
+etl/, kpi/, api/, dq/ — 60+ pytest test files
+config/
+Directory
+screener_config.yaml, .env.template, logging_config.yaml
+reports/tearsheets/
+Directory
+92 company tearsheet PDFs
+reports/sector/
+Directory
+11 sector PDFs
+reports/portfolio/
+Directory
+Portfolio summary PDFs (weekly)
+rep
+
+--- Match 4 (Position 84956) ---
+2 files loaded
+6. Run KPI computation
+python src/analytics/ratios.py (or: make ratios)
+financial_ratios table populated; 1,100+ rows
+7. Run test suite
+pytest tests/ --html=reports/pytest_report.html (or: make test)
+60+ tests collected; 0 failures
+8. Generate PDF reports
+python src/reports/portfolio_report.py (or: make report)
+reports/tearsheets/ populated with 92 PDFs
+9. Start Streamlit dashboard
+streamlit run src/dashboard/app.py (or: make dashboard)
+Browser opens at http://localhost:8501
+10. Start REST API
+uvicorn src.api.main:app --port 8000 (or: make api)
+API running at http://localhost:8000/docs
+M
+
+============================================================
+KEYWORD: 'dashboard\.py' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'api\.py' matched 3 times
+============================================================
+
+--- Match 1 (Position 96229) ---
+base=100, end=161, n=5
+CAGR ≈ 10.0%
+tests/dq/test_rules.py
+test_dq04_bs_balance
+assets=1000, liab=1020
+DQ-04 WARNING triggered
+tests/dq/test_rules.py
+test_dq06_zero_sales
+sales=0
+DQ-06 WARNING triggered
+tests/api/test_health.py
+test_health_200
+GET /api/v1/health
+HTTP 200, status='ok'
+tests/api/test_api.py
+test_companies_count
+GET /api/v1/companies
+92 records returned
+tests/api/test_api.py
+test_invalid_ticker
+GET /api/v1/companies/INVALID
+HTTP 404
+tests/api/test_api.py
+test_screener_filter
+GET /api/v1/screener?min_roe=15
+All results have ROE ≥ 15
+
+=================== PAGE 42 ===================
+NIFTY
+
+--- Match 2 (Position 96314) ---
+s=1000, liab=1020
+DQ-04 WARNING triggered
+tests/dq/test_rules.py
+test_dq06_zero_sales
+sales=0
+DQ-06 WARNING triggered
+tests/api/test_health.py
+test_health_200
+GET /api/v1/health
+HTTP 200, status='ok'
+tests/api/test_api.py
+test_companies_count
+GET /api/v1/companies
+92 records returned
+tests/api/test_api.py
+test_invalid_ticker
+GET /api/v1/companies/INVALID
+HTTP 404
+tests/api/test_api.py
+test_screener_filter
+GET /api/v1/screener?min_roe=15
+All results have ROE ≥ 15
+
+=================== PAGE 42 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DA
+
+--- Match 3 (Position 96395) ---
+ales
+sales=0
+DQ-06 WARNING triggered
+tests/api/test_health.py
+test_health_200
+GET /api/v1/health
+HTTP 200, status='ok'
+tests/api/test_api.py
+test_companies_count
+GET /api/v1/companies
+92 records returned
+tests/api/test_api.py
+test_invalid_ticker
+GET /api/v1/companies/INVALID
+HTTP 404
+tests/api/test_api.py
+test_screener_filter
+GET /api/v1/screener?min_roe=15
+All results have ROE ≥ 15
+
+=================== PAGE 42 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 42
+28. Sector Benchmarks & Expec
+
+============================================================
+KEYWORD: 'D08' matched 2 times
+============================================================
+
+--- Match 1 (Position 54724) ---
+tables. Fix any loader bugs. Re-run load.
+DQ review notes in team channel
+D07
+Write 10 SQL exploratory queries (row counts, nulls, year coverage per company). Sprint retrospective. Update task board.
+exploratory_queries.sql, sprint1_retro.md
+Sprint 2 — Ratio Engine (Days 8–14)
+Day
+Tasks
+Deliverable
+D08
+Implement profitability ratios: NPM, OPM, ROE, ROCE. Edge cases: negative equity (None), zero sales (None). Cross-validate OPM vs source.
+analytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset Turnover. Write tests.
+tests/kpi/test_l
+
+--- Match 2 (Position 98763) ---
+Handoffs
+ & Sign-Off Schedule
+Week
+Days
+Review Meeting
+Deliverables to Share
+Go / No-Go Criteria
+Week 1
+D01–07
+End of D07 — Sprint 1 Review (30 min)
+nifty100.db, load_audit.csv, validation_failures.csv, exploratory_queries.sql
+All 10 tables loaded. Zero CRITICAL DQ failures. Coverage > 90%.
+Week 2
+D08–14
+End of D14 — Sprint 2 Review (45 min)
+financial_ratios table (SQLite export), ratio_edge_cases.log, all KPI tests green
+1,100+ rows in financial_ratios. Formula spot-checks pass. All 20 KPI tests green.
+Week 3
+D15–21
+End of D21 — Sprint 3 Review (45 min)
+screener_output.xlsx (6 presets), peer_co
+
+============================================================
+KEYWORD: 'D09' matched 1 times
+============================================================
+
+--- Match 1 (Position 54886) ---
+int retrospective. Update task board.
+exploratory_queries.sql, sprint1_retro.md
+Sprint 2 — Ratio Engine (Days 8–14)
+Day
+Tasks
+Deliverable
+D08
+Implement profitability ratios: NPM, OPM, ROE, ROCE. Edge cases: negative equity (None), zero sales (None). Cross-validate OPM vs source.
+analytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset Turnover. Write tests.
+tests/kpi/test_leverage.py
+D10
+Implement CAGR engine: Revenue CAGR, PAT CAGR, EPS CAGR for 3yr, 5yr, 10yr windows. Turnaround flag logic.
+analytics/cagr.py
+D11
+Implement cash flo
+
+============================================================
+KEYWORD: 'D10' matched 1 times
+============================================================
+
+--- Match 1 (Position 55038) ---
+profitability ratios: NPM, OPM, ROE, ROCE. Edge cases: negative equity (None), zero sales (None). Cross-validate OPM vs source.
+analytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset Turnover. Write tests.
+tests/kpi/test_leverage.py
+D10
+Implement CAGR engine: Revenue CAGR, PAT CAGR, EPS CAGR for 3yr, 5yr, 10yr windows. Turnaround flag logic.
+analytics/cagr.py
+D11
+Implement cash flow KPIs: FCF, CFO Quality Score, CapEx Intensity, FCF Conversion, capital allocation pattern (8 classes).
+analytics/cashflow_kpis.py
+D12
+Populate financi
+
+============================================================
+KEYWORD: 'D11' matched 1 times
+============================================================
+
+--- Match 1 (Position 55167) ---
+nalytics/ratios.py
+D09
+Implement leverage + efficiency ratios: D/E (bank carve-out), ICR (debt-free substitution), Asset Turnover. Write tests.
+tests/kpi/test_leverage.py
+D10
+Implement CAGR engine: Revenue CAGR, PAT CAGR, EPS CAGR for 3yr, 5yr, 10yr windows. Turnaround flag logic.
+analytics/cagr.py
+D11
+Implement cash flow KPIs: FCF, CFO Quality Score, CapEx Intensity, FCF Conversion, capital allocation pattern (8 classes).
+analytics/cashflow_kpis.py
+D12
+Populate financial_ratios table in SQLite for all 92 companies × all years. Run validation: compare sample to manual Excel calculations.
+Updated
+
+============================================================
+KEYWORD: 'D12' matched 1 times
+============================================================
+
+--- Match 1 (Position 55321) ---
+test_leverage.py
+D10
+Implement CAGR engine: Revenue CAGR, PAT CAGR, EPS CAGR for 3yr, 5yr, 10yr windows. Turnaround flag logic.
+analytics/cagr.py
+D11
+Implement cash flow KPIs: FCF, CFO Quality Score, CapEx Intensity, FCF Conversion, capital allocation pattern (8 classes).
+analytics/cashflow_kpis.py
+D12
+Populate financial_ratios table in SQLite for all 92 companies × all years. Run validation: compare sample to manual Excel calculations.
+Updated financial_ratios table
+D13
+Implement ROCE for banks/NBFCs: sector-relative approach. Cross-check vs roce_percentage in companies.xlsx. Log anomalies.
+sect
+
+============================================================
+KEYWORD: 'D13' matched 1 times
+============================================================
+
+--- Match 1 (Position 55493) ---
+Is: FCF, CFO Quality Score, CapEx Intensity, FCF Conversion, capital allocation pattern (8 classes).
+analytics/cashflow_kpis.py
+D12
+Populate financial_ratios table in SQLite for all 92 companies × all years. Run validation: compare sample to manual Excel calculations.
+Updated financial_ratios table
+D13
+Implement ROCE for banks/NBFCs: sector-relative approach. Cross-check vs roce_percentage in companies.xlsx. Log anomalies.
+sector_roce_notes.csv
+D14
+Run all 20 KPI formula tests. Fix failures. Write ratio_edge_cases.log. Sprint retrospective.
+All KPI tests green, sprint2_retro.md
+
+=================
+
+============================================================
+KEYWORD: 'D14' matched 2 times
+============================================================
+
+--- Match 1 (Position 55642) ---
+l_ratios table in SQLite for all 92 companies × all years. Run validation: compare sample to manual Excel calculations.
+Updated financial_ratios table
+D13
+Implement ROCE for banks/NBFCs: sector-relative approach. Cross-check vs roce_percentage in companies.xlsx. Log anomalies.
+sector_roce_notes.csv
+D14
+Run all 20 KPI formula tests. Fix failures. Write ratio_edge_cases.log. Sprint retrospective.
+All KPI tests green, sprint2_retro.md
+
+=================== PAGE 26 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  IN
+
+--- Match 2 (Position 98777) ---
+ign-Off Schedule
+Week
+Days
+Review Meeting
+Deliverables to Share
+Go / No-Go Criteria
+Week 1
+D01–07
+End of D07 — Sprint 1 Review (30 min)
+nifty100.db, load_audit.csv, validation_failures.csv, exploratory_queries.sql
+All 10 tables loaded. Zero CRITICAL DQ failures. Coverage > 90%.
+Week 2
+D08–14
+End of D14 — Sprint 2 Review (45 min)
+financial_ratios table (SQLite export), ratio_edge_cases.log, all KPI tests green
+1,100+ rows in financial_ratios. Formula spot-checks pass. All 20 KPI tests green.
+Week 3
+D15–21
+End of D21 — Sprint 3 Review (45 min)
+screener_output.xlsx (6 presets), peer_comparison.xlsx
+
+============================================================
+KEYWORD: 'Day 8' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 9' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 10' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 11' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 12' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 13' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Day 14' matched 0 times
+============================================================
+
+============================================================
+KEYWORD: 'Acceptance Criteria' matched 6 times
+============================================================
+
+--- Match 1 (Position 1899) ---
+Version History
+Version
+Date
+Change Description
+1.0
+June 2026
+Initial release — full specification for 45-day project
+1.1
+Post-Sprint 1
+Updates based on data quality findings from ETL validation
+1.2
+Post-Sprint 3
+Screener and scoring refinements after testing
+2.0
+Day 45
+Final delivery version — all acceptance criteria verified
+How to Use This Document
+Section
+Pages
+Primary Reader
+Purpose
+1 — Document Control
+2
+All
+Classification, version history, reader guide
+2 — Table of Contents
+3
+All
+Navigation index
+3 — Executive Summary
+4–5
+All
+Platform overview, key metrics, outcomes
+4 — Project Overview
+6–7
+All
+Objectives
+
+--- Match 2 (Position 3348) ---
+============== PAGE 3 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 3
+Section
+Pages
+Primary Reader
+Purpose
+26 — Tech Stack & Standards
+48
+All
+Libraries, versions, code quality gates
+27 — Acceptance Criteria
+49
+All
+20 mandatory gates — definition of done
+28 — Glossary
+50
+All
+Definitions of all technical terms
+
+=================== PAGE 4 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 4
+Table o
+
+--- Match 3 (Position 5559) ---
+pecification
+ 45
+25
+Risk Register
+ 46
+
+=================== PAGE 5 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 5
+26
+Deliverables Checklist
+ 47
+27
+Technical Stack & Code Standards
+ 48
+28
+Acceptance Criteria — Definition of Done
+ 49
+29
+Glossary of Terms
+ 50
+
+=================== PAGE 6 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 6
+3. Executive Summary
+ Strategic Overview &
+ Key Metrics
+Attr
+
+--- Match 4 (Position 7481) ---
+Pre-built Screens
+6
+Data
+Cash Flow Records
+1,187
+Platform
+Peer Groups
+11
+Data
+Annual Report Links
+1,585
+Platform
+Sector Categories
+11
+Data
+Stock Price Records
+5,520
+Quality
+Test Coverage Target
+≥80%
+Data
+Computed Ratio Records
+1,184
+Quality
+DQ Validation Rules
+14
+Time
+Total Duration
+45 Days
+Quality
+Acceptance Criteria
+20
+#
+Key Outcome
+Business Value
+Owner Module
+01
+Unified financial data warehouse for 92 companies
+Single source of truth; eliminates manual data gathering
+ETL Pipeline
+02
+50+ computed KPIs per company per year
+Instant quantitative assessment without manual calculation
+Ratio Engine
+03
+Multi-paramete
+
+--- Match 5 (Position 74539) ---
+10–15 pages.
+D-23
+acceptance_checklist.pdf
+PDF
+S6
+23 deliverables reviewed and signed off. Date stamped.
+
+=================== PAGE 32 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 32
+18. Acceptance Criteria
+ 20 Non-Negotiable
+Quality Gates — All
+ Must Pass Before
+ Sign-Off
+Gate
+Area
+Criterion
+Tested By
+AC-01
+Data Coverage
+92 companies present in companies table. No extra or missing tickers.
+SELECT COUNT(*) FROM companies → 92
+AC-02
+Time Coverage
+≥ 90% of companies have ≥ 10 years of P&L, BS, CF record
+
+--- Match 6 (Position 102964) ---
+rd Developer
+Streamlit app (Module 5), chart design, UX
+Same sprint day
+Escalate for data availability issues → Data Engineer
+API Developer
+FastAPI server (Module 11), OpenAPI docs, Postman collection
+Same sprint day
+Escalate for DB access issues → Data Engineer
+QA / Testing
+Test suite (Module 12), acceptance criteria verification, sign-off checklist
+24hr for test failures
+Escalate to Team Lead for acceptance gate failures
+Document Sign-Off
+Role
+Name
+Signature
+Date
+Project Manager / Team Lead
+_________________________
+_____________
+Data Engineering Lead
+_________________________
+_____________
+Analytics Lead
+____
+
+============================================================
+KEYWORD: 'Deliverables' matched 11 times
+============================================================
+
+--- Match 1 (Position 2967) ---
+41–43
+Analytics
+Formulas, edge cases, benchmarks for 50+ KPIs
+22 — Data Quality Rules
+44
+Data Engineers
+14 validation rules — severity, action, test
+23 — API Specification
+45
+Backend
+Optional FastAPI endpoint definitions
+24 — Risk Register
+46
+Project Lead
+Risks, likelihood, impact, mitigations
+25 — Deliverables Checklist
+47
+All
+What to submit, format, due date, evaluation
+
+=================== PAGE 3 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 3
+Section
+Pages
+Primary Reader
+Purpose
+26 — Tech S
+
+--- Match 2 (Position 5489) ---
+ic
+ 41
+23
+Data Quality & Validation Rules
+ 44
+24
+API & Service Layer Specification
+ 45
+25
+Risk Register
+ 46
+
+=================== PAGE 5 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 5
+26
+Deliverables Checklist
+ 47
+27
+Technical Stack & Code Standards
+ 48
+28
+Acceptance Criteria — Definition of Done
+ 49
+29
+Glossary of Terms
+ 50
+
+=================== PAGE 6 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL
+
+--- Match 3 (Position 59532) ---
+screener queries. Fix bottlenecks.
+Load test results in perf_notes.md
+D44
+Documentation
+Update all docstrings. Write analyst_guide.pdf (how to use screener + dashboard). Review project doc.
+analyst_guide.pdf
+D45
+Final Sign-Off
+Run acceptance checklist (23 gates). Present to team lead. Archive final deliverables to output/ dir.
+Signed acceptance_checklist.pdf
+
+=================== PAGE 27 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 27
+13. KPI Reference — 50+ Financial Metrics
+ Formulas,
+Benchma
+
+--- Match 4 (Position 72116) ---
+ine
+Low
+Low
+Default port 8000. .env file contains PORT variable. README documents port change procedure.
+
+=================== PAGE 31 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 31
+17. Deliverables Checklist
+ 23 Mandatory
+Deliverables —
+Sign-Off Required on
+ Day 45
+#
+Deliverable
+Format
+Owner Sprint
+Sign-Off Criteria
+D-01
+nifty100.db
+SQLite file
+S1
+All 10 tables populated. rowcounts match source. FK constraints pass.
+D-02
+load_audit.csv
+CSV
+S1
+All 12 files loaded. Zero CRITICAL failures.
+D-03
+
+--- Match 5 (Position 72153) ---
+ile contains PORT variable. README documents port change procedure.
+
+=================== PAGE 31 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 31
+17. Deliverables Checklist
+ 23 Mandatory
+Deliverables —
+Sign-Off Required on
+ Day 45
+#
+Deliverable
+Format
+Owner Sprint
+Sign-Off Criteria
+D-01
+nifty100.db
+SQLite file
+S1
+All 10 tables populated. rowcounts match source. FK constraints pass.
+D-02
+load_audit.csv
+CSV
+S1
+All 12 files loaded. Zero CRITICAL failures.
+D-03
+validation_failures.csv
+CSV
+S1
+All DQ
+
+--- Match 6 (Position 74292) ---
+PI Server (api/)
+Python app
+S6
+16 endpoints. openapi.json exported. /health returns 200.
+D-21
+pytest_report.html
+HTML
+S6
+60+ tests. All green. Runtime < 120 seconds total.
+D-22
+analyst_guide.pdf
+PDF
+S6
+Screener usage guide + dashboard navigation. 10–15 pages.
+D-23
+acceptance_checklist.pdf
+PDF
+S6
+23 deliverables reviewed and signed off. Date stamped.
+
+=================== PAGE 32 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 32
+18. Acceptance Criteria
+ 20 Non-Negotiable
+Quality Gates — All
+ Must
+
+--- Match 7 (Position 78530) ---
+.env.template, logging_config.yaml
+reports/tearsheets/
+Directory
+92 company tearsheet PDFs
+reports/sector/
+Directory
+11 sector PDFs
+reports/portfolio/
+Directory
+Portfolio summary PDFs (weekly)
+reports/radar_charts/
+Directory
+92 radar chart PNGs
+output/
+Directory
+Screener exports, ad hoc CSVs, final deliverables archive
+notebooks/
+Directory
+Exploratory Jupyter notebooks (not in production path)
+docs/
+Directory
+Project document PDF, analyst guide, openapi.json
+requirements.txt
+File
+All pip dependencies pinned to minor version
+.env
+File
+DB_PATH, PORT, LOG_LEVEL, SIMULATED_DATA_FLAG. Not committed to git.
+REA
+
+--- Match 8 (Position 86037) ---
+n once a week for fresh reports.
+make dashboard
+Starts Streamlit on port 8501.
+Day-to-day analytics work.
+make api
+Starts FastAPI/Uvicorn on port 8000.
+Sprint 6+. When dashboard needs live API.
+make clean
+Deletes .pyc files, __pycache__, and test artifacts (NOT the database).
+Before packaging final deliverables.
+
+=================== PAGE 37 ===================
+NIFTY 100 FINANCIAL INTELLIGENCE PLATFORM
+PROJECT EXECUTION PLAN  v1.0  ·  CONFIDENTIAL
+DATA ANALYTICS DIVISION  ·  INTERNAL USE ONLY
+Page 37
+22. Coding Standards & Best Practices
+ Mandatory
+Conventions for All
+ Submitted Code
+Area
+Standard
+Tooling
+
+--- Match 9 (Position 98519) ---
+CRITICAL flag for
+an IT company but completely normal for a bank. The Ratio Engine uses sectors.broad_sector to select the appropriate benchmark range for each
+metric.
+29. Week-by-Week Communication & Review Plan
+ Milestone Reviews,
+Deliverable Handoffs
+ & Sign-Off Schedule
+Week
+Days
+Review Meeting
+Deliverables to Share
+Go / No-Go Criteria
+Week 1
+D01–07
+End of D07 — Sprint 1 Review (30 min)
+nifty100.db, load_audit.csv, validation_failures.csv, exploratory_queries.sql
+All 10 tables loaded. Zero CRITICAL DQ failures. Coverage > 90%.
+Week 2
+D08–14
+End of D14 — Sprint 2 Review (45 min)
+financial_ratios table
+
+--- Match 10 (Position 99837) ---
+o overflow. NLP coverage > 90%. CF flags spot-checked.
+Week 6
+D36–42
+End of D42 — Sprint 6 Review (60 min)
+API demo (Postman), pytest_report.html, cluster_labels.csv
+16 endpoints live. 60+ tests pass. Cluster labels make business sense (reviewed).
+Final
+D43–45
+D45 — Project Sign-Off (90 min)
+All 23 deliverables, acceptance_checklist.pdf signed
+All 20 acceptance gates pass. Lead signs acceptance_checklist.pdf. Project archived.
+29.1 Daily Stand-Up Format (5 minutes per person)
+Question
+Guidance
+Max Time
+What did I complete yesterday?
+Name the specific deliverable or sub-task completed. Reference the sprint
+
+--- Match 11 (Position 102322) ---
+egenerate from DB
+peer_groups.xlsx
+~15 KB
+56
+Run: sha256sum data/supporting/peer_groups.xlsx
+Created — update if groups change
+Appendix B — Contact & Escalation Matrix
+Role
+Responsibility
+Response SLA
+Escalation Path
+Team Lead / Project Manager
+Sprint planning, risk decisions, final sign-off on all deliverables
+Same day
+—
+Data Engineer
+ETL module (Module 1), database schema, DQ rules, pipeline reliability
+4 hours for CRITICAL DQ failures
+Escalate to Team Lead after 2hr block
+Analytics Engineer
+Ratio Engine (Module 2), Screener (Module 3), Peer Engine (Module 4)
+Same sprint day
+Escalate to Team Lead for bu

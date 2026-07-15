@@ -1,312 +1,269 @@
-[RELIANCE] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=9.61%, Diff=9.61%. Category: formula discrepancy.
-[ICICIGI] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=22.50%, Diff=22.50%. Category: formula discrepancy.
-[GRASIM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=9.30%, Diff=9.30%. Category: formula discrepancy.
-[GAIL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=14.70%, Diff=14.70%. Category: formula discrepancy.
-[PNB] ROE anomaly at latest conformed year 2024-03: Computed=61.32%, Source Excel=8.70%, Diff=52.62%. Category: formula discrepancy.
-[HEROMOTOCO] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=29.10%, Diff=29.10%. Category: formula discrepancy.
-[MARUTI] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=23.67%, Diff=23.67%. Category: formula discrepancy.
-[ADANIGREEN] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=96.50%, Diff=96.50%. Category: formula discrepancy.
-[DLF] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=5.74%, Diff=5.74%. Category: formula discrepancy.
-[HINDALCO] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.30%, Diff=11.30%. Category: formula discrepancy.
-[TATAMOTORS] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=20.10%, Diff=20.10%. Category: formula discrepancy.
-[TATAMOTORS] ROE anomaly at latest conformed year 2024-09: Computed=37.46%, Source Excel=49.40%, Diff=11.94%. Category: formula discrepancy.
-[TECHM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.90%, Diff=11.90%. Category: formula discrepancy.
-[PIDILITIND] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=29.70%, Diff=29.70%. Category: formula discrepancy.
-[DRREDDY] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=26.50%, Diff=26.50%. Category: formula discrepancy.
-[DMART] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=19.40%, Diff=19.40%. Category: formula discrepancy.
-[TATAPOWER] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.10%, Diff=11.10%. Category: formula discrepancy.
-[GODREJCP] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=26.49%, Diff=26.49%. Category: formula discrepancy.
-[GODREJCP] ROE anomaly at latest conformed year 2024-09: Computed=-4.45%, Source Excel=6.77%, Diff=11.22%. Category: formula discrepancy.
-[INFY] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=40.00%, Diff=40.00%. Category: formula discrepancy.
-[ABB] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=46.00%, Diff=46.00%. Category: formula discrepancy.
-[BAJAJ-AUTO] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=33.50%, Diff=33.50%. Category: formula discrepancy.
-[COALINDIA] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=63.60%, Diff=63.60%. Category: formula discrepancy.
-[COALINDIA] ROE anomaly at latest conformed year 2024-09: Computed=45.17%, Source Excel=52.00%, Diff=6.83%. Category: formula discrepancy.
-[ATGL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=21.20%, Diff=21.20%. Category: formula discrepancy.
-[TATASTEEL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=7.02%, Diff=7.02%. Category: formula discrepancy.
-[TATASTEEL] ROE anomaly at latest conformed year 2024-09: Computed=-5.33%, Source Excel=6.55%, Diff=11.88%. Category: formula discrepancy.
-[INDIGO] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=24.50%, Diff=24.50%. Category: formula discrepancy.
-[SBILIFE] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.20%, Diff=13.20%. Category: formula discrepancy.
-[JSWENERGY] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=8.59%, Diff=8.59%. Category: formula discrepancy.
-[M&M] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=26.98%, Diff=26.98%. Category: formula discrepancy.
-[APOLLOHOSP] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=17.20%, Diff=17.20%. Category: formula discrepancy.
-[IRFC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=5.73%, Diff=5.73%. Category: formula discrepancy.
-[BOSCHLTD] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=20.60%, Diff=20.60%. Category: formula discrepancy.
-[ICICIPRULI] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=8.75%, Diff=8.75%. Category: formula discrepancy.
-[IRCTC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=53.80%, Diff=53.80%. Category: formula discrepancy.
-[IRCTC] ROE anomaly at latest conformed year 2024-09: Computed=34.40%, Source Excel=40.40%, Diff=6.00%. Category: formula discrepancy.
-[JSWSTEEL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.36%, Diff=13.36%. Category: formula discrepancy.
-[BEL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=34.60%, Diff=34.60%. Category: data source issue.
-[BEL] ROE anomaly at latest conformed year 2024-09: Computed=4744.05%, Source Excel=26.30%, Diff=4717.75%. Category: data source issue.
-[NESTLEIND] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=185.43%, Diff=185.43%. Category: formula discrepancy.
-[NESTLEIND] ROE anomaly at latest conformed year 2024-09: Computed=117.75%, Source Excel=135.61%, Diff=17.86%. Category: formula discrepancy.
-[ITC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=34.76%, Diff=34.76%. Category: formula discrepancy.
-[HINDUNILVR] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=27.20%, Diff=27.20%. Category: formula discrepancy.
-[DABUR] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=22.30%, Diff=22.30%. Category: formula discrepancy.
-[LICI] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=63.79%, Diff=63.79%. Category: formula discrepancy.
-[LICI] ROE anomaly at latest conformed year 2024-09: Computed=49.45%, Source Excel=63.61%, Diff=14.16%. Category: formula discrepancy.
-[BAJAJFINSV] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=21.14%, Diff=21.14%. Category: formula discrepancy.
-[BAJAJFINSV] ROE anomaly at latest conformed year 2024-09: Computed=25.85%, Source Excel=11.72%, Diff=14.13%. Category: formula discrepancy.
-[HDFCLIFE] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=6.61%, Diff=6.61%. Category: formula discrepancy.
-[BAJFINANCE] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.90%, Diff=11.90%. Category: formula discrepancy.
-[EICHERMOT] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=31.10%, Diff=31.10%. Category: formula discrepancy.
-[IOC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=21.31%, Diff=21.31%. Category: formula discrepancy.
-[TRENT] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=23.80%, Diff=23.80%. Category: formula discrepancy.
-[TRENT] ROE anomaly at latest conformed year 2024-09: Computed=36.31%, Source Excel=27.20%, Diff=9.11%. Category: formula discrepancy.
-[AMBUJACEM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=12.80%, Diff=12.80%. Category: formula discrepancy.
-[RECLTD] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=10.00%, Diff=10.00%. Category: formula discrepancy.
-[SUNPHARMA] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=17.30%, Diff=17.30%. Category: formula discrepancy.
-[LTIM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=34.10%, Diff=34.10%. Category: formula discrepancy.
-[SHRIRAMFIN] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.30%, Diff=11.30%. Category: formula discrepancy.
-[ADANIPOWER] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=32.20%, Diff=32.20%. Category: formula discrepancy.
-[ADANIPOWER] ROE anomaly at latest conformed year 2024-09: Computed=48.28%, Source Excel=57.10%, Diff=8.82%. Category: formula discrepancy.
-[ONGC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=19.71%, Diff=19.71%. Category: formula discrepancy.
-[BRITANNIA] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=48.90%, Diff=48.90%. Category: formula discrepancy.
-[DIVISLAB] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=16.50%, Diff=16.50%. Category: formula discrepancy.
-[ADANIPORTS] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=12.90%, Diff=12.90%. Category: formula discrepancy.
-[ADANIENT] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.60%, Diff=11.60%. Category: formula discrepancy.
-[ADANIENT] ROE anomaly at latest conformed year 2024-09: Computed=8.53%, Source Excel=13.64%, Diff=5.11%. Category: formula discrepancy.
-[HAVELLS] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=24.40%, Diff=24.40%. Category: formula discrepancy.
-[TATACONSUM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=10.60%, Diff=10.60%. Category: formula discrepancy.
-[JINDALSTEL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.20%, Diff=13.20%. Category: formula discrepancy.
-[LT] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=17.18%, Diff=17.18%. Category: data source issue.
-[LT] ROE anomaly at latest conformed year 2024-09: Computed=77.67%, Source Excel=10.49%, Diff=67.18%. Category: data source issue.
-[ASIANPAINT] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=41.75%, Diff=41.75%. Category: formula discrepancy.
-[NHPC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=7.67%, Diff=7.67%. Category: formula discrepancy.
-[ADANIENSOL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=9.00%, Diff=9.00%. Category: formula discrepancy.
-[MOTHERSON] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.70%, Diff=13.70%. Category: formula discrepancy.
-[LODHA] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=11.10%, Diff=11.10%. Category: formula discrepancy.
-[HCLTECH] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=29.60%, Diff=29.60%. Category: formula discrepancy.
-[HAL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=38.90%, Diff=38.90%. Category: data source issue.
-[HAL] ROE anomaly at latest conformed year 2024-09: Computed=3816.58%, Source Excel=28.90%, Diff=3787.68%. Category: data source issue.
-[BPCL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=32.10%, Diff=32.10%. Category: formula discrepancy.
-[BPCL] ROE anomaly at latest conformed year 2024-09: Computed=35.51%, Source Excel=41.90%, Diff=6.39%. Category: formula discrepancy.
-[CHOLAFIN] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=10.40%, Diff=10.40%. Category: formula discrepancy.
-[PFC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=9.96%, Diff=9.96%. Category: formula discrepancy.
-[PFC] ROE anomaly at latest conformed year 2024-09: Computed=26.16%, Source Excel=19.49%, Diff=6.67%. Category: formula discrepancy.
-[CIPLA] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=22.80%, Diff=22.80%. Category: formula discrepancy.
-[TCS] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=64.30%, Diff=64.30%. Category: formula discrepancy.
-[SHREECEM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=14.80%, Diff=14.80%. Category: formula discrepancy.
-[SIEMENS] ROCE anomaly at latest conformed year 2024-09: Computed=17.74%, Source Excel=25.60%, Diff=7.86%. Category: formula discrepancy.
-[POWERGRID] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.20%, Diff=13.20%. Category: formula discrepancy.
-[TITAN] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=22.70%, Diff=22.70%. Category: formula discrepancy.
-[BAJAJHLDNG] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.10%, Diff=13.10%. Category: formula discrepancy.
-[BHARTIARTL] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=13.10%, Diff=13.10%. Category: formula discrepancy.
-[NTPC] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=10.58%, Diff=10.58%. Category: formula discrepancy.
-[TORNTPHARM] ROCE anomaly at latest conformed year 2024-09: Computed=0.00%, Source Excel=23.20%, Diff=23.20%. Category: formula discrepancy.
-[ADANIENSOL] [2024-03] OPM mismatch: Computed OPM=34.39%, Stored opm_percentage=30.00%, Diff=4.39%. Category: formula discrepancy.
-[AXISBANK] [2013-03] OPM mismatch: Computed OPM=30.58%, Stored opm_percentage=1353.00%, Diff=1322.42%. Category: formula discrepancy.
-[AXISBANK] [2014-03] OPM mismatch: Computed OPM=31.47%, Stored opm_percentage=2307.00%, Diff=2275.53%. Category: formula discrepancy.
-[AXISBANK] [2015-03] OPM mismatch: Computed OPM=31.36%, Stored opm_percentage=3097.00%, Diff=3065.64%. Category: formula discrepancy.
-[AXISBANK] [2016-03] OPM mismatch: Computed OPM=32.61%, Stored opm_percentage=3466.00%, Diff=3433.39%. Category: formula discrepancy.
-[AXISBANK] [2017-03] OPM mismatch: Computed OPM=53.45%, Stored opm_percentage=-5715.00%, Diff=5768.45%. Category: formula discrepancy.
-[AXISBANK] [2018-03] OPM mismatch: Computed OPM=63.12%, Stored opm_percentage=-10277.00%, Diff=10340.12%. Category: formula discrepancy.
-[AXISBANK] [2019-03] OPM mismatch: Computed OPM=49.39%, Stored opm_percentage=-5447.00%, Diff=5496.39%. Category: formula discrepancy.
-[AXISBANK] [2020-03] OPM mismatch: Computed OPM=55.98%, Stored opm_percentage=-9859.00%, Diff=9914.98%. Category: formula discrepancy.
-[AXISBANK] [2021-03] OPM mismatch: Computed OPM=50.12%, Stored opm_percentage=-2510.00%, Diff=2560.12%. Category: formula discrepancy.
-[AXISBANK] [2022-03] OPM mismatch: Computed OPM=44.47%, Stored opm_percentage=3170.00%, Diff=3125.53%. Category: formula discrepancy.
-[AXISBANK] [2023-03] OPM mismatch: Computed OPM=34.16%, Stored opm_percentage=13857.00%, Diff=13822.84%. Category: formula discrepancy.
-[AXISBANK] [2024-03] OPM mismatch: Computed OPM=34.69%, Stored opm_percentage=11952.00%, Diff=11917.31%. Category: formula discrepancy.
-[BAJFINANCE] [2015-03] OPM mismatch: Computed OPM=32.49%, Stored opm_percentage=1367.00%, Diff=1334.51%. Category: formula discrepancy.
-[BAJFINANCE] [2016-03] OPM mismatch: Computed OPM=32.25%, Stored opm_percentage=1986.00%, Diff=1953.75%. Category: formula discrepancy.
-[BAJFINANCE] [2017-03] OPM mismatch: Computed OPM=32.60%, Stored opm_percentage=2867.00%, Diff=2834.40%. Category: formula discrepancy.
-[BAJFINANCE] [2018-03] OPM mismatch: Computed OPM=32.28%, Stored opm_percentage=3935.00%, Diff=3902.72%. Category: formula discrepancy.
-[BAJFINANCE] [2019-03] OPM mismatch: Computed OPM=29.50%, Stored opm_percentage=6310.00%, Diff=6280.50%. Category: formula discrepancy.
-[BAJFINANCE] [2020-03] OPM mismatch: Computed OPM=34.73%, Stored opm_percentage=7608.00%, Diff=7573.27%. Category: formula discrepancy.
-[BAJFINANCE] [2021-03] OPM mismatch: Computed OPM=40.64%, Stored opm_percentage=6314.00%, Diff=6273.36%. Category: formula discrepancy.
-[BAJFINANCE] [2022-03] OPM mismatch: Computed OPM=37.55%, Stored opm_percentage=9906.00%, Diff=9868.45%. Category: formula discrepancy.
-[BAJFINANCE] [2023-03] OPM mismatch: Computed OPM=30.65%, Stored opm_percentage=16018.00%, Diff=15987.35%. Category: formula discrepancy.
-[BAJFINANCE] [2024-03] OPM mismatch: Computed OPM=29.29%, Stored opm_percentage=19987.00%, Diff=19957.71%. Category: formula discrepancy.
-[BANKBARODA] [2013-03] OPM mismatch: Computed OPM=30.05%, Stored opm_percentage=1006.00%, Diff=975.95%. Category: formula discrepancy.
-[BANKBARODA] [2014-03] OPM mismatch: Computed OPM=29.78%, Stored opm_percentage=809.00%, Diff=779.22%. Category: formula discrepancy.
-[BANKBARODA] [2015-03] OPM mismatch: Computed OPM=29.98%, Stored opm_percentage=902.00%, Diff=872.02%. Category: formula discrepancy.
-[BANKBARODA] [2016-03] OPM mismatch: Computed OPM=55.44%, Stored opm_percentage=-11700.00%, Diff=11755.44%. Category: formula discrepancy.
-[BANKBARODA] [2017-03] OPM mismatch: Computed OPM=43.28%, Stored opm_percentage=-4372.00%, Diff=4415.28%. Category: formula discrepancy.
-[BANKBARODA] [2018-03] OPM mismatch: Computed OPM=56.65%, Stored opm_percentage=-9197.00%, Diff=9253.65%. Category: formula discrepancy.
-[BANKBARODA] [2019-03] OPM mismatch: Computed OPM=48.79%, Stored opm_percentage=-5414.00%, Diff=5462.79%. Category: formula discrepancy.
-[BANKBARODA] [2020-03] OPM mismatch: Computed OPM=51.44%, Stored opm_percentage=-11728.00%, Diff=11779.44%. Category: formula discrepancy.
-[BANKBARODA] [2021-03] OPM mismatch: Computed OPM=51.23%, Stored opm_percentage=-6957.00%, Diff=7008.23%. Category: formula discrepancy.
-[BANKBARODA] [2022-03] OPM mismatch: Computed OPM=51.12%, Stored opm_percentage=-2948.00%, Diff=2999.12%. Category: formula discrepancy.
-[BANKBARODA] [2023-03] OPM mismatch: Computed OPM=40.45%, Stored opm_percentage=6329.00%, Diff=6288.55%. Category: formula discrepancy.
-[BANKBARODA] [2024-03] OPM mismatch: Computed OPM=37.49%, Stored opm_percentage=4102.00%, Diff=4064.51%. Category: formula discrepancy.
-[CANBK] [2013-03] OPM mismatch: Computed OPM=21.18%, Stored opm_percentage=655.00%, Diff=633.82%. Category: formula discrepancy.
-[CANBK] [2014-03] OPM mismatch: Computed OPM=24.35%, Stored opm_percentage=-672.00%, Diff=696.35%. Category: formula discrepancy.
-[CANBK] [2015-03] OPM mismatch: Computed OPM=23.51%, Stored opm_percentage=-621.00%, Diff=644.51%. Category: formula discrepancy.
-[CANBK] [2016-03] OPM mismatch: Computed OPM=40.38%, Stored opm_percentage=-8008.00%, Diff=8048.38%. Category: formula discrepancy.
-[CANBK] [2017-03] OPM mismatch: Computed OPM=37.85%, Stored opm_percentage=-5775.00%, Diff=5812.85%. Category: formula discrepancy.
-[CANBK] [2018-03] OPM mismatch: Computed OPM=61.87%, Stored opm_percentage=-13350.00%, Diff=13411.87%. Category: formula discrepancy.
-[CANBK] [2019-03] OPM mismatch: Computed OPM=56.73%, Stored opm_percentage=-11590.00%, Diff=11646.73%. Category: formula discrepancy.
-[CANBK] [2020-03] OPM mismatch: Computed OPM=53.88%, Stored opm_percentage=-12867.00%, Diff=12920.88%. Category: formula discrepancy.
-[CANBK] [2021-03] OPM mismatch: Computed OPM=61.83%, Stored opm_percentage=-18367.00%, Diff=18428.83%. Category: formula discrepancy.
-[CANBK] [2022-03] OPM mismatch: Computed OPM=58.39%, Stored opm_percentage=-13657.00%, Diff=13715.39%. Category: formula discrepancy.
-[CANBK] [2023-03] OPM mismatch: Computed OPM=49.80%, Stored opm_percentage=-9877.00%, Diff=9926.80%. Category: formula discrepancy.
-[CANBK] [2024-03] OPM mismatch: Computed OPM=41.75%, Stored opm_percentage=-7745.00%, Diff=7786.75%. Category: formula discrepancy.
-[CHOLAFIN] [2013-03] OPM mismatch: Computed OPM=26.77%, Stored opm_percentage=472.00%, Diff=445.23%. Category: formula discrepancy.
-[CHOLAFIN] [2014-03] OPM mismatch: Computed OPM=28.42%, Stored opm_percentage=578.00%, Diff=549.58%. Category: formula discrepancy.
-[CHOLAFIN] [2015-03] OPM mismatch: Computed OPM=28.56%, Stored opm_percentage=696.00%, Diff=667.44%. Category: formula discrepancy.
-[CHOLAFIN] [2016-03] OPM mismatch: Computed OPM=30.04%, Stored opm_percentage=899.00%, Diff=868.96%. Category: formula discrepancy.
-[CHOLAFIN] [2017-03] OPM mismatch: Computed OPM=28.16%, Stored opm_percentage=1143.00%, Diff=1114.84%. Category: formula discrepancy.
-[CHOLAFIN] [2018-03] OPM mismatch: Computed OPM=26.10%, Stored opm_percentage=1451.00%, Diff=1424.90%. Category: formula discrepancy.
-[CHOLAFIN] [2019-03] OPM mismatch: Computed OPM=22.96%, Stored opm_percentage=1888.00%, Diff=1865.04%. Category: formula discrepancy.
-[CHOLAFIN] [2020-03] OPM mismatch: Computed OPM=27.79%, Stored opm_percentage=1699.00%, Diff=1671.21%. Category: formula discrepancy.
-[CHOLAFIN] [2021-03] OPM mismatch: Computed OPM=30.40%, Stored opm_percentage=2094.00%, Diff=2063.60%. Category: formula discrepancy.
-[CHOLAFIN] [2022-03] OPM mismatch: Computed OPM=28.83%, Stored opm_percentage=2924.00%, Diff=2895.17%. Category: formula discrepancy.
-[CHOLAFIN] [2023-03] OPM mismatch: Computed OPM=28.10%, Stored opm_percentage=3515.00%, Diff=3486.90%. Category: formula discrepancy.
-[CHOLAFIN] [2024-03] OPM mismatch: Computed OPM=28.10%, Stored opm_percentage=4548.00%, Diff=4519.90%. Category: formula discrepancy.
-[CIPLA] [2013-03] OPM mismatch: Computed OPM=73.26%, Stored opm_percentage=2214.00%, Diff=2140.74%. Category: formula discrepancy.
-[CIPLA] [2014-03] OPM mismatch: Computed OPM=78.90%, Stored opm_percentage=2147.00%, Diff=2068.10%. Category: formula discrepancy.
-[CIPLA] [2015-03] OPM mismatch: Computed OPM=80.94%, Stored opm_percentage=2163.00%, Diff=2082.06%. Category: formula discrepancy.
-[CIPLA] [2016-03] OPM mismatch: Computed OPM=82.02%, Stored opm_percentage=2480.00%, Diff=2397.98%. Category: formula discrepancy.
-[CIPLA] [2017-03] OPM mismatch: Computed OPM=82.66%, Stored opm_percentage=2496.00%, Diff=2413.34%. Category: formula discrepancy.
-[CIPLA] [2018-03] OPM mismatch: Computed OPM=81.35%, Stored opm_percentage=2826.00%, Diff=2744.65%. Category: formula discrepancy.
-[CIPLA] [2019-03] OPM mismatch: Computed OPM=81.07%, Stored opm_percentage=3097.00%, Diff=3015.93%. Category: formula discrepancy.
-[CIPLA] [2020-03] OPM mismatch: Computed OPM=81.29%, Stored opm_percentage=3206.00%, Diff=3124.71%. Category: formula discrepancy.
-[CIPLA] [2021-03] OPM mismatch: Computed OPM=77.80%, Stored opm_percentage=4252.00%, Diff=4174.20%. Category: formula discrepancy.
-[CIPLA] [2022-03] OPM mismatch: Computed OPM=79.08%, Stored opm_percentage=4553.00%, Diff=4473.92%. Category: formula discrepancy.
-[CIPLA] [2023-03] OPM mismatch: Computed OPM=77.91%, Stored opm_percentage=5027.00%, Diff=4949.09%. Category: formula discrepancy.
-[CIPLA] [2024-03] OPM mismatch: Computed OPM=75.59%, Stored opm_percentage=6291.00%, Diff=6215.41%. Category: formula discrepancy.
-[COALINDIA] [2013-03] OPM mismatch: Computed OPM=73.52%, Stored opm_percentage=18087.00%, Diff=18013.48%. Category: formula discrepancy.
-[COALINDIA] [2014-03] OPM mismatch: Computed OPM=74.84%, Stored opm_percentage=17766.00%, Diff=17691.16%. Category: formula discrepancy.
-[COALINDIA] [2015-03] OPM mismatch: Computed OPM=76.60%, Stored opm_percentage=17343.00%, Diff=17266.40%. Category: formula discrepancy.
-[COALINDIA] [2016-03] OPM mismatch: Computed OPM=75.96%, Stored opm_percentage=18714.00%, Diff=18638.04%. Category: formula discrepancy.
-[COALINDIA] [2017-03] OPM mismatch: Computed OPM=84.07%, Stored opm_percentage=12448.00%, Diff=12363.93%. Category: formula discrepancy.
-[COALINDIA] [2018-03] OPM mismatch: Computed OPM=89.10%, Stored opm_percentage=9288.00%, Diff=9198.90%. Category: formula discrepancy.
-[COALINDIA] [2019-03] OPM mismatch: Computed OPM=74.89%, Stored opm_percentage=25007.00%, Diff=24932.11%. Category: formula discrepancy.
-[COALINDIA] [2020-03] OPM mismatch: Computed OPM=77.54%, Stored opm_percentage=21581.00%, Diff=21503.46%. Category: formula discrepancy.
-[COALINDIA] [2021-03] OPM mismatch: Computed OPM=79.31%, Stored opm_percentage=18628.00%, Diff=18548.69%. Category: formula discrepancy.
-[COALINDIA] [2022-03] OPM mismatch: Computed OPM=77.47%, Stored opm_percentage=24721.00%, Diff=24643.53%. Category: formula discrepancy.
-[COALINDIA] [2023-03] OPM mismatch: Computed OPM=68.01%, Stored opm_percentage=44232.00%, Diff=44163.99%. Category: formula discrepancy.
-[COALINDIA] [2024-03] OPM mismatch: Computed OPM=66.29%, Stored opm_percentage=47971.00%, Diff=47904.71%. Category: formula discrepancy.
-[HDFCBANK] [2013-03] OPM mismatch: Computed OPM=35.22%, Stored opm_percentage=3534.00%, Diff=3498.78%. Category: formula discrepancy.
-[HDFCBANK] [2014-03] OPM mismatch: Computed OPM=31.74%, Stored opm_percentage=5602.00%, Diff=5570.26%. Category: formula discrepancy.
-[HDFCBANK] [2015-03] OPM mismatch: Computed OPM=31.90%, Stored opm_percentage=7214.00%, Diff=7182.10%. Category: formula discrepancy.
-[HDFCBANK] [2016-03] OPM mismatch: Computed OPM=31.75%, Stored opm_percentage=9037.00%, Diff=9005.25%. Category: formula discrepancy.
-[HDFCBANK] [2017-03] OPM mismatch: Computed OPM=32.56%, Stored opm_percentage=11374.00%, Diff=11341.44%. Category: formula discrepancy.
-[HDFCBANK] [2018-03] OPM mismatch: Computed OPM=34.63%, Stored opm_percentage=13374.00%, Diff=13339.37%. Category: formula discrepancy.
-[HDFCBANK] [2019-03] OPM mismatch: Computed OPM=33.15%, Stored opm_percentage=16592.00%, Diff=16558.85%. Category: formula discrepancy.
-[HDFCBANK] [2020-03] OPM mismatch: Computed OPM=37.20%, Stored opm_percentage=14593.00%, Diff=14555.80%. Category: formula discrepancy.
-[HDFCBANK] [2021-03] OPM mismatch: Computed OPM=40.81%, Stored opm_percentage=16848.00%, Diff=16807.19%. Category: formula discrepancy.
-[HDFCBANK] [2022-03] OPM mismatch: Computed OPM=41.61%, Stored opm_percentage=20795.00%, Diff=20753.39%. Category: formula discrepancy.
-[HDFCBANK] [2023-03] OPM mismatch: Computed OPM=36.92%, Stored opm_percentage=29932.00%, Diff=29895.08%. Category: formula discrepancy.
-[HDFCBANK] [2024-03] OPM mismatch: Computed OPM=61.41%, Stored opm_percentage=-44685.00%, Diff=44746.41%. Category: formula discrepancy.
-[HDFCLIFE] [2013-03] OPM mismatch: Computed OPM=96.27%, Stored opm_percentage=525.00%, Diff=428.73%. Category: formula discrepancy.
-[HDFCLIFE] [2014-03] OPM mismatch: Computed OPM=96.48%, Stored opm_percentage=605.00%, Diff=508.52%. Category: formula discrepancy.
-[HDFCLIFE] [2015-03] OPM mismatch: Computed OPM=96.79%, Stored opm_percentage=874.00%, Diff=777.21%. Category: formula discrepancy.
-[HDFCLIFE] [2016-03] OPM mismatch: Computed OPM=94.74%, Stored opm_percentage=953.00%, Diff=858.26%. Category: formula discrepancy.
-[HDFCLIFE] [2017-03] OPM mismatch: Computed OPM=96.83%, Stored opm_percentage=972.00%, Diff=875.17%. Category: formula discrepancy.
-[HDFCLIFE] [2018-03] OPM mismatch: Computed OPM=96.67%, Stored opm_percentage=1074.00%, Diff=977.33%. Category: formula discrepancy.
-[HDFCLIFE] [2019-03] OPM mismatch: Computed OPM=96.87%, Stored opm_percentage=1215.00%, Diff=1118.13%. Category: formula discrepancy.
-[HDFCLIFE] [2020-03] OPM mismatch: Computed OPM=96.12%, Stored opm_percentage=1141.00%, Diff=1044.88%. Category: formula discrepancy.
-[HDFCLIFE] [2021-03] OPM mismatch: Computed OPM=98.27%, Stored opm_percentage=1235.00%, Diff=1136.73%. Category: formula discrepancy.
-[HDFCLIFE] [2022-03] OPM mismatch: Computed OPM=98.84%, Stored opm_percentage=778.00%, Diff=679.16%. Category: formula discrepancy.
-[HDFCLIFE] [2023-03] OPM mismatch: Computed OPM=99.89%, Stored opm_percentage=80.00%, Diff=19.89%. Category: formula discrepancy.
-[HDFCLIFE] [2024-03] OPM mismatch: Computed OPM=99.48%, Stored opm_percentage=531.00%, Diff=431.52%. Category: formula discrepancy.
-[HEROMOTOCO] [2014-03] OPM mismatch: Computed OPM=85.94%, Stored opm_percentage=3553.00%, Diff=3467.06%. Category: formula discrepancy.
-[HEROMOTOCO] [2015-03] OPM mismatch: Computed OPM=87.22%, Stored opm_percentage=3520.00%, Diff=3432.78%. Category: formula discrepancy.
-[HEROMOTOCO] [2016-03] OPM mismatch: Computed OPM=84.45%, Stored opm_percentage=4424.00%, Diff=4339.55%. Category: formula discrepancy.
-[HEROMOTOCO] [2017-03] OPM mismatch: Computed OPM=83.97%, Stored opm_percentage=4585.00%, Diff=4501.03%. Category: formula discrepancy.
-[HEROMOTOCO] [2018-03] OPM mismatch: Computed OPM=83.57%, Stored opm_percentage=5334.00%, Diff=5250.43%. Category: formula discrepancy.
-[HEROMOTOCO] [2019-03] OPM mismatch: Computed OPM=85.21%, Stored opm_percentage=5025.00%, Diff=4939.79%. Category: formula discrepancy.
-[HEROMOTOCO] [2020-03] OPM mismatch: Computed OPM=86.09%, Stored opm_percentage=4070.00%, Diff=3983.91%. Category: formula discrepancy.
-[HEROMOTOCO] [2021-03] OPM mismatch: Computed OPM=86.90%, Stored opm_percentage=4058.00%, Diff=3971.10%. Category: formula discrepancy.
-[HEROMOTOCO] [2022-03] OPM mismatch: Computed OPM=88.98%, Stored opm_percentage=3256.00%, Diff=3167.02%. Category: formula discrepancy.
-[HEROMOTOCO] [2023-03] OPM mismatch: Computed OPM=88.00%, Stored opm_percentage=4099.00%, Diff=4011.00%. Category: formula discrepancy.
-[HEROMOTOCO] [2024-03] OPM mismatch: Computed OPM=86.15%, Stored opm_percentage=5235.00%, Diff=5148.85%. Category: formula discrepancy.
-[HINDALCO] [2013-03] OPM mismatch: Computed OPM=90.40%, Stored opm_percentage=7699.00%, Diff=7608.60%. Category: formula discrepancy.
-[HINDALCO] [2014-03] OPM mismatch: Computed OPM=90.85%, Stored opm_percentage=8024.00%, Diff=7933.15%. Category: formula discrepancy.
-[HINDALCO] [2015-03] OPM mismatch: Computed OPM=91.52%, Stored opm_percentage=8844.00%, Diff=8752.48%. Category: formula discrepancy.
-[HINDALCO] [2016-03] OPM mismatch: Computed OPM=92.12%, Stored opm_percentage=7778.00%, Diff=7685.88%. Category: formula discrepancy.
-[HINDALCO] [2017-03] OPM mismatch: Computed OPM=87.71%, Stored opm_percentage=12317.00%, Diff=12229.29%. Category: formula discrepancy.
-[HINDALCO] [2018-03] OPM mismatch: Computed OPM=88.11%, Stored opm_percentage=13695.00%, Diff=13606.89%. Category: formula discrepancy.
-[HINDALCO] [2019-03] OPM mismatch: Computed OPM=88.12%, Stored opm_percentage=15511.00%, Diff=15422.88%. Category: formula discrepancy.
-[HINDALCO] [2020-03] OPM mismatch: Computed OPM=87.89%, Stored opm_percentage=14306.00%, Diff=14218.11%. Category: formula discrepancy.
-[HINDALCO] [2021-03] OPM mismatch: Computed OPM=86.70%, Stored opm_percentage=17559.00%, Diff=17472.30%. Category: formula discrepancy.
-[HINDALCO] [2022-03] OPM mismatch: Computed OPM=85.47%, Stored opm_percentage=28347.00%, Diff=28261.53%. Category: formula discrepancy.
-[HINDALCO] [2023-03] OPM mismatch: Computed OPM=89.85%, Stored opm_percentage=22666.00%, Diff=22576.15%. Category: formula discrepancy.
-[HINDALCO] [2024-03] OPM mismatch: Computed OPM=88.95%, Stored opm_percentage=23872.00%, Diff=23783.05%. Category: formula discrepancy.
-[HINDUNILVR] [2013-03] OPM mismatch: Computed OPM=84.37%, Stored opm_percentage=4220.00%, Diff=4135.63%. Category: formula discrepancy.
-[HINDUNILVR] [2014-03] OPM mismatch: Computed OPM=83.72%, Stored opm_percentage=4759.00%, Diff=4675.28%. Category: formula discrepancy.
-[HINDUNILVR] [2015-03] OPM mismatch: Computed OPM=83.07%, Stored opm_percentage=5412.00%, Diff=5328.93%. Category: formula discrepancy.
-[HINDUNILVR] [2016-03] OPM mismatch: Computed OPM=81.64%, Stored opm_percentage=5910.00%, Diff=5828.36%. Category: formula discrepancy.
-[HINDUNILVR] [2017-03] OPM mismatch: Computed OPM=80.92%, Stored opm_percentage=6328.00%, Diff=6247.08%. Category: formula discrepancy.
-[HINDUNILVR] [2018-03] OPM mismatch: Computed OPM=78.90%, Stored opm_percentage=7499.00%, Diff=7420.10%. Category: formula discrepancy.
-[HINDUNILVR] [2019-03] OPM mismatch: Computed OPM=77.41%, Stored opm_percentage=8880.00%, Diff=8802.59%. Category: formula discrepancy.
-[HINDUNILVR] [2020-03] OPM mismatch: Computed OPM=75.21%, Stored opm_percentage=9861.00%, Diff=9785.79%. Category: formula discrepancy.
-[HINDUNILVR] [2021-03] OPM mismatch: Computed OPM=75.28%, Stored opm_percentage=11626.00%, Diff=11550.72%. Category: formula discrepancy.
-[HINDUNILVR] [2022-03] OPM mismatch: Computed OPM=75.49%, Stored opm_percentage=12857.00%, Diff=12781.51%. Category: formula discrepancy.
-[HINDUNILVR] [2023-03] OPM mismatch: Computed OPM=76.65%, Stored opm_percentage=14147.00%, Diff=14070.35%. Category: formula discrepancy.
-[HINDUNILVR] [2024-03] OPM mismatch: Computed OPM=76.32%, Stored opm_percentage=14659.00%, Diff=14582.68%. Category: formula discrepancy.
-[ICICIBANK] [2013-03] OPM mismatch: Computed OPM=70.59%, Stored opm_percentage=-15085.00%, Diff=15155.59%. Category: formula discrepancy.
-[ICICIBANK] [2014-03] OPM mismatch: Computed OPM=66.40%, Stored opm_percentage=-13084.00%, Diff=13150.40%. Category: formula discrepancy.
-[ICICIBANK] [2015-03] OPM mismatch: Computed OPM=70.53%, Stored opm_percentage=-16120.00%, Diff=16190.53%. Category: formula discrepancy.
-[ICICIBANK] [2016-03] OPM mismatch: Computed OPM=88.12%, Stored opm_percentage=-26955.00%, Diff=27043.12%. Category: formula discrepancy.
-[ICICIBANK] [2017-03] OPM mismatch: Computed OPM=104.76%, Stored opm_percentage=-37737.00%, Diff=37841.76%. Category: formula discrepancy.
-[ICICIBANK] [2018-03] OPM mismatch: Computed OPM=117.12%, Stored opm_percentage=-44906.00%, Diff=45023.12%. Category: formula discrepancy.
-[ICICIBANK] [2019-03] OPM mismatch: Computed OPM=116.38%, Stored opm_percentage=-50971.00%, Diff=51087.38%. Category: formula discrepancy.
-[ICICIBANK] [2020-03] OPM mismatch: Computed OPM=100.62%, Stored opm_percentage=-45190.00%, Diff=45290.62%. Category: formula discrepancy.
-[ICICIBANK] [2021-03] OPM mismatch: Computed OPM=102.41%, Stored opm_percentage=-44805.00%, Diff=44907.41%. Category: formula discrepancy.
-[ICICIBANK] [2022-03] OPM mismatch: Computed OPM=84.69%, Stored opm_percentage=-26558.00%, Diff=26642.69%. Category: formula discrepancy.
-[ICICIBANK] [2023-03] OPM mismatch: Computed OPM=72.57%, Stored opm_percentage=-17341.00%, Diff=17413.57%. Category: formula discrepancy.
-[ICICIBANK] [2024-03] OPM mismatch: Computed OPM=62.41%, Stored opm_percentage=-14152.00%, Diff=14214.41%. Category: formula discrepancy.
-[ICICIGI] [2013-03] OPM mismatch: Computed OPM=104.46%, Stored opm_percentage=-178.00%, Diff=282.46%. Category: formula discrepancy.
-[ICICIGI] [2014-03] OPM mismatch: Computed OPM=105.19%, Stored opm_percentage=-225.00%, Diff=330.19%. Category: formula discrepancy.
-[ICICIGI] [2015-03] OPM mismatch: Computed OPM=105.24%, Stored opm_percentage=-221.00%, Diff=326.24%. Category: formula discrepancy.
-[ICICIGI] [2016-03] OPM mismatch: Computed OPM=87.34%, Stored opm_percentage=764.00%, Diff=676.66%. Category: formula discrepancy.
-[ICICIGI] [2017-03] OPM mismatch: Computed OPM=87.78%, Stored opm_percentage=919.00%, Diff=831.22%. Category: formula discrepancy.
-[ICICIGI] [2018-03] OPM mismatch: Computed OPM=103.79%, Stored opm_percentage=-262.00%, Diff=365.79%. Category: formula discrepancy.
-[ICICIGI] [2019-03] OPM mismatch: Computed OPM=85.05%, Stored opm_percentage=1669.00%, Diff=1583.95%. Category: formula discrepancy.
-[ICICIGI] [2020-03] OPM mismatch: Computed OPM=84.61%, Stored opm_percentage=1772.00%, Diff=1687.39%. Category: formula discrepancy.
-[ICICIGI] [2021-03] OPM mismatch: Computed OPM=82.97%, Stored opm_percentage=2072.00%, Diff=1989.03%. Category: formula discrepancy.
-[ICICIGI] [2022-03] OPM mismatch: Computed OPM=93.66%, Stored opm_percentage=1016.00%, Diff=922.34%. Category: formula discrepancy.
-[ICICIGI] [2023-03] OPM mismatch: Computed OPM=92.93%, Stored opm_percentage=1264.00%, Diff=1171.07%. Category: formula discrepancy.
-[ICICIGI] [2024-03] OPM mismatch: Computed OPM=87.42%, Stored opm_percentage=2577.00%, Diff=2489.58%. Category: formula discrepancy.
-[ICICIPRULI] [2013-03] OPM mismatch: Computed OPM=96.28%, Stored opm_percentage=745.00%, Diff=648.72%. Category: formula discrepancy.
-[ICICIPRULI] [2014-03] OPM mismatch: Computed OPM=93.13%, Stored opm_percentage=1504.00%, Diff=1410.87%. Category: formula discrepancy.
-[ICICIPRULI] [2015-03] OPM mismatch: Computed OPM=95.20%, Stored opm_percentage=1655.00%, Diff=1559.80%. Category: formula discrepancy.
-[ICICIPRULI] [2016-03] OPM mismatch: Computed OPM=91.17%, Stored opm_percentage=1842.00%, Diff=1750.83%. Category: formula discrepancy.
-[ICICIPRULI] [2017-03] OPM mismatch: Computed OPM=95.22%, Stored opm_percentage=1806.00%, Diff=1710.78%. Category: formula discrepancy.
-[ICICIPRULI] [2018-03] OPM mismatch: Computed OPM=95.44%, Stored opm_percentage=1771.00%, Diff=1675.56%. Category: formula discrepancy.
-[ICICIPRULI] [2019-03] OPM mismatch: Computed OPM=98.70%, Stored opm_percentage=541.00%, Diff=442.30%. Category: formula discrepancy.
-[ICICIPRULI] [2020-03] OPM mismatch: Computed OPM=101.52%, Stored opm_percentage=-319.00%, Diff=420.52%. Category: formula discrepancy.
-[ICICIPRULI] [2021-03] OPM mismatch: Computed OPM=100.47%, Stored opm_percentage=-390.00%, Diff=490.47%. Category: formula discrepancy.
-[ICICIPRULI] [2022-03] OPM mismatch: Computed OPM=103.40%, Stored opm_percentage=-2163.00%, Diff=2266.40%. Category: formula discrepancy.
-[ICICIPRULI] [2023-03] OPM mismatch: Computed OPM=103.48%, Stored opm_percentage=-1757.00%, Diff=1860.48%. Category: formula discrepancy.
-[ICICIPRULI] [2024-03] OPM mismatch: Computed OPM=102.03%, Stored opm_percentage=-1829.00%, Diff=1931.03%. Category: formula discrepancy.
-[INDIGO] [2013-03] OPM mismatch: Computed OPM=90.71%, Stored opm_percentage=855.00%, Diff=764.29%. Category: formula discrepancy.
-[INDIGO] [2014-03] OPM mismatch: Computed OPM=96.11%, Stored opm_percentage=433.00%, Diff=336.89%. Category: formula discrepancy.
-[INDIGO] [2015-03] OPM mismatch: Computed OPM=86.33%, Stored opm_percentage=1904.00%, Diff=1817.67%. Category: formula discrepancy.
-[INDIGO] [2016-03] OPM mismatch: Computed OPM=80.40%, Stored opm_percentage=3164.00%, Diff=3083.60%. Category: formula discrepancy.
-[INDIGO] [2017-03] OPM mismatch: Computed OPM=88.06%, Stored opm_percentage=2219.00%, Diff=2130.94%. Category: formula discrepancy.
-[INDIGO] [2018-03] OPM mismatch: Computed OPM=86.84%, Stored opm_percentage=3030.00%, Diff=2943.16%. Category: formula discrepancy.
-[INDIGO] [2019-03] OPM mismatch: Computed OPM=100.53%, Stored opm_percentage=-151.00%, Diff=251.53%. Category: formula discrepancy.
-[INDIGO] [2020-03] OPM mismatch: Computed OPM=88.62%, Stored opm_percentage=4069.00%, Diff=3980.38%. Category: formula discrepancy.
-[INDIGO] [2021-03] OPM mismatch: Computed OPM=99.98%, Stored opm_percentage=2.00%, Diff=97.98%. Category: formula discrepancy.
-[INDIGO] [2022-03] OPM mismatch: Computed OPM=97.85%, Stored opm_percentage=558.00%, Diff=460.15%. Category: formula discrepancy.
-[INDIGO] [2023-03] OPM mismatch: Computed OPM=88.02%, Stored opm_percentage=6521.00%, Diff=6432.98%. Category: formula discrepancy.
-[INDIGO] [2024-03] OPM mismatch: Computed OPM=76.30%, Stored opm_percentage=16331.00%, Diff=16254.70%. Category: formula discrepancy.
-[INDUSINDBK] [2013-03] OPM mismatch: Computed OPM=27.88%, Stored opm_percentage=286.00%, Diff=258.12%. Category: formula discrepancy.
-[INDUSINDBK] [2014-03] OPM mismatch: Computed OPM=30.95%, Stored opm_percentage=335.00%, Diff=304.05%. Category: formula discrepancy.
-[INDUSINDBK] [2015-03] OPM mismatch: Computed OPM=32.33%, Stored opm_percentage=288.00%, Diff=255.67%. Category: formula discrepancy.
-[INDUSINDBK] [2016-03] OPM mismatch: Computed OPM=35.28%, Stored opm_percentage=329.00%, Diff=293.72%. Category: formula discrepancy.
-[INDUSINDBK] [2017-03] OPM mismatch: Computed OPM=39.46%, Stored opm_percentage=379.00%, Diff=339.54%. Category: formula discrepancy.
-[INDUSINDBK] [2018-03] OPM mismatch: Computed OPM=37.93%, Stored opm_percentage=942.00%, Diff=904.07%. Category: formula discrepancy.
-[INDUSINDBK] [2019-03] OPM mismatch: Computed OPM=41.70%, Stored opm_percentage=-437.00%, Diff=478.70%. Category: formula discrepancy.
-[INDUSINDBK] [2020-03] OPM mismatch: Computed OPM=43.81%, Stored opm_percentage=-553.00%, Diff=596.81%. Category: formula discrepancy.
-[INDUSINDBK] [2021-03] OPM mismatch: Computed OPM=55.16%, Stored opm_percentage=-2469.00%, Diff=2524.16%. Category: formula discrepancy.
-[INDUSINDBK] [2022-03] OPM mismatch: Computed OPM=51.39%, Stored opm_percentage=-839.00%, Diff=890.39%. Category: formula discrepancy.
-[INDUSINDBK] [2023-03] OPM mismatch: Computed OPM=42.69%, Stored opm_percentage=2067.00%, Diff=2024.31%. Category: formula discrepancy.
-[INDUSINDBK] [2024-03] OPM mismatch: Computed OPM=38.55%, Stored opm_percentage=2978.00%, Diff=2939.45%. Category: formula discrepancy.
-[JIOFIN] [2023-03] OPM mismatch: Computed OPM=86.67%, Stored opm_percentage=88.00%, Diff=1.33%. Category: formula discrepancy.
-[KOTAKBANK] [2013-03] OPM mismatch: Computed OPM=60.92%, Stored opm_percentage=-1789.00%, Diff=1849.92%. Category: formula discrepancy.
-[KOTAKBANK] [2014-03] OPM mismatch: Computed OPM=58.84%, Stored opm_percentage=-1379.00%, Diff=1437.84%. Category: formula discrepancy.
-[KOTAKBANK] [2015-03] OPM mismatch: Computed OPM=72.96%, Stored opm_percentage=-3366.00%, Diff=3438.96%. Category: formula discrepancy.
-[KOTAKBANK] [2016-03] OPM mismatch: Computed OPM=56.57%, Stored opm_percentage=-2263.00%, Diff=2319.57%. Category: formula discrepancy.
-[KOTAKBANK] [2017-03] OPM mismatch: Computed OPM=66.44%, Stored opm_percentage=-3965.00%, Diff=4031.44%. Category: formula discrepancy.
-[KOTAKBANK] [2018-03] OPM mismatch: Computed OPM=66.87%, Stored opm_percentage=-4141.00%, Diff=4207.87%. Category: formula discrepancy.
-[KOTAKBANK] [2019-03] OPM mismatch: Computed OPM=66.23%, Stored opm_percentage=-5114.00%, Diff=5180.23%. Category: formula discrepancy.
-[KOTAKBANK] [2020-03] OPM mismatch: Computed OPM=67.45%, Stored opm_percentage=-5005.00%, Diff=5072.45%. Category: formula discrepancy.
-[KOTAKBANK] [2021-03] OPM mismatch: Computed OPM=90.83%, Stored opm_percentage=-9958.00%, Diff=10048.83%. Category: formula discrepancy.
-[KOTAKBANK] [2022-03] OPM mismatch: Computed OPM=90.98%, Stored opm_percentage=-8512.00%, Diff=8602.98%. Category: formula discrepancy.
-[KOTAKBANK] [2023-03] OPM mismatch: Computed OPM=79.44%, Stored opm_percentage=-5746.00%, Diff=5825.44%. Category: formula discrepancy.
-[KOTAKBANK] [2024-03] OPM mismatch: Computed OPM=83.67%, Stored opm_percentage=-13382.00%, Diff=13465.67%. Category: formula discrepancy.
-[SUNPHARMA] [2024-03] OPM mismatch: Computed OPM=26.84%, Stored opm_percentage=28.00%, Diff=1.16%. Category: formula discrepancy.
+[ABB] ROCE anomaly at latest conformed year 2024-03: Computed=36.54%, Source Excel=46.00%, Diff=9.46%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[ADANIENT] ROE anomaly at latest conformed year 2024-03: Computed=8.53%, Source Excel=13.64%, Diff=5.11%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[ADANIGREEN] ROCE anomaly at latest conformed year 2024-03: Computed=7.25%, Source Excel=96.50%, Diff=89.25%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[ADANIPOWER] ROCE anomaly at latest conformed year 2024-03: Computed=18.39%, Source Excel=32.20%, Diff=13.81%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[ADANIPOWER] ROE anomaly at latest conformed year 2024-03: Computed=48.28%, Source Excel=57.10%, Diff=8.82%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[ASIANPAINT] ROCE anomaly at latest conformed year 2024-03: Computed=31.75%, Source Excel=41.75%, Diff=10.00%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[BAJAJ-AUTO] ROCE anomaly at latest conformed year 2024-03: Computed=27.21%, Source Excel=33.50%, Diff=6.29%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[BAJAJFINSV] ROCE anomaly at latest conformed year 2024-03: Computed=11.45%, Source Excel=21.14%, Diff=9.69%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[BAJAJFINSV] ROE anomaly at latest conformed year 2024-03: Computed=25.85%, Source Excel=11.72%, Diff=14.13%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[BAJAJHLDNG] ROCE anomaly at latest conformed year 2024-03: Computed=2.81%, Source Excel=13.10%, Diff=10.29%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[BAJFINANCE] ROCE anomaly at latest conformed year 2024-03: Computed=4.17%, Source Excel=11.90%, Diff=7.73%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[BEL] ROCE anomaly at latest conformed year 2024-03: Computed=3628.35%, Source Excel=34.60%, Diff=3593.75%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[BEL] ROE anomaly at latest conformed year 2024-03: Computed=4744.05%, Source Excel=26.30%, Diff=4717.75%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[BOSCHLTD] ROCE anomaly at latest conformed year 2024-03: Computed=13.76%, Source Excel=20.60%, Diff=6.84%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[BPCL] ROE anomaly at latest conformed year 2024-03: Computed=35.51%, Source Excel=41.90%, Diff=6.39%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[CHOLAFIN] ROCE anomaly at latest conformed year 2024-03: Computed=3.37%, Source Excel=10.40%, Diff=7.03%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[CIPLA] ROCE anomaly at latest conformed year 2024-03: Computed=67.60%, Source Excel=22.80%, Diff=44.80%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[COALINDIA] ROCE anomaly at latest conformed year 2024-03: Computed=98.17%, Source Excel=63.60%, Diff=34.57%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[COALINDIA] ROE anomaly at latest conformed year 2024-03: Computed=45.17%, Source Excel=52.00%, Diff=6.83%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[DRREDDY] ROCE anomaly at latest conformed year 2024-03: Computed=21.36%, Source Excel=26.50%, Diff=5.14%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[EICHERMOT] ROCE anomaly at latest conformed year 2024-03: Computed=20.21%, Source Excel=31.10%, Diff=10.89%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[GODREJCP] ROCE anomaly at latest conformed year 2024-03: Computed=17.17%, Source Excel=26.49%, Diff=9.32%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[GODREJCP] ROE anomaly at latest conformed year 2024-03: Computed=-4.45%, Source Excel=6.77%, Diff=11.22%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[HAL] ROCE anomaly at latest conformed year 2024-03: Computed=2590.99%, Source Excel=38.90%, Diff=2552.09%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[HAL] ROE anomaly at latest conformed year 2024-03: Computed=3816.58%, Source Excel=28.90%, Diff=3787.68%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[HDFCLIFE] ROCE anomaly at latest conformed year 2024-03: Computed=645.95%, Source Excel=6.61%, Diff=639.34%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[HEROMOTOCO] ROCE anomaly at latest conformed year 2024-03: Computed=173.71%, Source Excel=29.10%, Diff=144.61%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[HINDALCO] ROCE anomaly at latest conformed year 2024-03: Computed=113.58%, Source Excel=11.30%, Diff=102.28%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[HINDUNILVR] ROCE anomaly at latest conformed year 2024-03: Computed=87.32%, Source Excel=27.20%, Diff=60.12%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[ICICIGI] ROCE anomaly at latest conformed year 2024-03: Computed=145.23%, Source Excel=22.50%, Diff=122.73%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[ICICIPRULI] ROCE anomaly at latest conformed year 2024-03: Computed=753.98%, Source Excel=8.75%, Diff=745.23%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[INDIGO] ROCE anomaly at latest conformed year 2024-03: Computed=4953.54%, Source Excel=24.50%, Diff=4929.04%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[INFY] ROCE anomaly at latest conformed year 2024-03: Computed=32.91%, Source Excel=40.00%, Diff=7.09%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[IRCTC] ROCE anomaly at latest conformed year 2024-03: Computed=42.83%, Source Excel=53.80%, Diff=10.97%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[IRCTC] ROE anomaly at latest conformed year 2024-03: Computed=34.40%, Source Excel=40.40%, Diff=6.00%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[LICI] ROCE anomaly at latest conformed year 2024-03: Computed=39.05%, Source Excel=63.79%, Diff=24.74%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[LICI] ROE anomaly at latest conformed year 2024-03: Computed=49.45%, Source Excel=63.61%, Diff=14.16%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[LT] ROCE anomaly at latest conformed year 2024-03: Computed=118.53%, Source Excel=17.18%, Diff=101.35%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[LT] ROE anomaly at latest conformed year 2024-03: Computed=77.67%, Source Excel=10.49%, Diff=67.18%. Category: data source issue (Balance Sheet values in raw Excel are scaled down by 100x/1000x compared to P&L).
+[LTIM] ROCE anomaly at latest conformed year 2024-03: Computed=25.21%, Source Excel=34.10%, Diff=8.89%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[M&M] ROCE anomaly at latest conformed year 2024-03: Computed=11.54%, Source Excel=26.98%, Diff=15.44%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[MARUTI] ROCE anomaly at latest conformed year 2024-03: Computed=15.59%, Source Excel=23.67%, Diff=8.08%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[NESTLEIND] ROCE anomaly at latest conformed year 2024-03: Computed=143.15%, Source Excel=185.43%, Diff=42.28%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[NESTLEIND] ROE anomaly at latest conformed year 2024-03: Computed=117.75%, Source Excel=135.61%, Diff=17.86%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[PFC] ROCE anomaly at latest conformed year 2024-03: Computed=3.48%, Source Excel=9.96%, Diff=6.48%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[PFC] ROE anomaly at latest conformed year 2024-03: Computed=26.16%, Source Excel=19.49%, Diff=6.67%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[PNB] ROE anomaly at latest conformed year 2024-03: Computed=61.32%, Source Excel=8.70%, Diff=52.62%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[SBILIFE] ROCE anomaly at latest conformed year 2024-03: Computed=1.14%, Source Excel=13.20%, Diff=12.06%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[SHRIRAMFIN] ROCE anomaly at latest conformed year 2024-03: Computed=4.06%, Source Excel=11.30%, Diff=7.24%. Category: formula discrepancy (financial company ROCE calculations are structurally mismatched with standard industrial formulas).
+[SIEMENS] ROCE anomaly at latest conformed year 2024-09: Computed=17.74%, Source Excel=25.60%, Diff=7.86%. Category: formula discrepancy (discrepancy due to different definition of EBIT or Capital Employed in source calculation).
+[TATAMOTORS] ROE anomaly at latest conformed year 2024-03: Computed=37.46%, Source Excel=49.40%, Diff=11.94%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[TATASTEEL] ROE anomaly at latest conformed year 2024-03: Computed=-5.33%, Source Excel=6.55%, Diff=11.88%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[TRENT] ROE anomaly at latest conformed year 2024-03: Computed=36.31%, Source Excel=27.20%, Diff=9.11%. Category: formula discrepancy (discrepancy due to different definition of reserves/equity in source calculation).
+[ADANIENSOL] [2024-03] OPM mismatch: Computed OPM=34.39%, Stored opm_percentage=30.00%, Diff=4.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2013-03] OPM mismatch: Computed OPM=30.58%, Stored opm_percentage=1353.00%, Diff=1322.42%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2014-03] OPM mismatch: Computed OPM=31.47%, Stored opm_percentage=2307.00%, Diff=2275.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2015-03] OPM mismatch: Computed OPM=31.36%, Stored opm_percentage=3097.00%, Diff=3065.64%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2016-03] OPM mismatch: Computed OPM=32.61%, Stored opm_percentage=3466.00%, Diff=3433.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2017-03] OPM mismatch: Computed OPM=53.45%, Stored opm_percentage=-5715.00%, Diff=5768.45%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2018-03] OPM mismatch: Computed OPM=63.12%, Stored opm_percentage=-10277.00%, Diff=10340.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2019-03] OPM mismatch: Computed OPM=49.39%, Stored opm_percentage=-5447.00%, Diff=5496.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2020-03] OPM mismatch: Computed OPM=55.98%, Stored opm_percentage=-9859.00%, Diff=9914.98%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2021-03] OPM mismatch: Computed OPM=50.12%, Stored opm_percentage=-2510.00%, Diff=2560.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2022-03] OPM mismatch: Computed OPM=44.47%, Stored opm_percentage=3170.00%, Diff=3125.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2023-03] OPM mismatch: Computed OPM=34.16%, Stored opm_percentage=13857.00%, Diff=13822.84%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[AXISBANK] [2024-03] OPM mismatch: Computed OPM=34.69%, Stored opm_percentage=11952.00%, Diff=11917.31%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2015-03] OPM mismatch: Computed OPM=32.49%, Stored opm_percentage=1367.00%, Diff=1334.51%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2016-03] OPM mismatch: Computed OPM=32.25%, Stored opm_percentage=1986.00%, Diff=1953.75%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2017-03] OPM mismatch: Computed OPM=32.60%, Stored opm_percentage=2867.00%, Diff=2834.40%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2018-03] OPM mismatch: Computed OPM=32.28%, Stored opm_percentage=3935.00%, Diff=3902.72%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2019-03] OPM mismatch: Computed OPM=29.50%, Stored opm_percentage=6310.00%, Diff=6280.50%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2020-03] OPM mismatch: Computed OPM=34.73%, Stored opm_percentage=7608.00%, Diff=7573.27%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2021-03] OPM mismatch: Computed OPM=40.64%, Stored opm_percentage=6314.00%, Diff=6273.36%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2022-03] OPM mismatch: Computed OPM=37.55%, Stored opm_percentage=9906.00%, Diff=9868.45%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2023-03] OPM mismatch: Computed OPM=30.65%, Stored opm_percentage=16018.00%, Diff=15987.35%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BAJFINANCE] [2024-03] OPM mismatch: Computed OPM=29.29%, Stored opm_percentage=19987.00%, Diff=19957.71%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2013-03] OPM mismatch: Computed OPM=30.05%, Stored opm_percentage=1006.00%, Diff=975.95%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2014-03] OPM mismatch: Computed OPM=29.78%, Stored opm_percentage=809.00%, Diff=779.22%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2015-03] OPM mismatch: Computed OPM=29.98%, Stored opm_percentage=902.00%, Diff=872.02%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2016-03] OPM mismatch: Computed OPM=55.44%, Stored opm_percentage=-11700.00%, Diff=11755.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2017-03] OPM mismatch: Computed OPM=43.28%, Stored opm_percentage=-4372.00%, Diff=4415.28%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2018-03] OPM mismatch: Computed OPM=56.65%, Stored opm_percentage=-9197.00%, Diff=9253.65%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2019-03] OPM mismatch: Computed OPM=48.79%, Stored opm_percentage=-5414.00%, Diff=5462.79%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2020-03] OPM mismatch: Computed OPM=51.44%, Stored opm_percentage=-11728.00%, Diff=11779.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2021-03] OPM mismatch: Computed OPM=51.23%, Stored opm_percentage=-6957.00%, Diff=7008.23%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2022-03] OPM mismatch: Computed OPM=51.12%, Stored opm_percentage=-2948.00%, Diff=2999.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2023-03] OPM mismatch: Computed OPM=40.45%, Stored opm_percentage=6329.00%, Diff=6288.55%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[BANKBARODA] [2024-03] OPM mismatch: Computed OPM=37.49%, Stored opm_percentage=4102.00%, Diff=4064.51%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2013-03] OPM mismatch: Computed OPM=21.18%, Stored opm_percentage=655.00%, Diff=633.82%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2014-03] OPM mismatch: Computed OPM=24.35%, Stored opm_percentage=-672.00%, Diff=696.35%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2015-03] OPM mismatch: Computed OPM=23.51%, Stored opm_percentage=-621.00%, Diff=644.51%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2016-03] OPM mismatch: Computed OPM=40.38%, Stored opm_percentage=-8008.00%, Diff=8048.38%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2017-03] OPM mismatch: Computed OPM=37.85%, Stored opm_percentage=-5775.00%, Diff=5812.85%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2018-03] OPM mismatch: Computed OPM=61.87%, Stored opm_percentage=-13350.00%, Diff=13411.87%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2019-03] OPM mismatch: Computed OPM=56.73%, Stored opm_percentage=-11590.00%, Diff=11646.73%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2020-03] OPM mismatch: Computed OPM=53.88%, Stored opm_percentage=-12867.00%, Diff=12920.88%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2021-03] OPM mismatch: Computed OPM=61.83%, Stored opm_percentage=-18367.00%, Diff=18428.83%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2022-03] OPM mismatch: Computed OPM=58.39%, Stored opm_percentage=-13657.00%, Diff=13715.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2023-03] OPM mismatch: Computed OPM=49.80%, Stored opm_percentage=-9877.00%, Diff=9926.80%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CANBK] [2024-03] OPM mismatch: Computed OPM=41.75%, Stored opm_percentage=-7745.00%, Diff=7786.75%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2013-03] OPM mismatch: Computed OPM=26.77%, Stored opm_percentage=472.00%, Diff=445.23%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2014-03] OPM mismatch: Computed OPM=28.42%, Stored opm_percentage=578.00%, Diff=549.58%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2015-03] OPM mismatch: Computed OPM=28.56%, Stored opm_percentage=696.00%, Diff=667.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2016-03] OPM mismatch: Computed OPM=30.04%, Stored opm_percentage=899.00%, Diff=868.96%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2017-03] OPM mismatch: Computed OPM=28.16%, Stored opm_percentage=1143.00%, Diff=1114.84%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2018-03] OPM mismatch: Computed OPM=26.10%, Stored opm_percentage=1451.00%, Diff=1424.90%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2019-03] OPM mismatch: Computed OPM=22.96%, Stored opm_percentage=1888.00%, Diff=1865.04%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2020-03] OPM mismatch: Computed OPM=27.79%, Stored opm_percentage=1699.00%, Diff=1671.21%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2021-03] OPM mismatch: Computed OPM=30.40%, Stored opm_percentage=2094.00%, Diff=2063.60%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2022-03] OPM mismatch: Computed OPM=28.83%, Stored opm_percentage=2924.00%, Diff=2895.17%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2023-03] OPM mismatch: Computed OPM=28.10%, Stored opm_percentage=3515.00%, Diff=3486.90%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CHOLAFIN] [2024-03] OPM mismatch: Computed OPM=28.10%, Stored opm_percentage=4548.00%, Diff=4519.90%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2013-03] OPM mismatch: Computed OPM=73.26%, Stored opm_percentage=2214.00%, Diff=2140.74%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2014-03] OPM mismatch: Computed OPM=78.90%, Stored opm_percentage=2147.00%, Diff=2068.10%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2015-03] OPM mismatch: Computed OPM=80.94%, Stored opm_percentage=2163.00%, Diff=2082.06%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2016-03] OPM mismatch: Computed OPM=82.02%, Stored opm_percentage=2480.00%, Diff=2397.98%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2017-03] OPM mismatch: Computed OPM=82.66%, Stored opm_percentage=2496.00%, Diff=2413.34%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2018-03] OPM mismatch: Computed OPM=81.35%, Stored opm_percentage=2826.00%, Diff=2744.65%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2019-03] OPM mismatch: Computed OPM=81.07%, Stored opm_percentage=3097.00%, Diff=3015.93%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2020-03] OPM mismatch: Computed OPM=81.29%, Stored opm_percentage=3206.00%, Diff=3124.71%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2021-03] OPM mismatch: Computed OPM=77.80%, Stored opm_percentage=4252.00%, Diff=4174.20%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2022-03] OPM mismatch: Computed OPM=79.08%, Stored opm_percentage=4553.00%, Diff=4473.92%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2023-03] OPM mismatch: Computed OPM=77.91%, Stored opm_percentage=5027.00%, Diff=4949.09%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[CIPLA] [2024-03] OPM mismatch: Computed OPM=75.59%, Stored opm_percentage=6291.00%, Diff=6215.41%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2013-03] OPM mismatch: Computed OPM=73.52%, Stored opm_percentage=18087.00%, Diff=18013.48%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2014-03] OPM mismatch: Computed OPM=74.84%, Stored opm_percentage=17766.00%, Diff=17691.16%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2015-03] OPM mismatch: Computed OPM=76.60%, Stored opm_percentage=17343.00%, Diff=17266.40%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2016-03] OPM mismatch: Computed OPM=75.96%, Stored opm_percentage=18714.00%, Diff=18638.04%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2017-03] OPM mismatch: Computed OPM=84.07%, Stored opm_percentage=12448.00%, Diff=12363.93%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2018-03] OPM mismatch: Computed OPM=89.10%, Stored opm_percentage=9288.00%, Diff=9198.90%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2019-03] OPM mismatch: Computed OPM=74.89%, Stored opm_percentage=25007.00%, Diff=24932.11%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2020-03] OPM mismatch: Computed OPM=77.54%, Stored opm_percentage=21581.00%, Diff=21503.46%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2021-03] OPM mismatch: Computed OPM=79.31%, Stored opm_percentage=18628.00%, Diff=18548.69%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2022-03] OPM mismatch: Computed OPM=77.47%, Stored opm_percentage=24721.00%, Diff=24643.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2023-03] OPM mismatch: Computed OPM=68.01%, Stored opm_percentage=44232.00%, Diff=44163.99%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[COALINDIA] [2024-03] OPM mismatch: Computed OPM=66.29%, Stored opm_percentage=47971.00%, Diff=47904.71%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2013-03] OPM mismatch: Computed OPM=35.22%, Stored opm_percentage=3534.00%, Diff=3498.78%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2014-03] OPM mismatch: Computed OPM=31.74%, Stored opm_percentage=5602.00%, Diff=5570.26%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2015-03] OPM mismatch: Computed OPM=31.90%, Stored opm_percentage=7214.00%, Diff=7182.10%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2016-03] OPM mismatch: Computed OPM=31.75%, Stored opm_percentage=9037.00%, Diff=9005.25%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2017-03] OPM mismatch: Computed OPM=32.56%, Stored opm_percentage=11374.00%, Diff=11341.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2018-03] OPM mismatch: Computed OPM=34.63%, Stored opm_percentage=13374.00%, Diff=13339.37%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2019-03] OPM mismatch: Computed OPM=33.15%, Stored opm_percentage=16592.00%, Diff=16558.85%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2020-03] OPM mismatch: Computed OPM=37.20%, Stored opm_percentage=14593.00%, Diff=14555.80%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2021-03] OPM mismatch: Computed OPM=40.81%, Stored opm_percentage=16848.00%, Diff=16807.19%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2022-03] OPM mismatch: Computed OPM=41.61%, Stored opm_percentage=20795.00%, Diff=20753.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2023-03] OPM mismatch: Computed OPM=36.92%, Stored opm_percentage=29932.00%, Diff=29895.08%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCBANK] [2024-03] OPM mismatch: Computed OPM=61.41%, Stored opm_percentage=-44685.00%, Diff=44746.41%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2013-03] OPM mismatch: Computed OPM=96.27%, Stored opm_percentage=525.00%, Diff=428.73%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2014-03] OPM mismatch: Computed OPM=96.48%, Stored opm_percentage=605.00%, Diff=508.52%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2015-03] OPM mismatch: Computed OPM=96.79%, Stored opm_percentage=874.00%, Diff=777.21%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2016-03] OPM mismatch: Computed OPM=94.74%, Stored opm_percentage=953.00%, Diff=858.26%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2017-03] OPM mismatch: Computed OPM=96.83%, Stored opm_percentage=972.00%, Diff=875.17%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2018-03] OPM mismatch: Computed OPM=96.67%, Stored opm_percentage=1074.00%, Diff=977.33%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2019-03] OPM mismatch: Computed OPM=96.87%, Stored opm_percentage=1215.00%, Diff=1118.13%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2020-03] OPM mismatch: Computed OPM=96.12%, Stored opm_percentage=1141.00%, Diff=1044.88%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2021-03] OPM mismatch: Computed OPM=98.27%, Stored opm_percentage=1235.00%, Diff=1136.73%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2022-03] OPM mismatch: Computed OPM=98.84%, Stored opm_percentage=778.00%, Diff=679.16%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2023-03] OPM mismatch: Computed OPM=99.89%, Stored opm_percentage=80.00%, Diff=19.89%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HDFCLIFE] [2024-03] OPM mismatch: Computed OPM=99.48%, Stored opm_percentage=531.00%, Diff=431.52%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2014-03] OPM mismatch: Computed OPM=85.94%, Stored opm_percentage=3553.00%, Diff=3467.06%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2015-03] OPM mismatch: Computed OPM=87.22%, Stored opm_percentage=3520.00%, Diff=3432.78%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2016-03] OPM mismatch: Computed OPM=84.45%, Stored opm_percentage=4424.00%, Diff=4339.55%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2017-03] OPM mismatch: Computed OPM=83.97%, Stored opm_percentage=4585.00%, Diff=4501.03%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2018-03] OPM mismatch: Computed OPM=83.57%, Stored opm_percentage=5334.00%, Diff=5250.43%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2019-03] OPM mismatch: Computed OPM=85.21%, Stored opm_percentage=5025.00%, Diff=4939.79%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2020-03] OPM mismatch: Computed OPM=86.09%, Stored opm_percentage=4070.00%, Diff=3983.91%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2021-03] OPM mismatch: Computed OPM=86.90%, Stored opm_percentage=4058.00%, Diff=3971.10%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2022-03] OPM mismatch: Computed OPM=88.98%, Stored opm_percentage=3256.00%, Diff=3167.02%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2023-03] OPM mismatch: Computed OPM=88.00%, Stored opm_percentage=4099.00%, Diff=4011.00%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HEROMOTOCO] [2024-03] OPM mismatch: Computed OPM=86.15%, Stored opm_percentage=5235.00%, Diff=5148.85%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2013-03] OPM mismatch: Computed OPM=90.40%, Stored opm_percentage=7699.00%, Diff=7608.60%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2014-03] OPM mismatch: Computed OPM=90.85%, Stored opm_percentage=8024.00%, Diff=7933.15%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2015-03] OPM mismatch: Computed OPM=91.52%, Stored opm_percentage=8844.00%, Diff=8752.48%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2016-03] OPM mismatch: Computed OPM=92.12%, Stored opm_percentage=7778.00%, Diff=7685.88%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2017-03] OPM mismatch: Computed OPM=87.71%, Stored opm_percentage=12317.00%, Diff=12229.29%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2018-03] OPM mismatch: Computed OPM=88.11%, Stored opm_percentage=13695.00%, Diff=13606.89%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2019-03] OPM mismatch: Computed OPM=88.12%, Stored opm_percentage=15511.00%, Diff=15422.88%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2020-03] OPM mismatch: Computed OPM=87.89%, Stored opm_percentage=14306.00%, Diff=14218.11%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2021-03] OPM mismatch: Computed OPM=86.70%, Stored opm_percentage=17559.00%, Diff=17472.30%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2022-03] OPM mismatch: Computed OPM=85.47%, Stored opm_percentage=28347.00%, Diff=28261.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2023-03] OPM mismatch: Computed OPM=89.85%, Stored opm_percentage=22666.00%, Diff=22576.15%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDALCO] [2024-03] OPM mismatch: Computed OPM=88.95%, Stored opm_percentage=23872.00%, Diff=23783.05%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2013-03] OPM mismatch: Computed OPM=84.37%, Stored opm_percentage=4220.00%, Diff=4135.63%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2014-03] OPM mismatch: Computed OPM=83.72%, Stored opm_percentage=4759.00%, Diff=4675.28%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2015-03] OPM mismatch: Computed OPM=83.07%, Stored opm_percentage=5412.00%, Diff=5328.93%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2016-03] OPM mismatch: Computed OPM=81.64%, Stored opm_percentage=5910.00%, Diff=5828.36%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2017-03] OPM mismatch: Computed OPM=80.92%, Stored opm_percentage=6328.00%, Diff=6247.08%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2018-03] OPM mismatch: Computed OPM=78.90%, Stored opm_percentage=7499.00%, Diff=7420.10%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2019-03] OPM mismatch: Computed OPM=77.41%, Stored opm_percentage=8880.00%, Diff=8802.59%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2020-03] OPM mismatch: Computed OPM=75.21%, Stored opm_percentage=9861.00%, Diff=9785.79%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2021-03] OPM mismatch: Computed OPM=75.28%, Stored opm_percentage=11626.00%, Diff=11550.72%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2022-03] OPM mismatch: Computed OPM=75.49%, Stored opm_percentage=12857.00%, Diff=12781.51%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2023-03] OPM mismatch: Computed OPM=76.65%, Stored opm_percentage=14147.00%, Diff=14070.35%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[HINDUNILVR] [2024-03] OPM mismatch: Computed OPM=76.32%, Stored opm_percentage=14659.00%, Diff=14582.68%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2013-03] OPM mismatch: Computed OPM=70.59%, Stored opm_percentage=-15085.00%, Diff=15155.59%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2014-03] OPM mismatch: Computed OPM=66.40%, Stored opm_percentage=-13084.00%, Diff=13150.40%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2015-03] OPM mismatch: Computed OPM=70.53%, Stored opm_percentage=-16120.00%, Diff=16190.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2016-03] OPM mismatch: Computed OPM=88.12%, Stored opm_percentage=-26955.00%, Diff=27043.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2017-03] OPM mismatch: Computed OPM=104.76%, Stored opm_percentage=-37737.00%, Diff=37841.76%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2018-03] OPM mismatch: Computed OPM=117.12%, Stored opm_percentage=-44906.00%, Diff=45023.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2019-03] OPM mismatch: Computed OPM=116.38%, Stored opm_percentage=-50971.00%, Diff=51087.38%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2020-03] OPM mismatch: Computed OPM=100.62%, Stored opm_percentage=-45190.00%, Diff=45290.62%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2021-03] OPM mismatch: Computed OPM=102.41%, Stored opm_percentage=-44805.00%, Diff=44907.41%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2022-03] OPM mismatch: Computed OPM=84.69%, Stored opm_percentage=-26558.00%, Diff=26642.69%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2023-03] OPM mismatch: Computed OPM=72.57%, Stored opm_percentage=-17341.00%, Diff=17413.57%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIBANK] [2024-03] OPM mismatch: Computed OPM=62.41%, Stored opm_percentage=-14152.00%, Diff=14214.41%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2013-03] OPM mismatch: Computed OPM=104.46%, Stored opm_percentage=-178.00%, Diff=282.46%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2014-03] OPM mismatch: Computed OPM=105.19%, Stored opm_percentage=-225.00%, Diff=330.19%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2015-03] OPM mismatch: Computed OPM=105.24%, Stored opm_percentage=-221.00%, Diff=326.24%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2016-03] OPM mismatch: Computed OPM=87.34%, Stored opm_percentage=764.00%, Diff=676.66%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2017-03] OPM mismatch: Computed OPM=87.78%, Stored opm_percentage=919.00%, Diff=831.22%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2018-03] OPM mismatch: Computed OPM=103.79%, Stored opm_percentage=-262.00%, Diff=365.79%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2019-03] OPM mismatch: Computed OPM=85.05%, Stored opm_percentage=1669.00%, Diff=1583.95%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2020-03] OPM mismatch: Computed OPM=84.61%, Stored opm_percentage=1772.00%, Diff=1687.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2021-03] OPM mismatch: Computed OPM=82.97%, Stored opm_percentage=2072.00%, Diff=1989.03%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2022-03] OPM mismatch: Computed OPM=93.66%, Stored opm_percentage=1016.00%, Diff=922.34%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2023-03] OPM mismatch: Computed OPM=92.93%, Stored opm_percentage=1264.00%, Diff=1171.07%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIGI] [2024-03] OPM mismatch: Computed OPM=87.42%, Stored opm_percentage=2577.00%, Diff=2489.58%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2013-03] OPM mismatch: Computed OPM=96.28%, Stored opm_percentage=745.00%, Diff=648.72%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2014-03] OPM mismatch: Computed OPM=93.13%, Stored opm_percentage=1504.00%, Diff=1410.87%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2015-03] OPM mismatch: Computed OPM=95.20%, Stored opm_percentage=1655.00%, Diff=1559.80%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2016-03] OPM mismatch: Computed OPM=91.17%, Stored opm_percentage=1842.00%, Diff=1750.83%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2017-03] OPM mismatch: Computed OPM=95.22%, Stored opm_percentage=1806.00%, Diff=1710.78%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2018-03] OPM mismatch: Computed OPM=95.44%, Stored opm_percentage=1771.00%, Diff=1675.56%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2019-03] OPM mismatch: Computed OPM=98.70%, Stored opm_percentage=541.00%, Diff=442.30%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2020-03] OPM mismatch: Computed OPM=101.52%, Stored opm_percentage=-319.00%, Diff=420.52%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2021-03] OPM mismatch: Computed OPM=100.47%, Stored opm_percentage=-390.00%, Diff=490.47%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2022-03] OPM mismatch: Computed OPM=103.40%, Stored opm_percentage=-2163.00%, Diff=2266.40%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2023-03] OPM mismatch: Computed OPM=103.48%, Stored opm_percentage=-1757.00%, Diff=1860.48%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[ICICIPRULI] [2024-03] OPM mismatch: Computed OPM=102.03%, Stored opm_percentage=-1829.00%, Diff=1931.03%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2013-03] OPM mismatch: Computed OPM=90.71%, Stored opm_percentage=855.00%, Diff=764.29%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2014-03] OPM mismatch: Computed OPM=96.11%, Stored opm_percentage=433.00%, Diff=336.89%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2015-03] OPM mismatch: Computed OPM=86.33%, Stored opm_percentage=1904.00%, Diff=1817.67%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2016-03] OPM mismatch: Computed OPM=80.40%, Stored opm_percentage=3164.00%, Diff=3083.60%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2017-03] OPM mismatch: Computed OPM=88.06%, Stored opm_percentage=2219.00%, Diff=2130.94%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2018-03] OPM mismatch: Computed OPM=86.84%, Stored opm_percentage=3030.00%, Diff=2943.16%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2019-03] OPM mismatch: Computed OPM=100.53%, Stored opm_percentage=-151.00%, Diff=251.53%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2020-03] OPM mismatch: Computed OPM=88.62%, Stored opm_percentage=4069.00%, Diff=3980.38%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2021-03] OPM mismatch: Computed OPM=99.98%, Stored opm_percentage=2.00%, Diff=97.98%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2022-03] OPM mismatch: Computed OPM=97.85%, Stored opm_percentage=558.00%, Diff=460.15%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2023-03] OPM mismatch: Computed OPM=88.02%, Stored opm_percentage=6521.00%, Diff=6432.98%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDIGO] [2024-03] OPM mismatch: Computed OPM=76.30%, Stored opm_percentage=16331.00%, Diff=16254.70%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2013-03] OPM mismatch: Computed OPM=27.88%, Stored opm_percentage=286.00%, Diff=258.12%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2014-03] OPM mismatch: Computed OPM=30.95%, Stored opm_percentage=335.00%, Diff=304.05%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2015-03] OPM mismatch: Computed OPM=32.33%, Stored opm_percentage=288.00%, Diff=255.67%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2016-03] OPM mismatch: Computed OPM=35.28%, Stored opm_percentage=329.00%, Diff=293.72%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2017-03] OPM mismatch: Computed OPM=39.46%, Stored opm_percentage=379.00%, Diff=339.54%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2018-03] OPM mismatch: Computed OPM=37.93%, Stored opm_percentage=942.00%, Diff=904.07%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2019-03] OPM mismatch: Computed OPM=41.70%, Stored opm_percentage=-437.00%, Diff=478.70%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2020-03] OPM mismatch: Computed OPM=43.81%, Stored opm_percentage=-553.00%, Diff=596.81%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2021-03] OPM mismatch: Computed OPM=55.16%, Stored opm_percentage=-2469.00%, Diff=2524.16%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2022-03] OPM mismatch: Computed OPM=51.39%, Stored opm_percentage=-839.00%, Diff=890.39%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2023-03] OPM mismatch: Computed OPM=42.69%, Stored opm_percentage=2067.00%, Diff=2024.31%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[INDUSINDBK] [2024-03] OPM mismatch: Computed OPM=38.55%, Stored opm_percentage=2978.00%, Diff=2939.45%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[JIOFIN] [2023-03] OPM mismatch: Computed OPM=86.67%, Stored opm_percentage=88.00%, Diff=1.33%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2013-03] OPM mismatch: Computed OPM=60.92%, Stored opm_percentage=-1789.00%, Diff=1849.92%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2014-03] OPM mismatch: Computed OPM=58.84%, Stored opm_percentage=-1379.00%, Diff=1437.84%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2015-03] OPM mismatch: Computed OPM=72.96%, Stored opm_percentage=-3366.00%, Diff=3438.96%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2016-03] OPM mismatch: Computed OPM=56.57%, Stored opm_percentage=-2263.00%, Diff=2319.57%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2017-03] OPM mismatch: Computed OPM=66.44%, Stored opm_percentage=-3965.00%, Diff=4031.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2018-03] OPM mismatch: Computed OPM=66.87%, Stored opm_percentage=-4141.00%, Diff=4207.87%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2019-03] OPM mismatch: Computed OPM=66.23%, Stored opm_percentage=-5114.00%, Diff=5180.23%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2020-03] OPM mismatch: Computed OPM=67.45%, Stored opm_percentage=-5005.00%, Diff=5072.45%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2021-03] OPM mismatch: Computed OPM=90.83%, Stored opm_percentage=-9958.00%, Diff=10048.83%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2022-03] OPM mismatch: Computed OPM=90.98%, Stored opm_percentage=-8512.00%, Diff=8602.98%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2023-03] OPM mismatch: Computed OPM=79.44%, Stored opm_percentage=-5746.00%, Diff=5825.44%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[KOTAKBANK] [2024-03] OPM mismatch: Computed OPM=83.67%, Stored opm_percentage=-13382.00%, Diff=13465.67%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
+[SUNPHARMA] [2024-03] OPM mismatch: Computed OPM=26.84%, Stored opm_percentage=28.00%, Diff=1.16%. Category: formula discrepancy (stored opm_percentage is calculated differently or is anomalous in source data).
