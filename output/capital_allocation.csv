@@ -11,6 +11,7 @@ ABB,2021-03,+,-,-,Shareholder Returns
 ABB,2022-03,+,-,-,Shareholder Returns
 ABB,2023-03,+,-,-,Reinvestor
 ABB,2024-03,+,-,-,Shareholder Returns
+ABB,2024-09,,,,Unknown
 ADANIENSOL,2014-03,+,+,+,Cash Accumulator
 ADANIENSOL,2015-03,-,-,+,Growth Funded by Debt
 ADANIENSOL,2016-03,+,-,-,Shareholder Returns
@@ -22,6 +23,7 @@ ADANIENSOL,2021-03,+,-,-,Shareholder Returns
 ADANIENSOL,2022-03,+,-,-,Shareholder Returns
 ADANIENSOL,2023-03,+,-,+,Mixed
 ADANIENSOL,2024-03,+,-,-,Shareholder Returns
+ADANIENSOL,2024-09,,,,Unknown
 ADANIENT,2013-03,+,-,+,Mixed
 ADANIENT,2014-03,+,-,-,Shareholder Returns
 ADANIENT,2015-03,+,-,+,Mixed
@@ -34,6 +36,7 @@ ADANIENT,2021-03,+,-,+,Mixed
 ADANIENT,2022-03,+,-,+,Mixed
 ADANIENT,2023-03,+,-,-,Shareholder Returns
 ADANIENT,2024-03,+,-,+,Mixed
+ADANIENT,2024-09,,,,Unknown
 ADANIGREEN,2017-03,+,-,+,Mixed
 ADANIGREEN,2018-03,+,-,+,Mixed
 ADANIGREEN,2019-03,+,-,+,Mixed
@@ -42,6 +45,7 @@ ADANIGREEN,2021-03,+,-,+,Mixed
 ADANIGREEN,2022-03,+,-,+,Mixed
 ADANIGREEN,2023-03,+,-,-,Shareholder Returns
 ADANIGREEN,2024-03,+,-,+,Mixed
+ADANIGREEN,2024-09,,,,Unknown
 ADANIPORTS,2013-03,+,-,+,Mixed
 ADANIPORTS,2014-03,+,-,+,Mixed
 ADANIPORTS,2015-03,+,-,-,Shareholder Returns
@@ -54,6 +58,7 @@ ADANIPORTS,2021-03,+,-,+,Mixed
 ADANIPORTS,2022-03,+,-,-,Shareholder Returns
 ADANIPORTS,2023-03,+,-,-,Shareholder Returns
 ADANIPORTS,2024-03,+,-,-,Shareholder Returns
+ADANIPORTS,2024-09,,,,Unknown
 ADANIPOWER,2013-03,+,-,+,Mixed
 ADANIPOWER,2014-03,+,-,+,Mixed
 ADANIPOWER,2015-03,+,-,-,Reinvestor
@@ -66,6 +71,7 @@ ADANIPOWER,2021-03,+,-,-,Shareholder Returns
 ADANIPOWER,2022-03,+,+,-,Liquidating Assets
 ADANIPOWER,2023-03,+,+,-,Liquidating Assets
 ADANIPOWER,2024-03,+,+,-,Liquidating Assets
+ADANIPOWER,2024-09,,,,Unknown
 AMBUJACEM,2012-12,+,-,-,Shareholder Returns
 AMBUJACEM,2013-12,+,-,-,Reinvestor
 AMBUJACEM,2014-12,+,-,-,Shareholder Returns
@@ -78,6 +84,7 @@ AMBUJACEM,2020-12,+,-,-,Shareholder Returns
 AMBUJACEM,2021-12,+,-,-,Shareholder Returns
 AMBUJACEM,2023-03,+,-,+,Mixed
 AMBUJACEM,2024-03,+,-,+,Mixed
+AMBUJACEM,2024-09,,,,Unknown
 APOLLOHOSP,2013-03,+,-,+,Mixed
 APOLLOHOSP,2014-03,+,-,-,Shareholder Returns
 APOLLOHOSP,2015-03,+,-,+,Mixed
@@ -90,6 +97,7 @@ APOLLOHOSP,2021-03,+,-,-,Shareholder Returns
 APOLLOHOSP,2022-03,+,-,-,Shareholder Returns
 APOLLOHOSP,2023-03,+,-,-,Shareholder Returns
 APOLLOHOSP,2024-03,+,-,-,Shareholder Returns
+APOLLOHOSP,2024-09,,,,Unknown
 ASIANPAINT,2013-03,+,-,-,Shareholder Returns
 ASIANPAINT,2014-03,+,-,-,Shareholder Returns
 ASIANPAINT,2015-03,+,-,-,Reinvestor
@@ -102,6 +110,15 @@ ASIANPAINT,2021-03,+,-,-,Shareholder Returns
 ASIANPAINT,2022-03,+,-,-,Reinvestor
 ASIANPAINT,2023-03,+,-,-,Reinvestor
 ASIANPAINT,2024-03,+,-,-,Shareholder Returns
+ASIANPAINT,2024-09,,,,Unknown
+ATGL,2018-03,,,,Unknown
+ATGL,2019-03,,,,Unknown
+ATGL,2020-03,,,,Unknown
+ATGL,2021-03,,,,Unknown
+ATGL,2022-03,,,,Unknown
+ATGL,2023-03,,,,Unknown
+ATGL,2024-03,,,,Unknown
+ATGL,2024-09,,,,Unknown
 AXISBANK,2013-03,+,-,+,Mixed
 AXISBANK,2014-03,+,-,+,Mixed
 AXISBANK,2015-03,-,-,+,Growth Funded by Debt
@@ -126,6 +143,7 @@ BAJAJ-AUTO,2021-03,+,-,-,Reinvestor
 BAJAJ-AUTO,2022-03,+,+,-,Liquidating Assets
 BAJAJ-AUTO,2023-03,+,+,-,Liquidating Assets
 BAJAJ-AUTO,2024-03,+,-,-,Reinvestor
+BAJAJ-AUTO,2024-09,,,,Unknown
 BAJAJFINSV,2013-03,-,+,+,Distress Signal
 BAJAJFINSV,2014-03,-,+,+,Distress Signal
 BAJAJFINSV,2015-03,-,+,+,Distress Signal
@@ -138,6 +156,7 @@ BAJAJFINSV,2021-03,+,-,+,Mixed
 BAJAJFINSV,2022-03,-,+,+,Distress Signal
 BAJAJFINSV,2023-03,-,-,+,Growth Funded by Debt
 BAJAJFINSV,2024-03,-,-,+,Growth Funded by Debt
+BAJAJFINSV,2024-09,,,,Unknown
 BAJAJHLDNG,2013-03,+,-,-,Reinvestor
 BAJAJHLDNG,2014-03,+,-,-,Reinvestor
 BAJAJHLDNG,2015-03,+,-,-,Reinvestor
@@ -150,6 +169,7 @@ BAJAJHLDNG,2021-03,+,-,-,Reinvestor
 BAJAJHLDNG,2022-03,+,-,-,Reinvestor
 BAJAJHLDNG,2023-03,+,-,-,Reinvestor
 BAJAJHLDNG,2024-03,+,-,-,Reinvestor
+BAJAJHLDNG,2024-09,,,,Unknown
 BAJFINANCE,2015-03,-,-,+,Growth Funded by Debt
 BAJFINANCE,2016-03,-,-,+,Growth Funded by Debt
 BAJFINANCE,2017-03,-,-,+,Growth Funded by Debt
@@ -160,6 +180,7 @@ BAJFINANCE,2021-03,-,-,+,Growth Funded by Debt
 BAJFINANCE,2022-03,-,+,+,Distress Signal
 BAJFINANCE,2023-03,-,-,+,Growth Funded by Debt
 BAJFINANCE,2024-03,-,-,+,Growth Funded by Debt
+BAJFINANCE,2024-09,,,,Unknown
 BANKBARODA,2013-03,+,-,-,Shareholder Returns
 BANKBARODA,2014-03,+,-,+,Mixed
 BANKBARODA,2015-03,+,-,-,Shareholder Returns
@@ -184,6 +205,7 @@ BEL,2021-03,+,-,-,Shareholder Returns
 BEL,2022-03,+,-,-,Shareholder Returns
 BEL,2023-03,+,+,-,Liquidating Assets
 BEL,2024-03,+,-,-,Shareholder Returns
+BEL,2024-09,,,,Unknown
 BHARTIARTL,2013-03,+,-,-,Shareholder Returns
 BHARTIARTL,2014-03,+,-,+,Mixed
 BHARTIARTL,2015-03,+,-,-,Shareholder Returns
@@ -196,6 +218,7 @@ BHARTIARTL,2021-03,+,-,-,Reinvestor
 BHARTIARTL,2022-03,+,-,-,Shareholder Returns
 BHARTIARTL,2023-03,+,-,-,Shareholder Returns
 BHARTIARTL,2024-03,+,-,-,Shareholder Returns
+BHARTIARTL,2024-09,,,,Unknown
 BHEL,2013-03,+,-,+,Mixed
 BHEL,2014-03,+,-,+,Mixed
 BHEL,2015-03,+,+,-,Liquidating Assets
@@ -208,6 +231,7 @@ BHEL,2021-03,+,-,-,Reinvestor
 BHEL,2022-03,+,-,-,Shareholder Returns
 BHEL,2023-03,-,+,+,Distress Signal
 BHEL,2024-03,-,+,+,Distress Signal
+BHEL,2024-09,,,,Unknown
 BOSCHLTD,2012-12,+,-,-,Reinvestor
 BOSCHLTD,2013-12,+,-,-,Shareholder Returns
 BOSCHLTD,2015-03,+,-,-,Shareholder Returns
@@ -220,6 +244,7 @@ BOSCHLTD,2021-03,+,-,-,Shareholder Returns
 BOSCHLTD,2022-03,+,-,-,Reinvestor
 BOSCHLTD,2023-03,+,+,-,Liquidating Assets
 BOSCHLTD,2024-03,+,+,-,Liquidating Assets
+BOSCHLTD,2024-09,,,,Unknown
 BPCL,2013-03,+,-,-,Shareholder Returns
 BPCL,2014-03,+,-,-,Shareholder Returns
 BPCL,2015-03,+,-,-,Shareholder Returns
@@ -232,6 +257,7 @@ BPCL,2021-03,+,-,-,Shareholder Returns
 BPCL,2022-03,+,-,-,Shareholder Returns
 BPCL,2023-03,+,-,-,Shareholder Returns
 BPCL,2024-03,+,-,-,Shareholder Returns
+BPCL,2024-09,,,,Unknown
 BRITANNIA,2013-03,+,+,-,Liquidating Assets
 BRITANNIA,2014-03,+,-,-,Shareholder Returns
 BRITANNIA,2015-03,+,-,-,Reinvestor
@@ -244,6 +270,7 @@ BRITANNIA,2021-03,+,+,-,Liquidating Assets
 BRITANNIA,2022-03,+,+,-,Liquidating Assets
 BRITANNIA,2023-03,+,-,-,Shareholder Returns
 BRITANNIA,2024-03,+,+,-,Liquidating Assets
+BRITANNIA,2024-09,,,,Unknown
 CANBK,2013-03,+,-,-,Shareholder Returns
 CANBK,2014-03,+,-,-,Shareholder Returns
 CANBK,2015-03,+,-,-,Shareholder Returns
@@ -268,6 +295,7 @@ CHOLAFIN,2021-03,-,-,+,Growth Funded by Debt
 CHOLAFIN,2022-03,-,+,+,Distress Signal
 CHOLAFIN,2023-03,-,-,+,Growth Funded by Debt
 CHOLAFIN,2024-03,-,-,+,Growth Funded by Debt
+CHOLAFIN,2024-09,,,,Unknown
 CIPLA,2013-03,+,-,+,Mixed
 CIPLA,2014-03,+,-,-,Shareholder Returns
 CIPLA,2015-03,+,-,+,Mixed
@@ -280,6 +308,7 @@ CIPLA,2021-03,+,-,-,Shareholder Returns
 CIPLA,2022-03,+,-,-,Shareholder Returns
 CIPLA,2023-03,+,-,-,Shareholder Returns
 CIPLA,2024-03,+,-,-,Reinvestor
+CIPLA,2024-09,,,,Unknown
 COALINDIA,2013-03,+,-,-,Reinvestor
 COALINDIA,2014-03,+,+,-,Liquidating Assets
 COALINDIA,2015-03,+,+,-,Liquidating Assets
@@ -292,6 +321,7 @@ COALINDIA,2021-03,+,+,-,Liquidating Assets
 COALINDIA,2022-03,+,-,-,Shareholder Returns
 COALINDIA,2023-03,+,-,-,Shareholder Returns
 COALINDIA,2024-03,+,-,-,Reinvestor
+COALINDIA,2024-09,,,,Unknown
 DABUR,2013-03,+,-,-,Shareholder Returns
 DABUR,2014-03,+,-,-,Shareholder Returns
 DABUR,2015-03,+,-,-,Reinvestor
@@ -304,6 +334,7 @@ DABUR,2021-03,+,-,-,Shareholder Returns
 DABUR,2022-03,+,-,-,Shareholder Returns
 DABUR,2023-03,+,-,-,Reinvestor
 DABUR,2024-03,+,-,-,Shareholder Returns
+DABUR,2024-09,,,,Unknown
 DIVISLAB,2013-03,+,-,-,Reinvestor
 DIVISLAB,2014-03,+,-,-,Reinvestor
 DIVISLAB,2015-03,+,-,-,Reinvestor
@@ -316,6 +347,7 @@ DIVISLAB,2021-03,+,+,-,Liquidating Assets
 DIVISLAB,2022-03,+,-,-,Reinvestor
 DIVISLAB,2023-03,+,-,-,Shareholder Returns
 DIVISLAB,2024-03,+,-,-,Reinvestor
+DIVISLAB,2024-09,,,,Unknown
 DLF,2013-03,+,+,-,Liquidating Assets
 DLF,2014-03,+,+,-,Liquidating Assets
 DLF,2015-03,+,+,-,Liquidating Assets
@@ -328,6 +360,7 @@ DLF,2021-03,+,+,-,Liquidating Assets
 DLF,2022-03,+,+,-,Liquidating Assets
 DLF,2023-03,+,-,-,Shareholder Returns
 DLF,2024-03,+,-,+,Mixed
+DLF,2024-09,,,,Unknown
 DMART,2013-03,+,-,+,Mixed
 DMART,2014-03,+,-,+,Mixed
 DMART,2015-03,+,-,+,Mixed
@@ -340,6 +373,7 @@ DMART,2021-03,+,-,-,Shareholder Returns
 DMART,2022-03,+,-,-,Reinvestor
 DMART,2023-03,+,-,-,Shareholder Returns
 DMART,2024-03,+,-,-,Shareholder Returns
+DMART,2024-09,,,,Unknown
 DRREDDY,2013-03,+,-,-,Reinvestor
 DRREDDY,2014-03,+,-,-,Shareholder Returns
 DRREDDY,2015-03,+,-,-,Shareholder Returns
@@ -352,6 +386,7 @@ DRREDDY,2021-03,+,-,-,Shareholder Returns
 DRREDDY,2022-03,+,-,-,Shareholder Returns
 DRREDDY,2023-03,+,-,-,Shareholder Returns
 DRREDDY,2024-03,+,-,-,Reinvestor
+DRREDDY,2024-09,,,,Unknown
 EICHERMOT,2012-12,+,-,-,Shareholder Returns
 EICHERMOT,2013-12,+,-,-,Shareholder Returns
 EICHERMOT,2014-12,+,-,-,Shareholder Returns
@@ -364,6 +399,7 @@ EICHERMOT,2021-03,+,-,-,Shareholder Returns
 EICHERMOT,2022-03,+,-,-,Reinvestor
 EICHERMOT,2023-03,+,-,-,Reinvestor
 EICHERMOT,2024-03,+,-,-,Reinvestor
+EICHERMOT,2024-09,,,,Unknown
 GAIL,2013-03,+,-,+,Mixed
 GAIL,2014-03,+,-,-,Reinvestor
 GAIL,2015-03,+,-,-,Shareholder Returns
@@ -376,6 +412,7 @@ GAIL,2021-03,+,-,-,Shareholder Returns
 GAIL,2022-03,+,-,-,Reinvestor
 GAIL,2023-03,+,-,+,Mixed
 GAIL,2024-03,+,-,-,Shareholder Returns
+GAIL,2024-09,,,,Unknown
 GODREJCP,2013-03,+,-,+,Mixed
 GODREJCP,2014-03,+,-,-,Shareholder Returns
 GODREJCP,2015-03,+,-,-,Shareholder Returns
@@ -388,6 +425,7 @@ GODREJCP,2021-03,+,-,-,Shareholder Returns
 GODREJCP,2022-03,+,-,-,Reinvestor
 GODREJCP,2023-03,+,-,-,Shareholder Returns
 GODREJCP,2024-03,+,-,+,Mixed
+GODREJCP,2024-09,,,,Unknown
 GRASIM,2013-03,+,-,+,Mixed
 GRASIM,2014-03,+,-,-,Shareholder Returns
 GRASIM,2015-03,+,-,-,Shareholder Returns
@@ -400,6 +438,11 @@ GRASIM,2021-03,+,-,-,Shareholder Returns
 GRASIM,2022-03,+,-,-,Reinvestor
 GRASIM,2023-03,-,-,+,Growth Funded by Debt
 GRASIM,2024-03,-,-,+,Growth Funded by Debt
+GRASIM,2024-09,,,,Unknown
+HAL,2013-03,,,,Unknown
+HAL,2014-03,,,,Unknown
+HAL,2015-03,,,,Unknown
+HAL,2016-03,,,,Unknown
 HAL,2017-03,-,+,-,Distress Signal
 HAL,2018-03,-,+,-,Distress Signal
 HAL,2019-03,-,+,+,Distress Signal
@@ -408,6 +451,7 @@ HAL,2021-03,+,-,-,Shareholder Returns
 HAL,2022-03,+,-,-,Shareholder Returns
 HAL,2023-03,+,-,-,Shareholder Returns
 HAL,2024-03,+,-,-,Shareholder Returns
+HAL,2024-09,,,,Unknown
 HAVELLS,2013-03,+,-,-,Shareholder Returns
 HAVELLS,2014-03,+,-,-,Shareholder Returns
 HAVELLS,2015-03,+,-,-,Shareholder Returns
@@ -420,6 +464,7 @@ HAVELLS,2021-03,+,-,+,Mixed
 HAVELLS,2022-03,+,-,-,Shareholder Returns
 HAVELLS,2023-03,+,+,-,Liquidating Assets
 HAVELLS,2024-03,+,-,-,Shareholder Returns
+HAVELLS,2024-09,,,,Unknown
 HCLTECH,2013-06,+,-,-,Shareholder Returns
 HCLTECH,2014-06,+,-,-,Reinvestor
 HCLTECH,2015-06,+,-,-,Reinvestor
@@ -432,6 +477,7 @@ HCLTECH,2021-03,+,-,-,Shareholder Returns
 HCLTECH,2022-03,+,+,-,Liquidating Assets
 HCLTECH,2023-03,+,-,-,Shareholder Returns
 HCLTECH,2024-03,+,-,-,Shareholder Returns
+HCLTECH,2024-09,,,,Unknown
 HDFCBANK,2013-03,-,-,+,Growth Funded by Debt
 HDFCBANK,2014-03,+,-,+,Mixed
 HDFCBANK,2015-03,-,-,+,Growth Funded by Debt
@@ -444,6 +490,8 @@ HDFCBANK,2021-03,+,-,-,Shareholder Returns
 HDFCBANK,2022-03,-,-,+,Growth Funded by Debt
 HDFCBANK,2023-03,+,-,+,Mixed
 HDFCBANK,2024-03,+,+,-,Liquidating Assets
+HDFCLIFE,2013-03,,,,Unknown
+HDFCLIFE,2014-03,,,,Unknown
 HDFCLIFE,2015-03,+,-,-,Shareholder Returns
 HDFCLIFE,2016-03,+,-,-,Shareholder Returns
 HDFCLIFE,2017-03,+,-,-,Shareholder Returns
@@ -454,6 +502,7 @@ HDFCLIFE,2021-03,+,-,+,Mixed
 HDFCLIFE,2022-03,+,-,-,Shareholder Returns
 HDFCLIFE,2023-03,+,-,+,Mixed
 HDFCLIFE,2024-03,+,-,-,Shareholder Returns
+HDFCLIFE,2024-09,,,,Unknown
 HEROMOTOCO,2014-03,+,-,-,Shareholder Returns
 HEROMOTOCO,2015-03,+,+,-,Liquidating Assets
 HEROMOTOCO,2016-03,+,-,-,Shareholder Returns
@@ -465,6 +514,7 @@ HEROMOTOCO,2021-03,+,-,-,Shareholder Returns
 HEROMOTOCO,2022-03,+,-,-,Reinvestor
 HEROMOTOCO,2023-03,+,-,-,Reinvestor
 HEROMOTOCO,2024-03,+,-,-,Shareholder Returns
+HEROMOTOCO,2024-09,,,,Unknown
 HINDALCO,2013-03,+,-,+,Mixed
 HINDALCO,2014-03,+,-,+,Mixed
 HINDALCO,2015-03,+,-,-,Shareholder Returns
@@ -477,6 +527,7 @@ HINDALCO,2021-03,+,-,-,Shareholder Returns
 HINDALCO,2022-03,+,-,-,Shareholder Returns
 HINDALCO,2023-03,+,-,-,Shareholder Returns
 HINDALCO,2024-03,+,-,-,Shareholder Returns
+HINDALCO,2024-09,,,,Unknown
 HINDUNILVR,2013-03,+,+,-,Liquidating Assets
 HINDUNILVR,2014-03,+,-,-,Reinvestor
 HINDUNILVR,2015-03,+,+,-,Liquidating Assets
@@ -489,6 +540,7 @@ HINDUNILVR,2021-03,+,-,-,Shareholder Returns
 HINDUNILVR,2022-03,+,-,-,Shareholder Returns
 HINDUNILVR,2023-03,+,-,-,Reinvestor
 HINDUNILVR,2024-03,+,-,-,Shareholder Returns
+HINDUNILVR,2024-09,,,,Unknown
 ICICIBANK,2013-03,+,-,+,Mixed
 ICICIBANK,2014-03,+,-,+,Mixed
 ICICIBANK,2015-03,-,-,+,Growth Funded by Debt
@@ -513,6 +565,7 @@ ICICIGI,2021-03,+,-,-,Shareholder Returns
 ICICIGI,2022-03,+,+,-,Liquidating Assets
 ICICIGI,2023-03,+,-,-,Shareholder Returns
 ICICIGI,2024-03,+,-,-,Shareholder Returns
+ICICIGI,2024-09,,,,Unknown
 ICICIPRULI,2013-03,-,+,-,Distress Signal
 ICICIPRULI,2014-03,-,+,-,Distress Signal
 ICICIPRULI,2015-03,+,-,-,Reinvestor
@@ -525,6 +578,7 @@ ICICIPRULI,2021-03,+,-,+,Mixed
 ICICIPRULI,2022-03,+,-,-,Shareholder Returns
 ICICIPRULI,2023-03,+,-,-,Reinvestor
 ICICIPRULI,2024-03,-,+,-,Distress Signal
+ICICIPRULI,2024-09,,,,Unknown
 INDIGO,2013-03,+,-,+,Mixed
 INDIGO,2014-03,+,-,+,Mixed
 INDIGO,2015-03,+,-,-,Shareholder Returns
@@ -537,6 +591,7 @@ INDIGO,2021-03,-,+,-,Distress Signal
 INDIGO,2022-03,+,+,-,Liquidating Assets
 INDIGO,2023-03,+,-,-,Reinvestor
 INDIGO,2024-03,+,-,-,Shareholder Returns
+INDIGO,2024-09,,,,Unknown
 INDUSINDBK,2013-03,-,-,+,Growth Funded by Debt
 INDUSINDBK,2014-03,-,-,+,Growth Funded by Debt
 INDUSINDBK,2015-03,-,-,+,Growth Funded by Debt
@@ -561,6 +616,7 @@ INFY,2021-03,+,-,-,Shareholder Returns
 INFY,2022-03,+,-,-,Shareholder Returns
 INFY,2023-03,+,-,-,Reinvestor
 INFY,2024-03,+,-,-,Reinvestor
+INFY,2024-09,,,,Unknown
 IOC,2013-03,+,-,+,Mixed
 IOC,2014-03,+,-,-,Shareholder Returns
 IOC,2015-03,+,-,-,Shareholder Returns
@@ -573,6 +629,7 @@ IOC,2021-03,+,-,-,Shareholder Returns
 IOC,2022-03,+,-,-,Shareholder Returns
 IOC,2023-03,+,-,-,Shareholder Returns
 IOC,2024-03,+,-,-,Shareholder Returns
+IOC,2024-09,,,,Unknown
 IRCTC,2015-03,+,-,-,Reinvestor
 IRCTC,2016-03,+,+,-,Liquidating Assets
 IRCTC,2017-03,+,+,-,Liquidating Assets
@@ -583,6 +640,10 @@ IRCTC,2021-03,+,-,-,Shareholder Returns
 IRCTC,2022-03,+,-,-,Reinvestor
 IRCTC,2023-03,+,-,-,Reinvestor
 IRCTC,2024-03,+,-,-,Reinvestor
+IRCTC,2024-09,,,,Unknown
+IRFC,2013-03,,,,Unknown
+IRFC,2014-03,,,,Unknown
+IRFC,2015-03,,,,Unknown
 IRFC,2016-03,-,+,+,Distress Signal
 IRFC,2017-03,-,+,+,Distress Signal
 IRFC,2018-03,-,+,+,Distress Signal
@@ -592,6 +653,7 @@ IRFC,2021-03,-,+,+,Distress Signal
 IRFC,2022-03,-,-,+,Growth Funded by Debt
 IRFC,2023-03,-,+,+,Distress Signal
 IRFC,2024-03,+,-,-,Shareholder Returns
+IRFC,2024-09,,,,Unknown
 ITC,2013-03,+,-,-,Reinvestor
 ITC,2014-03,+,-,-,Reinvestor
 ITC,2015-03,+,-,-,Shareholder Returns
@@ -604,6 +666,7 @@ ITC,2021-03,+,+,-,Liquidating Assets
 ITC,2022-03,+,-,-,Shareholder Returns
 ITC,2023-03,+,-,-,Reinvestor
 ITC,2024-03,+,+,-,Liquidating Assets
+ITC,2024-09,,,,Unknown
 JINDALSTEL,2013-03,+,-,+,Mixed
 JINDALSTEL,2014-03,+,-,+,Mixed
 JINDALSTEL,2015-03,+,-,+,Mixed
@@ -616,8 +679,10 @@ JINDALSTEL,2021-03,+,-,-,Shareholder Returns
 JINDALSTEL,2022-03,+,-,-,Shareholder Returns
 JINDALSTEL,2023-03,+,-,-,Shareholder Returns
 JINDALSTEL,2024-03,+,-,+,Mixed
+JINDALSTEL,2024-09,,,,Unknown
 JIOFIN,2023-03,+,-,-,Shareholder Returns
 JIOFIN,2024-03,-,+,-,Distress Signal
+JIOFIN,2024-09,,,,Unknown
 JSWENERGY,2013-03,+,-,-,Shareholder Returns
 JSWENERGY,2014-03,+,-,-,Shareholder Returns
 JSWENERGY,2015-03,+,-,-,Shareholder Returns
@@ -630,6 +695,7 @@ JSWENERGY,2021-03,+,-,-,Shareholder Returns
 JSWENERGY,2022-03,+,-,-,Shareholder Returns
 JSWENERGY,2023-03,+,-,+,Mixed
 JSWENERGY,2024-03,+,-,+,Mixed
+JSWENERGY,2024-09,,,,Unknown
 JSWSTEEL,2013-03,+,-,-,Shareholder Returns
 JSWSTEEL,2014-03,+,-,+,Mixed
 JSWSTEEL,2015-03,+,-,-,Shareholder Returns
@@ -642,6 +708,7 @@ JSWSTEEL,2021-03,+,-,-,Shareholder Returns
 JSWSTEEL,2022-03,+,-,-,Shareholder Returns
 JSWSTEEL,2023-03,+,-,-,Shareholder Returns
 JSWSTEEL,2024-03,+,-,-,Shareholder Returns
+JSWSTEEL,2024-09,,,,Unknown
 KOTAKBANK,2013-03,+,-,+,Mixed
 KOTAKBANK,2014-03,+,-,-,Shareholder Returns
 KOTAKBANK,2015-03,+,-,+,Mixed
@@ -660,6 +727,10 @@ LICI,2021-03,+,+,-,Liquidating Assets
 LICI,2022-03,-,+,+,Distress Signal
 LICI,2023-03,+,-,-,Shareholder Returns
 LICI,2024-03,+,-,-,Reinvestor
+LICI,2024-09,,,,Unknown
+LODHA,2011-03,,,,Unknown
+LODHA,2012-03,,,,Unknown
+LODHA,2015-03,,,,Unknown
 LODHA,2016-03,+,-,+,Mixed
 LODHA,2017-03,+,-,-,Shareholder Returns
 LODHA,2018-03,+,-,+,Mixed
@@ -669,6 +740,7 @@ LODHA,2021-03,+,+,-,Liquidating Assets
 LODHA,2022-03,+,+,-,Liquidating Assets
 LODHA,2023-03,+,+,-,Liquidating Assets
 LODHA,2024-03,+,-,+,Mixed
+LODHA,2024-09,,,,Unknown
 LT,2013-03,-,-,+,Growth Funded by Debt
 LT,2014-03,-,-,+,Growth Funded by Debt
 LT,2015-03,-,-,+,Growth Funded by Debt
@@ -681,6 +753,7 @@ LT,2021-03,+,-,-,Shareholder Returns
 LT,2022-03,+,-,-,Shareholder Returns
 LT,2023-03,+,-,-,Shareholder Returns
 LT,2024-03,+,+,-,Liquidating Assets
+LT,2024-09,,,,Unknown
 LTIM,2013-03,+,-,-,Shareholder Returns
 LTIM,2014-03,+,+,-,Liquidating Assets
 LTIM,2015-03,+,-,-,Reinvestor
@@ -693,6 +766,7 @@ LTIM,2021-03,+,-,-,Shareholder Returns
 LTIM,2022-03,+,-,-,Reinvestor
 LTIM,2023-03,+,-,-,Reinvestor
 LTIM,2024-03,+,-,-,Shareholder Returns
+LTIM,2024-09,,,,Unknown
 M&M,2013-03,-,-,+,Growth Funded by Debt
 M&M,2014-03,-,-,+,Growth Funded by Debt
 M&M,2015-03,+,-,+,Mixed
@@ -705,6 +779,7 @@ M&M,2021-03,+,-,+,Mixed
 M&M,2022-03,+,-,-,Shareholder Returns
 M&M,2023-03,-,-,+,Growth Funded by Debt
 M&M,2024-03,-,-,+,Growth Funded by Debt
+M&M,2024-09,,,,Unknown
 MARUTI,2013-03,+,-,-,Shareholder Returns
 MARUTI,2014-03,+,-,-,Shareholder Returns
 MARUTI,2015-03,+,-,-,Shareholder Returns
@@ -717,6 +792,7 @@ MARUTI,2021-03,+,-,-,Shareholder Returns
 MARUTI,2022-03,+,-,-,Reinvestor
 MARUTI,2023-03,+,-,-,Shareholder Returns
 MARUTI,2024-03,+,-,-,Shareholder Returns
+MARUTI,2024-09,,,,Unknown
 MOTHERSON,2013-03,+,-,-,Shareholder Returns
 MOTHERSON,2014-03,+,-,-,Shareholder Returns
 MOTHERSON,2015-03,+,-,+,Mixed
@@ -729,6 +805,7 @@ MOTHERSON,2021-03,+,-,-,Shareholder Returns
 MOTHERSON,2022-03,+,-,-,Shareholder Returns
 MOTHERSON,2023-03,+,-,-,Shareholder Returns
 MOTHERSON,2024-03,+,-,+,Mixed
+MOTHERSON,2024-09,,,,Unknown
 NAUKRI,2013-03,+,-,-,Reinvestor
 NAUKRI,2014-03,+,-,+,Mixed
 NAUKRI,2015-03,+,-,+,Mixed
@@ -741,6 +818,7 @@ NAUKRI,2021-03,+,-,+,Mixed
 NAUKRI,2022-03,+,-,+,Mixed
 NAUKRI,2023-03,+,-,+,Mixed
 NAUKRI,2024-03,+,-,+,Mixed
+NAUKRI,2024-09,,,,Unknown
 NESTLEIND,2013-12,+,-,-,Shareholder Returns
 NESTLEIND,2014-12,+,-,-,Shareholder Returns
 NESTLEIND,2015-12,+,-,-,Shareholder Returns
@@ -753,6 +831,7 @@ NESTLEIND,2021-12,+,-,-,Shareholder Returns
 NESTLEIND,2022-12,+,-,-,Shareholder Returns
 NESTLEIND,2023-12,+,-,-,Shareholder Returns
 NESTLEIND,2024-03,+,-,-,Shareholder Returns
+NESTLEIND,2024-09,,,,Unknown
 NHPC,2013-03,+,-,-,Reinvestor
 NHPC,2014-03,+,-,-,Shareholder Returns
 NHPC,2015-03,+,-,-,Shareholder Returns
@@ -765,6 +844,7 @@ NHPC,2021-03,+,-,-,Shareholder Returns
 NHPC,2022-03,+,-,-,Shareholder Returns
 NHPC,2023-03,+,-,-,Shareholder Returns
 NHPC,2024-03,+,-,-,Shareholder Returns
+NHPC,2024-09,,,,Unknown
 NTPC,2013-03,+,-,+,Mixed
 NTPC,2014-03,+,-,-,Shareholder Returns
 NTPC,2015-03,+,-,-,Shareholder Returns
@@ -777,6 +857,7 @@ NTPC,2021-03,+,-,-,Shareholder Returns
 NTPC,2022-03,+,-,-,Shareholder Returns
 NTPC,2023-03,+,-,-,Shareholder Returns
 NTPC,2024-03,+,-,-,Shareholder Returns
+NTPC,2024-09,,,,Unknown
 ONGC,2013-03,+,-,-,Shareholder Returns
 ONGC,2014-03,+,-,+,Mixed
 ONGC,2015-03,+,-,-,Shareholder Returns
@@ -789,6 +870,7 @@ ONGC,2021-03,+,-,-,Shareholder Returns
 ONGC,2022-03,+,-,-,Shareholder Returns
 ONGC,2023-03,+,-,-,Shareholder Returns
 ONGC,2024-03,+,-,-,Shareholder Returns
+ONGC,2024-09,,,,Unknown
 PFC,2013-03,-,+,+,Distress Signal
 PFC,2014-03,-,+,+,Distress Signal
 PFC,2015-03,-,-,+,Growth Funded by Debt
@@ -801,6 +883,7 @@ PFC,2021-03,-,+,+,Distress Signal
 PFC,2022-03,+,-,-,Reinvestor
 PFC,2023-03,-,-,+,Growth Funded by Debt
 PFC,2024-03,-,-,+,Growth Funded by Debt
+PFC,2024-09,,,,Unknown
 PIDILITIND,2013-03,+,-,-,Shareholder Returns
 PIDILITIND,2014-03,+,-,-,Reinvestor
 PIDILITIND,2015-03,+,-,-,Shareholder Returns
@@ -813,6 +896,7 @@ PIDILITIND,2021-03,+,-,-,Shareholder Returns
 PIDILITIND,2022-03,+,-,-,Reinvestor
 PIDILITIND,2023-03,+,-,-,Shareholder Returns
 PIDILITIND,2024-03,+,-,-,Shareholder Returns
+PIDILITIND,2024-09,,,,Unknown
 PNB,2013-03,-,-,-,Pre-Revenue
 PNB,2014-03,+,-,+,Mixed
 PNB,2015-03,+,-,+,Mixed
@@ -837,6 +921,7 @@ POWERGRID,2021-03,+,-,-,Shareholder Returns
 POWERGRID,2022-03,+,+,-,Liquidating Assets
 POWERGRID,2023-03,+,-,-,Shareholder Returns
 POWERGRID,2024-03,+,-,-,Shareholder Returns
+POWERGRID,2024-09,,,,Unknown
 RECLTD,2013-03,-,+,+,Distress Signal
 RECLTD,2014-03,-,+,+,Distress Signal
 RECLTD,2015-03,-,+,+,Distress Signal
@@ -849,6 +934,7 @@ RECLTD,2021-03,-,+,+,Distress Signal
 RECLTD,2022-03,-,-,+,Growth Funded by Debt
 RECLTD,2023-03,-,-,+,Growth Funded by Debt
 RECLTD,2024-03,-,-,+,Growth Funded by Debt
+RECLTD,2024-09,,,,Unknown
 RELIANCE,2013-03,+,-,+,Mixed
 RELIANCE,2014-03,+,-,+,Mixed
 RELIANCE,2015-03,+,-,+,Mixed
@@ -861,6 +947,7 @@ RELIANCE,2021-03,+,-,+,Mixed
 RELIANCE,2022-03,+,-,+,Mixed
 RELIANCE,2023-03,+,-,+,Mixed
 RELIANCE,2024-03,+,-,-,Shareholder Returns
+RELIANCE,2024-09,,,,Unknown
 SBILIFE,2013-03,+,-,-,Shareholder Returns
 SBILIFE,2014-03,+,-,-,Reinvestor
 SBILIFE,2015-03,+,-,-,Shareholder Returns
@@ -873,6 +960,7 @@ SBILIFE,2021-03,+,-,+,Mixed
 SBILIFE,2022-03,+,-,-,Shareholder Returns
 SBILIFE,2023-03,+,-,-,Shareholder Returns
 SBILIFE,2024-03,+,-,-,Shareholder Returns
+SBILIFE,2024-09,,,,Unknown
 SBIN,2013-03,+,-,-,Shareholder Returns
 SBIN,2014-03,+,-,+,Mixed
 SBIN,2015-03,+,-,-,Shareholder Returns
@@ -897,6 +985,7 @@ SHREECEM,2021-03,+,-,-,Shareholder Returns
 SHREECEM,2022-03,+,-,-,Shareholder Returns
 SHREECEM,2023-03,+,-,-,Shareholder Returns
 SHREECEM,2024-03,+,-,-,Shareholder Returns
+SHREECEM,2024-09,,,,Unknown
 SHRIRAMFIN,2013-03,-,-,+,Growth Funded by Debt
 SHRIRAMFIN,2014-03,-,-,+,Growth Funded by Debt
 SHRIRAMFIN,2015-03,-,-,+,Growth Funded by Debt
@@ -909,6 +998,7 @@ SHRIRAMFIN,2021-03,-,-,+,Growth Funded by Debt
 SHRIRAMFIN,2022-03,-,-,+,Growth Funded by Debt
 SHRIRAMFIN,2023-03,-,+,+,Distress Signal
 SHRIRAMFIN,2024-03,-,-,+,Growth Funded by Debt
+SHRIRAMFIN,2024-09,,,,Unknown
 SIEMENS,2011-09,+,+,-,Liquidating Assets
 SIEMENS,2014-09,+,+,-,Liquidating Assets
 SIEMENS,2015-09,+,+,-,Liquidating Assets
@@ -933,6 +1023,7 @@ SUNPHARMA,2021-03,+,+,-,Liquidating Assets
 SUNPHARMA,2022-03,+,-,-,Shareholder Returns
 SUNPHARMA,2023-03,+,-,+,Mixed
 SUNPHARMA,2024-03,+,-,-,Shareholder Returns
+SUNPHARMA,2024-09,,,,Unknown
 TATACONSUM,2013-03,+,+,+,Cash Accumulator
 TATACONSUM,2014-03,+,-,-,Reinvestor
 TATACONSUM,2015-03,+,-,-,Shareholder Returns
@@ -945,6 +1036,7 @@ TATACONSUM,2021-03,+,-,-,Shareholder Returns
 TATACONSUM,2022-03,+,-,-,Shareholder Returns
 TATACONSUM,2023-03,+,-,-,Shareholder Returns
 TATACONSUM,2024-03,+,-,+,Mixed
+TATACONSUM,2024-09,,,,Unknown
 TATAMOTORS,2013-03,+,-,-,Shareholder Returns
 TATAMOTORS,2014-03,+,-,-,Shareholder Returns
 TATAMOTORS,2015-03,+,-,+,Mixed
@@ -957,6 +1049,7 @@ TATAMOTORS,2021-03,+,-,+,Mixed
 TATAMOTORS,2022-03,+,-,-,Reinvestor
 TATAMOTORS,2023-03,+,-,-,Shareholder Returns
 TATAMOTORS,2024-03,+,-,-,Shareholder Returns
+TATAMOTORS,2024-09,,,,Unknown
 TATAPOWER,2013-03,+,-,-,Shareholder Returns
 TATAPOWER,2014-03,+,-,-,Shareholder Returns
 TATAPOWER,2015-03,+,-,-,Shareholder Returns
@@ -969,6 +1062,7 @@ TATAPOWER,2021-03,+,+,-,Liquidating Assets
 TATAPOWER,2022-03,+,-,-,Shareholder Returns
 TATAPOWER,2023-03,+,-,+,Mixed
 TATAPOWER,2024-03,+,-,-,Shareholder Returns
+TATAPOWER,2024-09,,,,Unknown
 TATASTEEL,2013-03,+,-,-,Reinvestor
 TATASTEEL,2014-03,+,-,+,Mixed
 TATASTEEL,2015-03,+,-,-,Reinvestor
@@ -981,6 +1075,7 @@ TATASTEEL,2021-03,+,-,-,Shareholder Returns
 TATASTEEL,2022-03,+,-,-,Shareholder Returns
 TATASTEEL,2023-03,+,-,-,Shareholder Returns
 TATASTEEL,2024-03,+,-,-,Reinvestor
+TATASTEEL,2024-09,,,,Unknown
 TCS,2013-03,+,-,-,Reinvestor
 TCS,2014-03,+,-,-,Reinvestor
 TCS,2015-03,+,-,-,Reinvestor
@@ -993,6 +1088,7 @@ TCS,2021-03,+,-,-,Shareholder Returns
 TCS,2022-03,+,-,-,Shareholder Returns
 TCS,2023-03,+,+,-,Liquidating Assets
 TCS,2024-03,+,+,-,Liquidating Assets
+TCS,2024-09,,,,Unknown
 TECHM,2013-03,+,-,+,Mixed
 TECHM,2014-03,+,+,-,Liquidating Assets
 TECHM,2015-03,+,-,-,Reinvestor
@@ -1005,6 +1101,7 @@ TECHM,2021-03,+,-,-,Shareholder Returns
 TECHM,2022-03,+,+,-,Liquidating Assets
 TECHM,2023-03,+,-,-,Shareholder Returns
 TECHM,2024-03,+,-,-,Shareholder Returns
+TECHM,2024-09,,,,Unknown
 TITAN,2013-03,+,-,-,Reinvestor
 TITAN,2014-03,-,-,+,Growth Funded by Debt
 TITAN,2015-03,+,-,-,Reinvestor
@@ -1017,6 +1114,7 @@ TITAN,2021-03,+,-,-,Shareholder Returns
 TITAN,2022-03,-,+,-,Distress Signal
 TITAN,2023-03,+,-,+,Mixed
 TITAN,2024-03,+,-,-,Reinvestor
+TITAN,2024-09,,,,Unknown
 TORNTPHARM,2013-03,+,-,+,Mixed
 TORNTPHARM,2014-03,+,-,+,Mixed
 TORNTPHARM,2015-03,+,-,+,Mixed
@@ -1029,6 +1127,7 @@ TORNTPHARM,2021-03,+,-,-,Shareholder Returns
 TORNTPHARM,2022-03,+,-,-,Shareholder Returns
 TORNTPHARM,2023-03,+,-,+,Mixed
 TORNTPHARM,2024-03,+,-,-,Shareholder Returns
+TORNTPHARM,2024-09,,,,Unknown
 TRENT,2013-03,+,-,+,Mixed
 TRENT,2014-03,-,-,-,Pre-Revenue
 TRENT,2015-03,-,-,+,Growth Funded by Debt
@@ -1041,6 +1140,7 @@ TRENT,2021-03,+,+,-,Liquidating Assets
 TRENT,2022-03,+,+,-,Liquidating Assets
 TRENT,2023-03,+,-,-,Shareholder Returns
 TRENT,2024-03,+,-,-,Reinvestor
+TRENT,2024-09,,,,Unknown
 TVSMOTOR,2013-03,+,-,-,Shareholder Returns
 TVSMOTOR,2014-03,+,-,-,Shareholder Returns
 TVSMOTOR,2015-03,+,-,+,Mixed
@@ -1053,3 +1153,4 @@ TVSMOTOR,2021-03,+,-,+,Mixed
 TVSMOTOR,2022-03,-,-,+,Growth Funded by Debt
 TVSMOTOR,2023-03,-,-,+,Growth Funded by Debt
 TVSMOTOR,2024-03,-,-,+,Growth Funded by Debt
+TVSMOTOR,2024-09,,,,Unknown

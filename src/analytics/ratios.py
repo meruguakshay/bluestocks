@@ -428,8 +428,6 @@ def main():
     print("\nGenerating output/capital_allocation.csv...")
     os.makedirs("output", exist_ok=True)
     df_alloc = pd.DataFrame(capital_alloc_list)
-    # Filter out records where signs are null
-    df_alloc = df_alloc.dropna(subset=["cfo_sign", "cfi_sign", "cff_sign"])
     df_alloc.to_csv("output/capital_allocation.csv", index=False)
     print(f"  [OK] Saved capital_allocation.csv ({len(df_alloc)} rows)")
     
