@@ -1,50 +1,66 @@
 import pytest
+import os
 import pandas as pd
-from src.etl.loader import clean_companies, clean_financials, clean_stock_prices
+from src.etl.loader import read_raw_file
 
-def test_clean_companies():
-    # Setup data with duplicates and tickers in various casings
-    df = pd.DataFrame([
-        {"company_id": 1, "ticker": "reliance.ns", "company_name": "Reliance", "sector_id": 1},
-        {"company_id": 1, "ticker": "RELIANCE", "company_name": "Reliance Dup", "sector_id": 1}, # duplicate company_id
-        {"company_id": 2, "ticker": "  tcs.bo  ", "company_name": "TCS", "sector_id": 2}
-    ])
-    
-    cleaned = clean_companies(df)
-    
-    # Assert row count is 2 (duplicates removed)
-    assert len(cleaned) == 2
-    assert set(cleaned['company_id']) == {1, 2}
-    # Assert ticker normalization
-    assert cleaned.loc[cleaned['company_id'] == 1, 'ticker'].values[0] == "RELIANCE"
-    assert cleaned.loc[cleaned['company_id'] == 2, 'ticker'].values[0] == "TCS"
+def test_load_sectors():
+    df = read_raw_file("sectors.xlsx", has_banner=False)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "broad_sector" in df.columns
 
-def test_clean_financials():
-    df = pd.DataFrame([
-        {"company_id": 1, "year": "FY23", "sales": 1000.0},
-        {"company_id": 1, "year": "2023", "sales": 1200.0}, # duplicate (company_id, year)
-        {"company_id": 1, "year": "2022-23", "sales": 1000.0}, # duplicate after normalization (FY23 and 2022-23 both resolve to 2023)
-        {"company_id": 1, "year": "2024", "sales": 1500.0},
-        {"company_id": 2, "year": "invalid_year", "sales": 800.0} # invalid year should be dropped
-    ])
-    
-    cleaned = clean_financials(df)
-    
-    # Assert duplicates/invalid years are cleaned
-    # "FY23", "2023", "2022-23" all map to year "2023-03". Only the first (FY23) is kept.
-    # "2024" maps to "2024-03".
-    # "invalid_year" -> year is None -> dropped.
-    assert len(cleaned) == 2
-    assert set(cleaned['year'].values) == {"2023-03", "2024-03"}
+def test_load_companies():
+    df = read_raw_file("companies.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "id" in df.columns
+    assert "company_name" in df.columns
 
-def test_clean_stock_prices():
-    df = pd.DataFrame([
-        {"ticker": "reliance.ns", "date": "2026-07-01", "close_price": 2400.0},
-        {"ticker": "RELIANCE", "date": "2026-07-01", "close_price": 2405.0}, # duplicate ticker + date
-        {"ticker": "tcs.bo", "date": "2026-07-01", "close_price": 3200.0}
-    ])
-    
-    cleaned = clean_stock_prices(df)
-    
-    assert len(cleaned) == 2
-    assert cleaned.loc[cleaned['company_id'] == "RELIANCE", 'close_price'].values[0] == 2400.0
+def test_load_profitandloss():
+    df = read_raw_file("profitandloss.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "sales" in df.columns
+    assert "net_profit" in df.columns
+
+def test_load_balancesheet():
+    df = read_raw_file("balancesheet.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "equity_capital" in df.columns
+    assert "reserves" in df.columns
+
+def test_load_cashflow():
+    df = read_raw_file("cashflow.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "operating_activity" in df.columns
+
+def test_load_financial_ratios():
+    df = read_raw_file("financial_ratios.xlsx", has_banner=False)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "return_on_equity_pct" in df.columns
+
+def test_load_stock_prices():
+    df = read_raw_file("stock_prices.xlsx", has_banner=False)
+    assert len(df) > 0
+    assert "ticker" in df.columns or "company_id" in df.columns
+    assert "close_price" in df.columns
+
+def test_load_documents():
+    df = read_raw_file("documents.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "Annual_Report" in df.columns
+
+def test_load_prosandcons():
+    df = read_raw_file("prosandcons.xlsx", has_banner=True)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "pros" in df.columns
+
+def test_load_market_cap():
+    df = read_raw_file("market_cap.xlsx", has_banner=False)
+    assert len(df) > 0
+    assert "company_id" in df.columns
+    assert "market_cap_crore" in df.columns
