@@ -1,0 +1,22 @@
+screener:
+  exclude_debt_sectors:
+    - "Financials"
+  presets:
+    Quality:
+      min_roe: 15.0
+      max_de: 1.0
+      min_fcf: 0.0
+    Value:
+      max_pe: 20.0
+      max_pb: 3.0
+    Growth:
+      min_pat_cagr_5yr: 20.0
+      min_rev_cagr_5yr: 10.0
+    Dividend:
+      min_dividend_yield_pct: 2.0
+    Debt-Free:
+      max_de: 0.0
+    Turnaround:
+      min_pat_cagr_5yr: 20.0
+      min_opm_pct: 10.0
+      max_de: 1.5
