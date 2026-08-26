@@ -450,14 +450,28 @@ def generate_tearsheet(ticker, dest_path):
     conn.close()
 
     # Bypassed skip logic: process all companies
-    conformed_years = set(pnl["year"]).intersection(bs["year"]).intersection(cf["year"])
-    all_years = (
-        set(pnl["year"]).union(bs["year"]).union(cf["year"]).union(ratios["year"])
-    )
-    if not all_years:
-        all_years = {"2024-03"}
-    sorted_years = sorted(list(all_years))
-    latest_year = sorted_years[-1]
+    valid_tables_years = []
+    if not pnl.empty:
+        valid_tables_years.append(set(pnl["year"]))
+    if not bs.empty:
+        valid_tables_years.append(set(bs["year"]))
+    if not cf.empty:
+        valid_tables_years.append(set(cf["year"]))
+
+    if valid_tables_years:
+        conformed_years = set.intersection(*valid_tables_years)
+    else:
+        conformed_years = set()
+
+    if conformed_years:
+        latest_year = sorted(list(conformed_years))[-1]
+    else:
+        all_years = (
+            set(pnl["year"]).union(bs["year"]).union(cf["year"]).union(ratios["year"])
+        )
+        if not all_years:
+            all_years = {"2024-03"}
+        latest_year = sorted(list(all_years))[-1]
 
     latest_ratio = (
         ratios[ratios["year"] == latest_year].iloc[0]
